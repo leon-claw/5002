@@ -1,0 +1,190 @@
+cip_code_4digit,cip_title,earnings,reported_n,ai,institutions,debt,family
+1.0,"Agriculture, General",52804.0,44,0.0,92,19500.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.01,Agricultural Business and Management,65882.0,77,0.0,139,18375.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.02,Agricultural Mechanization,73393.0,11,0.0,24,19500.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.03,Agricultural Production Operations,52516.0,14,0.0,71,21811.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.06,Applied Horticulture and Horticultural Business Services,56937.0,12,0.0,44,21574.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.08,Agricultural Public Services,52403.5,10,0.0,38,19134.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.09,Animal Sciences,49193.0,79,0.0,106,20800.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.1,Food Science and Technology,70537.0,29,0.0,81,20945.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.11,Plant Sciences,56265.0,45,0.0,92,18102.5,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+1.83,Veterinary/Animal Health Technologies/Technicians,41954.0,13,0.0,34,23626.0,Agricultural/Animal/Plant/Veterinary Science and Related Fields
+3.01,Natural Resources Conservation and Research,55009.5,266,0.0,847,21137.0,Natural Resources and Conservation
+3.02,Environmental/Natural Resources Management and Policy,53620.0,29,0.053,102,23160.0,Natural Resources and Conservation
+3.05,Forestry,58499.0,31,0.0,60,20500.0,Natural Resources and Conservation
+3.06,Wildlife and Wildlands Science and Management,45348.0,37,0.0,63,21687.5,Natural Resources and Conservation
+4.02,Architecture,67399.0,79,0.0,141,26442.0,Architecture and Related Services
+4.03,"City/Urban, Community, and Regional Planning",68163.0,17,0.0,55,23444.0,Architecture and Related Services
+4.04,Environmental Design,56561.0,13,0.0,41,21248.5,Architecture and Related Services
+4.05,Interior Architecture,61421.0,17,0.0,48,22254.0,Architecture and Related Services
+4.06,Landscape Architecture,65863.0,19,0.0,60,23734.0,Architecture and Related Services
+4.09,Architectural Sciences and Technology,69108.0,22,0.0,82,26666.0,Architecture and Related Services
+5.01,Area Studies,57208.0,70,0.0,462,20348.0,"Area, Ethnic, Cultural, Gender, and Group Studies"
+5.02,"Ethnic, Cultural Minority, Gender, and Group Studies",51565.0,103,0.0,492,21563.0,"Area, Ethnic, Cultural, Gender, and Group Studies"
+9.01,Communication and Media Studies,54091.0,673,0.111,1198,23000.0,"Communication, Journalism, and Related Programs"
+9.04,Journalism,54396.0,189,0.125,423,22483.5,"Communication, Journalism, and Related Programs"
+9.07,"Radio, Television, and Digital Communication",49359.0,163,0.143,416,22479.5,"Communication, Journalism, and Related Programs"
+9.09,"Public Relations, Advertising, and Applied Communication",62087.0,183,0.0,484,23250.0,"Communication, Journalism, and Related Programs"
+9.99,"Communication, Journalism, and Related Programs, Other",59122.0,22,0.333,95,24250.0,"Communication, Journalism, and Related Programs"
+10.02,Audiovisual Communications Technologies/Technicians,45571.0,32,0.0,80,27000.0,Communications Technologies/Technicians and Support Services
+10.03,Graphic Communications,42818.5,66,0.0,174,26928.5,Communications Technologies/Technicians and Support Services
+11.01,"Computer and Information Sciences, General",84554.0,473,0.571,974,22822.0,Computer and Information Sciences and Support Services
+11.02,Computer Programming,78404.0,33,0.571,124,30125.0,Computer and Information Sciences and Support Services
+11.04,Information Science/Studies,83331.0,149,0.714,313,24912.0,Computer and Information Sciences and Support Services
+11.05,Computer Systems Analysis,71675.0,30,0.5,63,40509.0,Computer and Information Sciences and Support Services
+11.07,Computer Science,98408.5,358,0.538,800,22055.0,Computer and Information Sciences and Support Services
+11.08,Computer Software and Media Applications,51764.0,73,0.615,240,27000.0,Computer and Information Sciences and Support Services
+11.09,Computer Systems Networking and Telecommunications,73884.0,48,0.6,96,27000.0,Computer and Information Sciences and Support Services
+11.1,Computer/Information Technology Administration and Management,80934.0,108,0.231,446,25916.0,Computer and Information Sciences and Support Services
+12.05,Culinary Arts and Related Services,46875.5,26,0.0,62,27000.0,"Culinary, Entertainment, and Personal Services"
+13.01,"Education, General",49250.0,73,0.0,432,24585.0,Education
+13.04,Educational Administration and Supervision,46541.0,19,0.0,58,25808.0,Education
+13.1,Special Education and Teaching,51258.0,185,0.0,615,24903.0,Education
+13.12,"Teacher Education and Professional Development, Specific Levels and Methods",47730.0,703,0.0,1263,24250.0,Education
+13.13,"Teacher Education and Professional Development, Specific Subject Areas",50805.5,356,0.034,1009,25000.0,Education
+13.99,"Education, Other",48652.5,28,0.0,126,24251.0,Education
+14.01,"Engineering, General",88063.0,57,0.333,280,25494.0,Engineering
+14.02,"Aerospace, Aeronautical, and Astronautical/Space Engineering",96510.0,59,0.0,78,23694.0,Engineering
+14.03,Agricultural Engineering,84994.5,26,0.0,39,22437.0,Engineering
+14.04,Architectural Engineering,87297.5,16,0.25,31,25508.0,Engineering
+14.05,Biomedical/Medical Engineering,94135.5,118,0.333,206,22588.0,Engineering
+14.07,Chemical Engineering,96798.0,159,0.4,193,22732.0,Engineering
+14.08,Civil Engineering,85076.0,234,0.143,321,23250.0,Engineering
+14.09,Computer Engineering,105640.0,192,0.286,388,23000.0,Engineering
+14.1,"Electrical, Electronics, and Communications Engineering",98640.0,261,0.143,414,23074.0,Engineering
+14.12,Engineering Physics,88589.0,10,0.2,141,23603.0,Engineering
+14.14,Environmental/Environmental Health Engineering,81659.0,46,0.0,131,21500.0,Engineering
+14.18,Materials Engineering,91799.0,34,0.0,66,22555.5,Engineering
+14.19,Mechanical Engineering,91131.0,321,0.0,415,22875.0,Engineering
+14.23,Nuclear Engineering,96752.0,12,0.0,23,21963.0,Engineering
+14.25,Petroleum Engineering,102594.0,19,0.0,25,24211.0,Engineering
+14.27,Systems Engineering,114815.0,11,0.6,33,20500.0,Engineering
+14.33,Construction Engineering,101108.0,13,0.2,36,24695.5,Engineering
+14.35,Industrial Engineering,97789.5,96,0.25,144,24312.5,Engineering
+14.36,Manufacturing Engineering,88690.0,15,0.4,37,20988.0,Engineering
+14.99,"Engineering, Other",94278.0,19,0.25,75,22500.0,Engineering
+15.0,"Engineering Technologies/Technicians, General",79055.0,34,0.167,75,24687.5,Engineering/Engineering-Related Technologies/Technicians
+15.02,Civil Engineering Technologies/Technicians,75356.5,14,0.0,35,25812.5,Engineering/Engineering-Related Technologies/Technicians
+15.03,Electrical/Electronic Engineering Technologies/Technicians,83322.0,51,0.0,146,27000.0,Engineering/Engineering-Related Technologies/Technicians
+15.04,Electromechanical Technologies/Technicians,88911.0,26,0.0,58,41137.0,Engineering/Engineering-Related Technologies/Technicians
+15.06,Industrial Production Technologies/Technicians,81404.0,52,0.2,126,21229.0,Engineering/Engineering-Related Technologies/Technicians
+15.07,Quality Control and Safety Technologies/Technicians,84705.0,19,0.4,32,24875.0,Engineering/Engineering-Related Technologies/Technicians
+15.08,Mechanical Engineering Related Technologies/Technicians,81765.0,61,0.0,103,25640.0,Engineering/Engineering-Related Technologies/Technicians
+15.1,Construction Engineering Technology/Technician,92524.0,43,0.0,70,22479.0,Engineering/Engineering-Related Technologies/Technicians
+15.12,Computer Engineering Technologies/Technicians,79501.0,32,0.4,81,33106.0,Engineering/Engineering-Related Technologies/Technicians
+15.15,Engineering-Related Fields,90274.5,34,0.333,89,24570.0,Engineering/Engineering-Related Technologies/Technicians
+16.01,"Linguistic, Comparative, and Related Language Studies and Services",50571.0,91,0.0,403,19996.5,"Foreign Languages, Literatures, and Linguistics"
+16.03,"East Asian Languages, Literatures, and Linguistics",52010.5,24,0.0,169,20839.0,"Foreign Languages, Literatures, and Linguistics"
+16.09,"Romance Languages, Literatures, and Linguistics",56122.0,225,0.0,884,21500.0,"Foreign Languages, Literatures, and Linguistics"
+16.16,American Sign Language,45474.5,20,0.0,61,23500.0,"Foreign Languages, Literatures, and Linguistics"
+19.01,"Family and Consumer Sciences/Human Sciences, General",46136.0,49,0.0,108,24371.0,Family and Consumer Sciences/Human Sciences
+19.04,Family and Consumer Economics and Related Studies,53055.0,19,0.0,28,20594.5,Family and Consumer Sciences/Human Sciences
+19.05,"Foods, Nutrition, and Related Services",55659.0,51,0.0,125,22745.5,Family and Consumer Sciences/Human Sciences
+19.06,Housing and Human Environments,52861.0,11,0.0,19,25683.0,Family and Consumer Sciences/Human Sciences
+19.07,"Human Development, Family Studies, and Related Services",46953.5,174,0.0,342,23028.0,Family and Consumer Sciences/Human Sciences
+19.09,Apparel and Textiles,58046.0,58,0.111,97,22700.0,Family and Consumer Sciences/Human Sciences
+22.0,Non-Professional Legal Studies,63487.0,39,0.0,204,25000.0,Legal Professions and Studies
+22.03,Legal Support Services,52443.5,32,0.0,116,24460.5,Legal Professions and Studies
+23.01,"English Language and Literature, General",48926.0,577,0.0,1355,22000.0,English Language and Literature/Letters
+23.13,Rhetoric and Composition/Writing Studies,47141.0,137,0.2,531,23250.0,English Language and Literature/Letters
+23.99,"English Language and Literature/Letters, Other",39286.5,14,0.0,66,20427.0,English Language and Literature/Letters
+26.01,"Biology, General",57545.5,864,0.0,1446,23412.5,Biological and Biomedical Sciences
+26.02,"Biochemistry, Biophysics and Molecular Biology",65097.0,110,0.0,713,21609.5,Biological and Biomedical Sciences
+26.04,Cell/Cellular Biology and Anatomical Sciences,68042.0,35,0.0,109,19378.0,Biological and Biomedical Sciences
+26.05,Microbiological Sciences and Immunology,65366.0,53,0.0,126,20500.0,Biological and Biomedical Sciences
+26.07,Zoology/Animal Biology,44201.0,52,0.0,109,23250.0,Biological and Biomedical Sciences
+26.09,"Physiology, Pathology and Related Sciences",60151.5,64,0.0,163,21531.0,Biological and Biomedical Sciences
+26.12,Biotechnology,76622.0,13,0.0,114,20809.0,Biological and Biomedical Sciences
+26.13,"Ecology, Evolution, Systematics, and Population Biology",50106.0,63,0.083,275,21455.0,Biological and Biomedical Sciences
+26.15,Neurobiology and Neurosciences,61799.0,67,0.0,305,21877.0,Biological and Biomedical Sciences
+26.99,"Biological and Biomedical Sciences, Other",81617.0,19,0.0,93,24988.0,Biological and Biomedical Sciences
+27.01,Mathematics,70257.0,309,0.429,1249,19935.5,Mathematics and Statistics
+27.03,Applied Mathematics,92803.0,45,0.417,319,20780.0,Mathematics and Statistics
+27.05,Statistics,87334.5,50,0.571,218,19588.5,Mathematics and Statistics
+30.01,Biological and Physical Sciences,63018.0,33,0.0,161,23815.0,Multi/Interdisciplinary Studies
+30.15,"Science, Technology and Society",81455.0,10,0.0,52,19000.0,Multi/Interdisciplinary Studies
+30.17,Behavioral Sciences,48657.0,24,0.0,81,23816.0,Multi/Interdisciplinary Studies
+30.18,Natural Sciences,48922.0,13,0.0,104,25767.0,Multi/Interdisciplinary Studies
+30.19,Nutrition Sciences,60728.0,53,0.0,131,21205.0,Multi/Interdisciplinary Studies
+30.2,International/Globalization Studies,56538.0,87,0.0,371,20500.0,Multi/Interdisciplinary Studies
+30.25,Cognitive Science,79016.0,19,0.0,68,17750.0,Multi/Interdisciplinary Studies
+30.33,Sustainability Studies,59660.0,17,0.0,153,19086.0,Multi/Interdisciplinary Studies
+31.01,"Parks, Recreation, and Leisure Studies",49369.0,63,0.0,128,20250.0,"Parks, Recreation, Leisure, Fitness, and Kinesiology"
+31.03,"Parks, Recreation, and Leisure Facilities Management",49799.0,55,0.0,123,22941.5,"Parks, Recreation, Leisure, Fitness, and Kinesiology"
+31.05,"Sports, Kinesiology, and Physical Education/Fitness",53175.0,627,0.0,995,24250.0,"Parks, Recreation, Leisure, Fitness, and Kinesiology"
+38.01,Philosophy,56848.5,86,0.25,819,20796.5,Philosophy and Religious Studies
+38.02,Religion/Religious Studies,47791.0,45,0.0,754,25000.0,Philosophy and Religious Studies
+39.02,Bible/Biblical Studies,44981.0,40,0.0,213,23562.5,Theology and Religious Vocations
+39.04,Religious Education,45165.0,13,0.0,102,25000.0,Theology and Religious Vocations
+39.06,Theological and Ministerial Studies,47632.0,27,0.0,284,24473.0,Theology and Religious Vocations
+39.07,Pastoral Counseling and Specialized Ministries,44603.0,29,0.0,176,24800.0,Theology and Religious Vocations
+40.04,Atmospheric Sciences and Meteorology,59759.5,18,0.0,86,24864.5,Physical Sciences
+40.05,Chemistry,66171.0,213,0.143,1187,22474.5,Physical Sciences
+40.06,Geological and Earth Sciences/Geosciences,60453.0,139,0.0,472,21875.0,Physical Sciences
+40.08,Physics,78216.0,108,0.0,796,21500.0,Physical Sciences
+42.01,"Psychology, General",49941.5,1066,0.0,1473,23517.5,Psychology
+42.27,Research and Experimental Psychology,56830.0,82,0.1,228,20511.0,Psychology
+42.28,"Clinical, Counseling and Applied Psychology",51086.0,67,0.0,250,25000.0,Psychology
+42.99,"Psychology, Other",50430.0,11,0.0,63,16546.0,Psychology
+43.01,Criminal Justice and Corrections,54212.0,714,0.053,1021,24750.0,"Homeland Security, Law Enforcement, Firefighting and Related Protective Services"
+43.02,Fire Protection,87428.0,19,0.0,52,23469.0,"Homeland Security, Law Enforcement, Firefighting and Related Protective Services"
+43.03,Homeland Security,67952.5,36,0.0,130,22000.0,"Homeland Security, Law Enforcement, Firefighting and Related Protective Services"
+43.04,Security Science and Technology,57446.5,48,0.125,210,24231.5,"Homeland Security, Law Enforcement, Firefighting and Related Protective Services"
+44.0,"Human Services, General",48799.0,99,0.0,225,25834.0,Public Administration and Social Service Professions
+44.02,Community Organization and Advocacy,51066.0,25,0.0,80,25000.0,Public Administration and Social Service Professions
+44.04,Public Administration,64953.0,47,0.0,191,20500.0,Public Administration and Social Service Professions
+44.05,Public Policy Analysis,69656.0,34,0.0,128,21000.0,Public Administration and Social Service Professions
+44.07,Social Work,51470.0,443,0.0,642,23500.0,Public Administration and Social Service Professions
+45.01,"Social Sciences, General",52095.0,89,0.2,376,22500.0,Social Sciences
+45.02,Anthropology,45920.0,189,0.0,477,20799.0,Social Sciences
+45.04,Criminology,55621.0,119,0.0,232,23312.5,Social Sciences
+45.06,Economics,79462.0,370,0.444,834,20750.0,Social Sciences
+45.07,Geography and Cartography,57751.0,118,0.0,311,20359.0,Social Sciences
+45.09,International Relations and National Security Studies,66307.5,118,0.0,409,21000.0,Social Sciences
+45.1,Political Science and Government,61922.0,569,0.0,1164,21500.0,Social Sciences
+45.11,Sociology,52094.0,465,0.0,1020,22665.0,Social Sciences
+45.12,Urban Studies/Affairs,59595.5,30,0.0,111,20750.0,Social Sciences
+45.99,"Social Sciences, Other",54888.0,35,0.0,141,24250.0,Social Sciences
+49.01,Air Transportation,83283.0,54,0.0,124,22067.0,Transportation and Materials Moving
+50.01,"Visual and Performing Arts, General",41156.0,72,0.0,345,23625.0,Visual and Performing Arts
+50.03,Dance,40656.5,60,0.0,290,24750.0,Visual and Performing Arts
+50.04,Design and Applied Arts,51507.0,337,0.091,764,26000.0,Visual and Performing Arts
+50.05,Drama/Theatre Arts and Stagecraft,40053.0,260,0.091,918,23738.5,Visual and Performing Arts
+50.06,Film/Video and Photographic Arts,43975.5,162,0.0,488,23900.0,Visual and Performing Arts
+50.07,Fine and Studio Arts,41153.0,449,0.0,1150,23655.0,Visual and Performing Arts
+50.09,Music,43385.0,275,0.0,1116,25000.0,Visual and Performing Arts
+50.1,"Arts, Entertainment, and Media Management",48193.5,44,0.0,252,25000.0,Visual and Performing Arts
+50.99,"Visual and Performing Arts, Other",48154.5,10,0.0,71,23888.0,Visual and Performing Arts
+51.0,"Health Services/Allied Health/Health Sciences, General",59794.0,157,0.0,486,24521.0,Health Professions and Related Programs
+51.02,Communication Disorders Sciences and Services,58556.5,220,0.0,312,20500.0,Health Professions and Related Programs
+51.06,Dental Support Services and Allied Professions,68392.0,77,0.0,108,20000.0,Health Professions and Related Programs
+51.07,Health and Medical Administrative Services,57633.0,304,0.053,655,26217.0,Health Professions and Related Programs
+51.08,Allied Health and Medical Assisting Services,79657.0,15,0.0,61,20500.0,Health Professions and Related Programs
+51.09,"Allied Health Diagnostic, Intervention, and Treatment Professions",67676.0,266,0.0,600,25210.0,Health Professions and Related Programs
+51.1,Clinical/Medical Laboratory Science/Research and Allied Professions,74864.0,94,0.0,340,20778.0,Health Professions and Related Programs
+51.15,Mental and Social Health Services and Allied Professions,51434.5,50,0.0,143,25185.0,Health Professions and Related Programs
+51.2,"Pharmacy, Pharmaceutical Sciences, and Administration",122169.0,29,0.0,85,23000.0,Health Professions and Related Programs
+51.22,Public Health,57397.5,218,0.0,552,23375.0,Health Professions and Related Programs
+51.23,Rehabilitation and Therapeutic Professions,54558.0,85,0.1,291,25449.0,Health Professions and Related Programs
+51.31,Dietetics and Clinical Nutrition Services,55804.0,72,0.0,162,22437.5,Health Professions and Related Programs
+51.38,"Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursing",86383.0,1029,0.0,1285,23000.0,Health Professions and Related Programs
+52.01,"Business/Commerce, General",65292.0,283,0.0,529,23995.5,"Business, Management, Marketing, and Related Support Services"
+52.02,"Business Administration, Management and Operations",64430.0,1272,0.024,1740,23500.0,"Business, Management, Marketing, and Related Support Services"
+52.03,Accounting and Related Services,72446.0,837,0.2,1242,23000.0,"Business, Management, Marketing, and Related Support Services"
+52.04,Business Operations Support and Assistant Services,23549.0,12,0.0,47,18750.0,"Business, Management, Marketing, and Related Support Services"
+52.05,Business/Corporate Communications,60109.0,25,0.1,65,25000.0,"Business, Management, Marketing, and Related Support Services"
+52.06,Business/Managerial Economics,78906.0,85,0.4,273,20835.0,"Business, Management, Marketing, and Related Support Services"
+52.07,Entrepreneurial and Small Business Operations,60437.0,73,0.0,343,22249.0,"Business, Management, Marketing, and Related Support Services"
+52.08,Finance and Financial Management Services,77504.0,459,0.095,785,21732.0,"Business, Management, Marketing, and Related Support Services"
+52.09,Hospitality Administration/Management,55805.5,142,0.0,313,22000.0,"Business, Management, Marketing, and Related Support Services"
+52.1,Human Resources Management and Services,66759.0,201,0.0,460,23317.0,"Business, Management, Marketing, and Related Support Services"
+52.11,International Business,73640.0,116,0.0,479,22950.0,"Business, Management, Marketing, and Related Support Services"
+52.12,Management Information Systems and Services,80822.0,171,0.75,441,22400.0,"Business, Management, Marketing, and Related Support Services"
+52.13,Management Sciences and Quantitative Methods,84095.5,126,0.333,366,23250.0,"Business, Management, Marketing, and Related Support Services"
+52.14,Marketing,66477.0,533,0.333,902,22627.5,"Business, Management, Marketing, and Related Support Services"
+52.15,Real Estate,83592.0,25,0.0,69,20138.0,"Business, Management, Marketing, and Related Support Services"
+52.17,Insurance,89343.0,21,0.0,60,21250.0,"Business, Management, Marketing, and Related Support Services"
+52.18,"General Sales, Merchandising and Related Marketing Operations",74557.0,27,0.0,93,22069.0,"Business, Management, Marketing, and Related Support Services"
+52.19,"Specialized Sales, Merchandising and  Marketing Operations",52827.0,58,0.091,120,26000.0,"Business, Management, Marketing, and Related Support Services"
+52.2,Construction Management,93431.0,57,0.0,99,22813.0,"Business, Management, Marketing, and Related Support Services"
+54.01,History,50591.5,460,0.0,1318,21500.0,History

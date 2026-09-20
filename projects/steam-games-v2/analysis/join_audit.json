@@ -1,0 +1,9 @@
+{
+  "raw": 23100,
+  "unique_appids": 22608,
+  "duplicate_key_excess": 492,
+  "conflicting_keys": 3,
+  "wikidata_match_rate": 0.9386500353857041,
+  "steamspy_ccu_mismatches": 0,
+  "parsed_dates": 22492
+}

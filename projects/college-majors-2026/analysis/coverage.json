@@ -1,0 +1,254 @@
+[
+  {
+    "x": "4 年收入",
+    "y": "Associate's Degree",
+    "value": 21.900738677931702,
+    "n": 42373,
+    "reported": 9280
+  },
+  {
+    "x": "债务",
+    "y": "Associate's Degree",
+    "value": 13.208883015127556,
+    "n": 42373,
+    "reported": 5597
+  },
+  {
+    "x": "1 年收入",
+    "y": "Associate's Degree",
+    "value": 15.99131522431737,
+    "n": 42373,
+    "reported": 6776
+  },
+  {
+    "x": "5 年收入",
+    "y": "Associate's Degree",
+    "value": 21.379180138295613,
+    "n": 42373,
+    "reported": 9059
+  },
+  {
+    "x": "4 年收入",
+    "y": "Bachelor's Degree",
+    "value": 38.53678276400983,
+    "n": 71664,
+    "reported": 27617
+  },
+  {
+    "x": "债务",
+    "y": "Bachelor's Degree",
+    "value": 36.28739674034382,
+    "n": 71664,
+    "reported": 26005
+  },
+  {
+    "x": "1 年收入",
+    "y": "Bachelor's Degree",
+    "value": 35.91622013842375,
+    "n": 71664,
+    "reported": 25739
+  },
+  {
+    "x": "5 年收入",
+    "y": "Bachelor's Degree",
+    "value": 34.576635409689665,
+    "n": 71664,
+    "reported": 24779
+  },
+  {
+    "x": "4 年收入",
+    "y": "Doctoral Degree",
+    "value": 9.100261137928307,
+    "n": 12637,
+    "reported": 1150
+  },
+  {
+    "x": "债务",
+    "y": "Doctoral Degree",
+    "value": 6.014085621587402,
+    "n": 12637,
+    "reported": 760
+  },
+  {
+    "x": "1 年收入",
+    "y": "Doctoral Degree",
+    "value": 8.807470127403656,
+    "n": 12637,
+    "reported": 1113
+  },
+  {
+    "x": "5 年收入",
+    "y": "Doctoral Degree",
+    "value": 6.678800348183904,
+    "n": 12637,
+    "reported": 844
+  },
+  {
+    "x": "4 年收入",
+    "y": "First Professional Degree",
+    "value": 31.361702127659573,
+    "n": 2350,
+    "reported": 737
+  },
+  {
+    "x": "债务",
+    "y": "First Professional Degree",
+    "value": 29.829787234042556,
+    "n": 2350,
+    "reported": 701
+  },
+  {
+    "x": "1 年收入",
+    "y": "First Professional Degree",
+    "value": 30.893617021276597,
+    "n": 2350,
+    "reported": 726
+  },
+  {
+    "x": "5 年收入",
+    "y": "First Professional Degree",
+    "value": 28.76595744680851,
+    "n": 2350,
+    "reported": 676
+  },
+  {
+    "x": "4 年收入",
+    "y": "Graduate/Professional Certificate",
+    "value": 3.218159614970189,
+    "n": 13921,
+    "reported": 448
+  },
+  {
+    "x": "债务",
+    "y": "Graduate/Professional Certificate",
+    "value": 2.327419007255226,
+    "n": 13921,
+    "reported": 324
+  },
+  {
+    "x": "1 年收入",
+    "y": "Graduate/Professional Certificate",
+    "value": 2.923640543064435,
+    "n": 13921,
+    "reported": 407
+  },
+  {
+    "x": "5 年收入",
+    "y": "Graduate/Professional Certificate",
+    "value": 2.7943394871058116,
+    "n": 13921,
+    "reported": 389
+  },
+  {
+    "x": "4 年收入",
+    "y": "Master's Degree",
+    "value": 26.93612283472722,
+    "n": 38621,
+    "reported": 10403
+  },
+  {
+    "x": "债务",
+    "y": "Master's Degree",
+    "value": 20.424121591880066,
+    "n": 38621,
+    "reported": 7888
+  },
+  {
+    "x": "1 年收入",
+    "y": "Master's Degree",
+    "value": 27.029336371404156,
+    "n": 38621,
+    "reported": 10439
+  },
+  {
+    "x": "5 年收入",
+    "y": "Master's Degree",
+    "value": 20.872064420910906,
+    "n": 38621,
+    "reported": 8061
+  },
+  {
+    "x": "4 年收入",
+    "y": "Non-Credential Program (Preparatory Coursework/Teacher Certification)",
+    "value": 11.529411764705882,
+    "n": 1700,
+    "reported": 196
+  },
+  {
+    "x": "债务",
+    "y": "Non-Credential Program (Preparatory Coursework/Teacher Certification)",
+    "value": 0.0,
+    "n": 1700,
+    "reported": 0
+  },
+  {
+    "x": "1 年收入",
+    "y": "Non-Credential Program (Preparatory Coursework/Teacher Certification)",
+    "value": 0.0,
+    "n": 1700,
+    "reported": 0
+  },
+  {
+    "x": "5 年收入",
+    "y": "Non-Credential Program (Preparatory Coursework/Teacher Certification)",
+    "value": 0.0,
+    "n": 1700,
+    "reported": 0
+  },
+  {
+    "x": "4 年收入",
+    "y": "Post-baccalaureate Certificate",
+    "value": 9.44755804643715,
+    "n": 1249,
+    "reported": 118
+  },
+  {
+    "x": "债务",
+    "y": "Post-baccalaureate Certificate",
+    "value": 2.1617293835068057,
+    "n": 1249,
+    "reported": 27
+  },
+  {
+    "x": "1 年收入",
+    "y": "Post-baccalaureate Certificate",
+    "value": 9.207365892714172,
+    "n": 1249,
+    "reported": 115
+  },
+  {
+    "x": "5 年收入",
+    "y": "Post-baccalaureate Certificate",
+    "value": 4.803843074459568,
+    "n": 1249,
+    "reported": 60
+  },
+  {
+    "x": "4 年收入",
+    "y": "Undergraduate Certificate or Diploma",
+    "value": 18.780628091567927,
+    "n": 43465,
+    "reported": 8163
+  },
+  {
+    "x": "债务",
+    "y": "Undergraduate Certificate or Diploma",
+    "value": 12.357068906016334,
+    "n": 43465,
+    "reported": 5371
+  },
+  {
+    "x": "1 年收入",
+    "y": "Undergraduate Certificate or Diploma",
+    "value": 15.900149545611411,
+    "n": 43465,
+    "reported": 6911
+  },
+  {
+    "x": "5 年收入",
+    "y": "Undergraduate Certificate or Diploma",
+    "value": 15.28586218796733,
+    "n": 43465,
+    "reported": 6644
+  }
+]

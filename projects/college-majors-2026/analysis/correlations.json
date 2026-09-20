@@ -1,0 +1,47 @@
+[
+  {
+    "label": "全部 credential",
+    "n": 43375,
+    "rho": 0.40057861169400644
+  },
+  {
+    "label": "Associate's Degree",
+    "n": 5335,
+    "rho": 0.06679060678783762
+  },
+  {
+    "label": "Bachelor's Degree",
+    "n": 23980,
+    "rho": -0.07816304155932509
+  },
+  {
+    "label": "Doctoral Degree",
+    "n": 707,
+    "rho": 0.12457008234970254
+  },
+  {
+    "label": "First Professional Degree",
+    "n": 666,
+    "rho": 0.3643951391235999
+  },
+  {
+    "label": "Graduate/Professional Certificate",
+    "n": 264,
+    "rho": 0.25091148431405413
+  },
+  {
+    "label": "Master's Degree",
+    "n": 7394,
+    "rho": 0.13925623449701527
+  },
+  {
+    "label": "Post-baccalaureate Certificate",
+    "n": 16,
+    "rho": 0.14927035850663303
+  },
+  {
+    "label": "Undergraduate Certificate or Diploma",
+    "n": 5013,
+    "rho": 0.2792864649550892
+  }
+]

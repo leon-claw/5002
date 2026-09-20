@@ -1,15 +1,36 @@
 {
-  "dataset": "College Majors 2026 Earnings, Debt, Jobs & AI",
+  "dataset": "College Majors 2026",
   "rows": 227980,
   "columns": 72,
   "missing_rate": 0.27790211860689534,
   "duplicate_rows": 0,
-  "families": 49,
-  "institutions": 6774,
+  "analysis_rows": 43375,
   "findings": [
-    "Rows are institution × CIP program × credential observations, not individual graduates.",
-    "Privacy suppression and small cohorts make displayed medians unsuitable for precise causal claims.",
-    "The page compares income, debt and AI exposure as descriptive signals; it does not infer that AI causes earnings.",
-    "State aggregates exclude Unknown and require a minimum program count to reduce unstable rankings."
-  ]
+    {
+      "title": "“可比较样本”比原始规模小得多",
+      "text": "227,980 个项目中，4 年收入被隐私抑制的有 169,868 个；同时报告收入和债务且值有效的仅 43,375 个（19.0%）。热力图展示 credential 层面的报告率，避免完整案例偏差被大样本量掩盖。"
+    },
+    {
+      "title": "收入与债务关系需要按层级拆开",
+      "text": "完整案例总体 Spearman ρ=0.401；对全样本秩值在“专业大类 × credential”内去均值后，残差相关为 -0.023。这是粗分层诊断，尚未控制院校选择、家庭背景和 cohort 构成。"
+    },
+    {
+      "title": "AI 关系改用专业作为分析单位",
+      "text": "只保留本科且至少 10 个项目报告收入的 189 个 CIP 专业，每个专业只计一次；AI 关联职业占比与项目收入中位数的 Spearman ρ=0.378。这里的 AI 指标表示职业链接中的软件工具覆盖，不表示替代概率。"
+    },
+    {
+      "title": "收入–债务前沿是探索工具",
+      "text": "本科完整案例按专业大类聚合并要求 n≥30，共 31 个专业大类，其中 3 个处于样本内“债务较低、收入较高”的非支配前沿。均为项目中位数的中位数，未按毕业生人数加权，不是个人投资回报。"
+    }
+  ],
+  "checks": {
+    "complete_pairs": 43375,
+    "ai_major_count": 189,
+    "ai_spearman": {
+      "n": 189,
+      "rho": 0.37796468493407304
+    },
+    "reported_earnings": 58112,
+    "scatter_sample": 4500
+  }
 }

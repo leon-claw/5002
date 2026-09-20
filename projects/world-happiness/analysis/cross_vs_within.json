@@ -1,0 +1,38 @@
+[
+  {
+    "label": "gdp",
+    "n": 1013,
+    "pooled_rho": 0.7161945305420946,
+    "within_rank_r": 0.19238945175178646
+  },
+  {
+    "label": "support",
+    "n": 1013,
+    "pooled_rho": 0.7056293341350308,
+    "within_rank_r": 0.2861101871277872
+  },
+  {
+    "label": "health",
+    "n": 1013,
+    "pooled_rho": 0.6728446204817634,
+    "within_rank_r": -0.01926425182001723
+  },
+  {
+    "label": "freedom",
+    "n": 1013,
+    "pooled_rho": 0.4876280297520933,
+    "within_rank_r": 0.27845694791557973
+  },
+  {
+    "label": "generosity",
+    "n": 1013,
+    "pooled_rho": 0.039056267458931114,
+    "within_rank_r": -0.07753544380191738
+  },
+  {
+    "label": "corruption",
+    "n": 1013,
+    "pooled_rho": 0.3469824972981665,
+    "within_rank_r": 0.2724801241632265
+  }
+]

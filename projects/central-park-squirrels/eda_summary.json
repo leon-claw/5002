@@ -1,18 +1,34 @@
 {
-  "dataset": "2018 Central Park Squirrel Census",
+  "dataset": "Central Park Squirrels",
   "rows": 3023,
-  "columns": 33,
-  "missing_rate": 0.12226465782535911,
+  "columns": 31,
+  "missing_rate": 0.13015270026570486,
   "duplicate_rows": 0,
-  "date_range": [
-    "2018-10-06",
-    "2018-10-20"
-  ],
-  "locations": 3023,
+  "analysis_rows": 3023,
   "findings": [
-    "Rows represent squirrel observations made during the census, with a Unique Squirrel ID for traceability.",
-    "X/Y are longitude/latitude-like coordinates and support a point map; they should not be interpreted as a precise tracking path.",
-    "Behavior fields are mostly binary observations and are summarized as observation rates by shift.",
-    "Missing fur color and narrative fields are kept as Unknown rather than imputed."
-  ]
+    {
+      "title": "行为组合比单一排名更有信息",
+      "text": "在 3,023 条观测里，所选行为中绝对值最大的非对角 φ 相关为 Runs from 与 Indifferent：φ=-0.467。这些布尔行为允许同时出现，不能画成互斥类别饼图。"
+    },
+    {
+      "title": "把 AM/PM 差异放回同一空间比较",
+      "text": "同时出现 AM 与 PM 观测且所选行为完整的 274 个 hectare 内，等权平均的 Foraging 差值（PM−AM）为 +6.5 个百分点；按 hectare 重采样 1,000 次的探索性 95% 区间为 [+0.3, +12.2]。"
+    },
+    {
+      "title": "空间热点首先是“观察热点”",
+      "text": "普查覆盖 11 个日期、339 个 hectare。地图保持经纬度局部比例，支持缩放、班次和毛色筛选。没有记录搜索时间和漏检率，因此点密度不等于松鼠真实密度。"
+    },
+    {
+      "title": "观察 ID 并非完全唯一",
+      "text": "有 5 条超额重复 ID 记录，坐标不同，不能直接判定为重复观测。主分析保留全部记录；按 ID 仅保留首条后的敏感性检查中，所选行为率最大变化为 0.059 个百分点。"
+    }
+  ],
+  "checks": {
+    "raw_columns": 31,
+    "distinct_observation_ids": 3018,
+    "duplicate_id_excess": 5,
+    "dedup_rate_max_change_pp": 0.059396624991478464,
+    "shared_hectares": 274,
+    "bootstrap_reps": 1000
+  }
 }

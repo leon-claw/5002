@@ -1,40 +1,65 @@
-# CityU 5002 · EDA + D3 数据可视化
+# CityU 5002 · EDA Research Studio
 
-当前分支：`codex/eda-d3-visualization`
+六个独立项目的第二版：先确认统计单位和数据质量，再分析变量关系，最后用交互图检验解释。结论直接写入每个 HTML。
 
-本仓库包含六个独立的数据科学硕士课程项目。每个目录都有自己的 EDA 脚本、清洗决策、统计输出和 D3 页面：
+**打开 [index.html](index.html)** 进入六项目导航。每个项目的 `index.html` 也可直接打开；D3 7.9.0 和数据都已放到项目自己的 `site/`，支持离线演示。
 
-| 项目 | 叙事重点 |
-|---|---|
-| `projects/nyc-film-permits` | 城市拍摄许可的时间、borough 与项目类型 |
-| `projects/nasa-exoplanets` | 系外行星发现方法、时间与天球位置 |
-| `projects/college-majors-2026` | 收入、债务、就业和 AI 暴露 |
-| `projects/central-park-squirrels` | 松鼠空间热点、班次和行为 |
-| `projects/steam-games-v2` | 游戏发行、价格、评价、并发玩家和类型 |
-| `projects/world-happiness` | 幸福评价的年度变化和解释变量 |
+| 项目目录 | 核心研究问题 | 视图 |
+|---|---|---:|
+| `projects/nyc-film-permits` | 类型与行政区关联，是否受高频项目重复出现影响？ | 8 |
+| `projects/nasa-exoplanets` | 发现方法与测量覆盖如何塑造物理关系？ | 6 |
+| `projects/college-majors-2026` | 收入–债务总体关系能否在学位和专业层级内成立？ | 6 |
+| `projects/central-park-squirrels` | AM/PM 行为差异能否在共同地块内成立？ | 6 |
+| `projects/steam-games-v2` | 价格、评价、快照 CCU 与多类型结构如何关联？ | 6 |
+| `projects/world-happiness` | 排名不确定性、固定国家趋势与分解贡献如何解释？ | 7 |
 
-## 运行
+## 复现
+
+Python 3.10+，依赖见 `requirements.txt`：
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 scripts/run_all_eda.py
 python3 scripts/verify_projects.py
 ```
 
-每个项目也可以单独运行：
+`run_all_eda.py` 会依次运行六个管线并生成页面。也可单独重跑：
 
 ```bash
-cd projects/nyc-film-permits
-python3 eda.py
-python3 -m http.server 8000
+python3 projects/nasa-exoplanets/eda.py
+python3 scripts/build_sites.py
 ```
 
-然后打开 `http://localhost:8000`。页面使用 D3 v7 CDN，不需要 npm 构建。
+可选 HTTP 预览：
 
-## 交付物
+```bash
+python3 -m http.server 8765 --bind 127.0.0.1
+```
 
-- `eda.py`：从仓库数据重新计算统计和 D3 数据。
-- `eda_profile.csv`：字段级缺失率、类型和基数。
-- `eda_summary.json`：可引用的关键 EDA 结果。
-- `site/data.js`：浏览器直接可加载的聚合数据。
-- `index.html`：交互式 D3 展示。
-- `README.md`：EDA 过程、清洗决定、限制和汇报要点。
+访问 `http://127.0.0.1:8765/`。无需 npm 构建。
+
+## 交付结构
+
+每个项目包含：
+
+- `eda.py`：该数据集的清洗、关系分析、验证和发现生成。
+- `README.md`：研究问题、实际计算的结论、方法和限制。
+- `eda_profile.csv`：所有**原始字段**的类型、缺失、基数、分位数。
+- `eda_summary.json`：原始规模、分析规模、结论和关键断言。
+- `analysis/`：全量汇总、敏感性分析、统计表等可审计结果。
+- `index.html`：静态写入结论，图表通过本地 D3 交互渲染。
+- `site/`：该页面自己的 D3、样式、代码和数据，可连同 HTML 单独复制演示。
+
+Python 管线共用 `scripts/eda_support.py` 中的数学和导出函数，原始数据统一保留在 `data/`，不重复复制大文件。六个页面运行时互不依赖。
+
+## 验证
+
+`scripts/verify_projects.py` 独立核对原始行数、NASA 默认确认行星口径、College 完整案例、Steam 美分转换、松鼠重复 ID、幸福报告平衡面板、source hash 及 HTML 结论。
+
+`scripts/browser_verify.js` 是 Playwright CLI 的浏览器检查函数，检查六页的筛选/框选、时间滑块、空搜索、SVG 导出和手机宽度布局。在启动本地服务器及 Playwright 会话后：
+
+```bash
+playwright-cli -s=eda-review run-code --filename=scripts/browser_verify.js
+```
+
+检查截图位于 `output/playwright/`（本地保留，不纳入版本控制）。简单汇报见 [presentation_outline.md](presentation_outline.md)。

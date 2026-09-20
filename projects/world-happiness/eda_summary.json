@@ -1,18 +1,33 @@
 {
-  "dataset": "World Happiness Report 2026 Figure 2.1",
+  "dataset": "World Happiness",
   "rows": 2116,
   "columns": 13,
   "missing_rate": 0.3591318889050458,
   "duplicate_rows": 0,
-  "date_range": [
-    2011,
-    2025
-  ],
-  "countries": 168,
+  "analysis_rows": 2116,
   "findings": [
-    "Life evaluation is reported as a three-year average, so year-to-year changes are smoothed rather than annual survey scores.",
-    "The latest ranking is paired with whisker intervals; close ranks should not be over-interpreted.",
-    "Older years contain structural missingness because country coverage changes across report editions.",
-    "The explanatory components are descriptive contributions to the reported evaluation, not causal estimates."
-  ]
+    {
+      "title": "排名接近时，先看区间",
+      "text": "最新数据 Year=2025，147 国。带区间的相邻排名共 146 对，其中 143 对区间重叠。重叠不是正式差异检验，但说明单凭名次难以支持精确优劣判断。"
+    },
+    {
+      "title": "跨年比较必须固定国家集合",
+      "text": "所有 14 个可用年份都存在的国家有 129 个。可切换“当年样本均值”和“固定国家均值”检查覆盖变化。2011 与 2025 共同出现的 141 国中，Serbia 的分数增加最多（+2.127），Afghanistan 下降最多（-2.812）；均是三年平均评价的差。"
+    },
+    {
+      "title": "解释项与总分存在构造关系",
+      "text": "完整分解的 1,013 行中，六项贡献加 residual 与总分的最大绝对差为 0.0030（舍入及源数据差异）。用这些贡献项预测总分会有构造性循环，不能把高拟合度当研究发现；页面把分解用作描述。"
+    },
+    {
+      "title": "早期缺失是整批字段缺失",
+      "text": "2019 年以前的 lower/upper 和分解贡献在当前文件中整批缺失；2013 年没有记录。保留真实年份间隔，不能把缺失值填 0 或连成不存在的年度观测。"
+    }
+  ],
+  "checks": {
+    "country_year_unique": true,
+    "balanced_countries": 129,
+    "paired_countries": 141,
+    "identity_max_abs_error": 0.0030000000000001137,
+    "adjacent_overlap": 143
+  }
 }

@@ -1,0 +1,488 @@
+[
+  {
+    "x": "Running",
+    "y": "Running",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Chasing",
+    "value": 0.02570693505452439,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Climbing",
+    "value": -0.05599467425137865,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Eating",
+    "value": -0.1238724492041451,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Foraging",
+    "value": -0.2206071094138708,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Approaches",
+    "value": -0.016363770093538413,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Indifferent",
+    "value": -0.11620008685256605,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Runs from",
+    "value": 0.16728499611137973,
+    "n": 3023
+  },
+  {
+    "x": "Running",
+    "y": "Tail twitches",
+    "value": 0.02908929767928179,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Running",
+    "value": 0.025706935054524392,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Chasing",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Climbing",
+    "value": -0.038022081377337,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Eating",
+    "value": -0.1057539389880198,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Foraging",
+    "value": -0.1795264016439419,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Approaches",
+    "value": -0.040918531727071064,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Indifferent",
+    "value": -0.0027293442234166835,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Runs from",
+    "value": -0.061854502872312846,
+    "n": 3023
+  },
+  {
+    "x": "Chasing",
+    "y": "Tail twitches",
+    "value": 0.022636581086268374,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Running",
+    "value": -0.05599467425137865,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Chasing",
+    "value": -0.038022081377337,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Climbing",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Eating",
+    "value": -0.11165489018127409,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Foraging",
+    "value": -0.29754172703869636,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Approaches",
+    "value": -0.03999313016006167,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Indifferent",
+    "value": -0.06976672031187406,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Runs from",
+    "value": 0.04886043589546587,
+    "n": 3023
+  },
+  {
+    "x": "Climbing",
+    "y": "Tail twitches",
+    "value": -0.02164136721003421,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Running",
+    "value": -0.1238724492041451,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Chasing",
+    "value": -0.1057539389880198,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Climbing",
+    "value": -0.11165489018127409,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Eating",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Foraging",
+    "value": -0.008806871892647049,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Approaches",
+    "value": 0.07207142520006979,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Indifferent",
+    "value": 0.06937213699479888,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Runs from",
+    "value": -0.011797158199833813,
+    "n": 3023
+  },
+  {
+    "x": "Eating",
+    "y": "Tail twitches",
+    "value": 0.04760152441948262,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Running",
+    "value": -0.22060710941387077,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Chasing",
+    "value": -0.17952640164394193,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Climbing",
+    "value": -0.2975417270386964,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Eating",
+    "value": -0.008806871892647049,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Foraging",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Approaches",
+    "value": 0.05488704757836993,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Indifferent",
+    "value": 0.13231273440577923,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Runs from",
+    "value": -0.05692453111721561,
+    "n": 3023
+  },
+  {
+    "x": "Foraging",
+    "y": "Tail twitches",
+    "value": 0.0585324497278209,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Running",
+    "value": -0.016363770093538413,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Chasing",
+    "value": -0.040918531727071064,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Climbing",
+    "value": -0.03999313016006167,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Eating",
+    "value": 0.07207142520006977,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Foraging",
+    "value": 0.05488704757836993,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Approaches",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Indifferent",
+    "value": -0.187353038913253,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Runs from",
+    "value": -0.06711694657470382,
+    "n": 3023
+  },
+  {
+    "x": "Approaches",
+    "y": "Tail twitches",
+    "value": 0.03785207734522038,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Running",
+    "value": -0.11620008685256605,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Chasing",
+    "value": -0.0027293442234166835,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Climbing",
+    "value": -0.06976672031187406,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Eating",
+    "value": 0.06937213699479887,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Foraging",
+    "value": 0.13231273440577923,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Approaches",
+    "value": -0.187353038913253,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Indifferent",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Runs from",
+    "value": -0.46683019775616086,
+    "n": 3023
+  },
+  {
+    "x": "Indifferent",
+    "y": "Tail twitches",
+    "value": -0.0032947153474689422,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Running",
+    "value": 0.16728499611137973,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Chasing",
+    "value": -0.06185450287231284,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Climbing",
+    "value": 0.04886043589546587,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Eating",
+    "value": -0.011797158199833815,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Foraging",
+    "value": -0.05692453111721561,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Approaches",
+    "value": -0.06711694657470382,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Indifferent",
+    "value": -0.4668301977561609,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Runs from",
+    "value": 1.0,
+    "n": 3023
+  },
+  {
+    "x": "Runs from",
+    "y": "Tail twitches",
+    "value": 0.05125593126889298,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Running",
+    "value": 0.02908929767928179,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Chasing",
+    "value": 0.02263658108626837,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Climbing",
+    "value": -0.02164136721003421,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Eating",
+    "value": 0.04760152441948262,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Foraging",
+    "value": 0.058532449727820894,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Approaches",
+    "value": 0.03785207734522038,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Indifferent",
+    "value": -0.0032947153474689422,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Runs from",
+    "value": 0.051255931268892975,
+    "n": 3023
+  },
+  {
+    "x": "Tail twitches",
+    "y": "Tail twitches",
+    "value": 1.0,
+    "n": 3023
+  }
+]

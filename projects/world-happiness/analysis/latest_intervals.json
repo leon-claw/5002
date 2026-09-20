@@ -1,0 +1,142 @@
+[
+  {
+    "label": "Finland",
+    "value": 7.764,
+    "lo": 7.69,
+    "hi": 7.837,
+    "n": 1
+  },
+  {
+    "label": "Iceland",
+    "value": 7.54,
+    "lo": 7.449,
+    "hi": 7.63,
+    "n": 1
+  },
+  {
+    "label": "Denmark",
+    "value": 7.539,
+    "lo": 7.446,
+    "hi": 7.631,
+    "n": 1
+  },
+  {
+    "label": "Costa Rica",
+    "value": 7.439,
+    "lo": 7.356,
+    "hi": 7.522,
+    "n": 1
+  },
+  {
+    "label": "Sweden",
+    "value": 7.255,
+    "lo": 7.172,
+    "hi": 7.337,
+    "n": 1
+  },
+  {
+    "label": "Norway",
+    "value": 7.242,
+    "lo": 7.156,
+    "hi": 7.327,
+    "n": 1
+  },
+  {
+    "label": "Netherlands",
+    "value": 7.223,
+    "lo": 7.153,
+    "hi": 7.293,
+    "n": 1
+  },
+  {
+    "label": "Israel",
+    "value": 7.187,
+    "lo": 7.119,
+    "hi": 7.254,
+    "n": 1
+  },
+  {
+    "label": "Luxembourg",
+    "value": 7.063,
+    "lo": 6.971,
+    "hi": 7.154,
+    "n": 1
+  },
+  {
+    "label": "Switzerland",
+    "value": 7.018,
+    "lo": 6.937,
+    "hi": 7.099,
+    "n": 1
+  },
+  {
+    "label": "New Zealand",
+    "value": 6.995,
+    "lo": 6.915,
+    "hi": 7.074,
+    "n": 1
+  },
+  {
+    "label": "Mexico",
+    "value": 6.972,
+    "lo": 6.885,
+    "hi": 7.06,
+    "n": 1
+  },
+  {
+    "label": "Ireland",
+    "value": 6.928,
+    "lo": 6.839,
+    "hi": 7.018,
+    "n": 1
+  },
+  {
+    "label": "Belgium",
+    "value": 6.926,
+    "lo": 6.859,
+    "hi": 6.993,
+    "n": 1
+  },
+  {
+    "label": "Australia",
+    "value": 6.916,
+    "lo": 6.833,
+    "hi": 6.999,
+    "n": 1
+  },
+  {
+    "label": "Kosovo",
+    "value": 6.91,
+    "lo": 6.81,
+    "hi": 7.01,
+    "n": 1
+  },
+  {
+    "label": "Germany",
+    "value": 6.882,
+    "lo": 6.789,
+    "hi": 6.975,
+    "n": 1
+  },
+  {
+    "label": "Slovenia",
+    "value": 6.868,
+    "lo": 6.783,
+    "hi": 6.954,
+    "n": 1
+  },
+  {
+    "label": "Austria",
+    "value": 6.845,
+    "lo": 6.764,
+    "hi": 6.927,
+    "n": 1
+  },
+  {
+    "label": "Czechia",
+    "value": 6.821,
+    "lo": 6.739,
+    "hi": 6.903,
+    "n": 1
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "label": "Agricultural/Animal/Plant/Veterinary Science and Related Fields",
+    "x": 19613.0,
+    "y": 54993.0,
+    "n": 309,
+    "group": "样本内非支配",
+    "frontier": true
+  },
+  {
+    "label": "Architecture and Related Services",
+    "x": 25000.0,
+    "y": 65469.0,
+    "n": 137,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Area, Ethnic, Cultural, Gender, and Group Studies",
+    "x": 20744.5,
+    "y": 54847.5,
+    "n": 138,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Biological and Biomedical Sciences",
+    "x": 22559.0,
+    "y": 58818.0,
+    "n": 1281,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Business, Management, Marketing, and Related Support Services",
+    "x": 23000.0,
+    "y": 69063.5,
+    "n": 3974,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Communication, Journalism, and Related Programs",
+    "x": 23000.0,
+    "y": 55505.0,
+    "n": 1082,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Communications Technologies/Technicians and Support Services",
+    "x": 26338.0,
+    "y": 43745.0,
+    "n": 71,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Computer and Information Sciences and Support Services",
+    "x": 23777.0,
+    "y": 87413.0,
+    "n": 1076,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Education",
+    "x": 24474.0,
+    "y": 49074.5,
+    "n": 1200,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Engineering",
+    "x": 23000.0,
+    "y": 93873.0,
+    "n": 1614,
+    "group": "样本内非支配",
+    "frontier": true
+  },
+  {
+    "label": "Engineering/Engineering-Related Technologies/Technicians",
+    "x": 25256.0,
+    "y": 83322.0,
+    "n": 324,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "English Language and Literature/Letters",
+    "x": 22160.0,
+    "y": 48773.5,
+    "n": 634,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Family and Consumer Sciences/Human Sciences",
+    "x": 23000.0,
+    "y": 50256.0,
+    "n": 330,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Foreign Languages, Literatures, and Linguistics",
+    "x": 20691.0,
+    "y": 54297.5,
+    "n": 294,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Health Professions and Related Programs",
+    "x": 23261.0,
+    "y": 72530.0,
+    "n": 2446,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "History",
+    "x": 21500.0,
+    "y": 51033.5,
+    "n": 404,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Homeland Security, Law Enforcement, Firefighting and Related Protective Services",
+    "x": 24553.0,
+    "y": 55356.0,
+    "n": 735,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Legal Professions and Studies",
+    "x": 25000.0,
+    "y": 60262.0,
+    "n": 68,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Liberal Arts and Sciences, General Studies and Humanities",
+    "x": 22998.0,
+    "y": 52230.5,
+    "n": 430,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Mathematics and Statistics",
+    "x": 20000.0,
+    "y": 76037.0,
+    "n": 327,
+    "group": "样本内非支配",
+    "frontier": true
+  },
+  {
+    "label": "Multi/Interdisciplinary Studies",
+    "x": 21500.0,
+    "y": 56538.0,
+    "n": 509,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Natural Resources and Conservation",
+    "x": 21500.0,
+    "y": 54473.0,
+    "n": 308,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Parks, Recreation, Leisure, Fitness, and Kinesiology",
+    "x": 23750.0,
+    "y": 53175.0,
+    "n": 663,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Philosophy and Religious Studies",
+    "x": 21250.0,
+    "y": 55804.0,
+    "n": 89,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Physical Sciences",
+    "x": 22000.0,
+    "y": 66959.0,
+    "n": 385,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Psychology",
+    "x": 23250.0,
+    "y": 50319.5,
+    "n": 1146,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Public Administration and Social Service Professions",
+    "x": 23422.0,
+    "y": 52194.0,
+    "n": 591,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Social Sciences",
+    "x": 21500.0,
+    "y": 58854.5,
+    "n": 1820,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Theology and Religious Vocations",
+    "x": 23946.0,
+    "y": 44862.0,
+    "n": 89,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Transportation and Materials Moving",
+    "x": 23250.0,
+    "y": 86121.0,
+    "n": 56,
+    "group": "其他专业大类",
+    "frontier": false
+  },
+  {
+    "label": "Visual and Performing Arts",
+    "x": 24556.0,
+    "y": 43192.0,
+    "n": 1395,
+    "group": "其他专业大类",
+    "frontier": false
+  }
+]

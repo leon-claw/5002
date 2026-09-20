@@ -17,4 +17,7 @@ for slug in PROJECTS:
     print(f"\n=== {slug} ===")
     subprocess.run([sys.executable, "eda.py"], cwd=project, check=True)
 
-print("\nAll EDA pipelines completed.")
+subprocess.run(
+    [sys.executable, str(ROOT / "scripts/build_sites.py")], cwd=ROOT, check=True
+)
+print("\nAll EDA pipelines and HTML builds completed.")

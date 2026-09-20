@@ -1,35 +1,32 @@
-field,dtype,missing_rate,unique_values
-X,float64,0.0,3023
-Y,float64,0.0,3023
-Unique Squirrel ID,object,0.0,3018
-Hectare,object,0.0,339
-Shift,object,0.0,2
-Date,int64,0.0,11
-Hectare Squirrel Number,int64,0.0,23
-Age,object,0.04002646377770427,3
-Primary Fur Color,object,0.018193847171683757,3
-Highlight Fur Color,object,0.35924578233542837,10
-Combination of Primary and Highlight Color,object,0.0,22
-Color notes,object,0.9397949057227919,135
-Location,object,0.02117102216341383,2
-Above Ground Sighter Measurement,object,0.03771088322858088,41
-Specific Location,object,0.8425405226596097,304
-Running,bool,0.0,2
-Chasing,bool,0.0,2
-Climbing,bool,0.0,2
-Eating,bool,0.0,2
-Foraging,bool,0.0,2
-Other Activities,object,0.85544161429044,307
-Kuks,bool,0.0,2
-Quaas,bool,0.0,2
-Moans,bool,0.0,2
-Tail flags,bool,0.0,2
-Tail twitches,bool,0.0,2
-Approaches,bool,0.0,2
-Indifferent,bool,0.0,2
-Runs from,bool,0.0,2
-Other Interactions,object,0.9206086668871981,197
-Lat/Long,object,0.0,3023
-date,datetime64[ns],0.0,11
-shift,object,0.0,2
-fur_color,object,0.0,4
+field,dtype,missing,missing_rate,unique_values,median,p01,p99
+X,float64,0,0.0,3023,-73.9685940262068,-73.98053607814882,-73.95211991479893
+Y,float64,0,0.0,3023,40.7781658424866,40.76600678815455,40.799148334189724
+Unique Squirrel ID,object,0,0.0,3018,,,
+Hectare,object,0,0.0,339,,,
+Shift,object,0,0.0,2,,,
+Date,int64,0,0.0,11,10122018.0,10062018.0,10202018.0
+Hectare Squirrel Number,int64,0,0.0,23,3.0,1.0,14.0
+Age,object,121,0.04002646377770427,3,,,
+Primary Fur Color,object,55,0.018193847171683757,3,,,
+Highlight Fur Color,object,1086,0.35924578233542837,10,,,
+Combination of Primary and Highlight Color,object,0,0.0,22,,,
+Color notes,object,2841,0.9397949057227919,135,,,
+Location,object,64,0.02117102216341383,2,,,
+Above Ground Sighter Measurement,object,114,0.03771088322858088,41,,,
+Specific Location,object,2547,0.8425405226596097,304,,,
+Running,bool,0,0.0,2,,,
+Chasing,bool,0,0.0,2,,,
+Climbing,bool,0,0.0,2,,,
+Eating,bool,0,0.0,2,,,
+Foraging,bool,0,0.0,2,,,
+Other Activities,object,2586,0.85544161429044,307,,,
+Kuks,bool,0,0.0,2,,,
+Quaas,bool,0,0.0,2,,,
+Moans,bool,0,0.0,2,,,
+Tail flags,bool,0,0.0,2,,,
+Tail twitches,bool,0,0.0,2,,,
+Approaches,bool,0,0.0,2,,,
+Indifferent,bool,0,0.0,2,,,
+Runs from,bool,0,0.0,2,,,
+Other Interactions,object,2783,0.9206086668871981,197,,,
+Lat/Long,object,0,0.0,3023,,,

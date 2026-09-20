@@ -1,20 +1,33 @@
 {
-  "dataset": "Steam Games Dataset V2",
-  "rows": 22608,
+  "dataset": "Steam Games V2",
+  "rows": 23100,
   "columns": 28,
-  "missing_rate": 0.031461682337478515,
+  "missing_rate": 0.03156926406926407,
   "duplicate_rows": 489,
-  "appid_duplicates": {
-    "main": 492,
-    "wikidata": 0,
-    "steamspy": 1166
-  },
-  "wikidata_match_rate": 0.9386500353857041,
-  "steamspy_match_rate": 1.0,
+  "analysis_rows": 22608,
   "findings": [
-    "The main table has 492 repeated appid rows; the EDA keeps the last row and reports the decision.",
-    "Wikidata and SteamSpy are left joins, so unmatched games remain visible rather than being dropped.",
-    "Review ratio is defined as positive / (positive + negative) and is not a Steam recommendation probability.",
-    "Release dates are messy text; only years parsed into 1990–2026 are used in the trend view."
-  ]
+    {
+      "title": "CCU 极度集中，总体均值很容易误导",
+      "text": "按唯一 appid 统计，CCU 最高的 1%（227 个游戏）贡献 82.1% 的快照 CCU；11,255 个游戏 CCU=0。价格图使用 symlog，保留零价格、零 CCU，不用 log 轴无声删除长尾。"
+    },
+    {
+      "title": "好评率不等于热度",
+      "text": "至少 50 条评价的 17,773 个游戏中，好评率与 CCU 的 Spearman ρ=0.332。对秩值按首个类型标签 × 发行年去均值后为 0.314；两者差异提示类型与年龄构成值得关注，但未消除营销和存活偏差。"
+    },
+    {
+      "title": "多标签组合需要同时看数量与 lift",
+      "text": "网络保留共同出现≥100 次的前 35 对类型。线宽表示共同游戏数，悬停显示 lift=联合概率/(边际概率乘积)；高频类别不一定有最强的超预期共现。"
+    },
+    {
+      "title": "多来源连接必须保留审计记录",
+      "text": "主表 23,100 行归并为 22,608 个 appid；3 个重复键含冲突内容。采用完整度、评价数和原始顺序选择，不能称为“最新记录”。Wikidata 匹配率 93.9%，SteamSpy CCU 不一致 0 行；日期成功解析 22,492 行。"
+    }
+  ],
+  "checks": {
+    "unique_appids": 22608,
+    "merged_rows": 22608,
+    "valid_reviews_n": 17773,
+    "top_ccu_share": 0.8207976989493788,
+    "price_conversion_divisor": 100
+  }
 }

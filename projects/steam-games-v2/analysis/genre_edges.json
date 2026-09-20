@@ -1,0 +1,212 @@
+[
+  {
+    "source": "Adventure",
+    "target": "Indie",
+    "value": 6992,
+    "lift": 1.1199540895381535
+  },
+  {
+    "source": "Action",
+    "target": "Indie",
+    "value": 6920,
+    "lift": 1.048833562757675
+  },
+  {
+    "source": "Casual",
+    "target": "Indie",
+    "value": 5398,
+    "lift": 1.1770257445360568
+  },
+  {
+    "source": "Action",
+    "target": "Adventure",
+    "value": 4519,
+    "lift": 1.0622076332563546
+  },
+  {
+    "source": "Indie",
+    "target": "RPG",
+    "value": 3707,
+    "lift": 1.046288638982234
+  },
+  {
+    "source": "Indie",
+    "target": "Strategy",
+    "value": 3488,
+    "lift": 1.0066017632861572
+  },
+  {
+    "source": "Indie",
+    "target": "Simulation",
+    "value": 3069,
+    "lift": 1.0199411090323738
+  },
+  {
+    "source": "Adventure",
+    "target": "RPG",
+    "value": 3063,
+    "lift": 1.3407336674310488
+  },
+  {
+    "source": "Adventure",
+    "target": "Casual",
+    "value": 2971,
+    "lift": 1.0046674420608253
+  },
+  {
+    "source": "Action",
+    "target": "Casual",
+    "value": 2358,
+    "lift": 0.754510276010685
+  },
+  {
+    "source": "Action",
+    "target": "RPG",
+    "value": 2255,
+    "lift": 0.933993268497178
+  },
+  {
+    "source": "Simulation",
+    "target": "Strategy",
+    "value": 1811,
+    "lift": 1.681688922514654
+  },
+  {
+    "source": "Casual",
+    "target": "Simulation",
+    "value": 1732,
+    "lift": 1.215197792965375
+  },
+  {
+    "source": "Casual",
+    "target": "Strategy",
+    "value": 1685,
+    "lift": 1.026601730761768
+  },
+  {
+    "source": "Free To Play",
+    "target": "Indie",
+    "value": 1673,
+    "lift": 1.0017571385740969
+  },
+  {
+    "source": "RPG",
+    "target": "Strategy",
+    "value": 1647,
+    "lift": 1.2988874714699379
+  },
+  {
+    "source": "Action",
+    "target": "Strategy",
+    "value": 1515,
+    "lift": 0.6415966974491886
+  },
+  {
+    "source": "Adventure",
+    "target": "Strategy",
+    "value": 1493,
+    "lift": 0.6682017567302724
+  },
+  {
+    "source": "Adventure",
+    "target": "Simulation",
+    "value": 1472,
+    "lift": 0.7586694789366993
+  },
+  {
+    "source": "Action",
+    "target": "Simulation",
+    "value": 1402,
+    "lift": 0.6837455267847582
+  },
+  {
+    "source": "Casual",
+    "target": "RPG",
+    "value": 1312,
+    "lift": 0.7817783422987586
+  },
+  {
+    "source": "Action",
+    "target": "Free To Play",
+    "value": 1150,
+    "lift": 1.0104913999871896
+  },
+  {
+    "source": "Early Access",
+    "target": "Indie",
+    "value": 1143,
+    "lift": 1.1574551340151051
+  },
+  {
+    "source": "RPG",
+    "target": "Simulation",
+    "value": 1014,
+    "lift": 0.9209008654925055
+  },
+  {
+    "source": "Casual",
+    "target": "Free To Play",
+    "value": 976,
+    "lift": 1.2337785030274402
+  },
+  {
+    "source": "Action",
+    "target": "Early Access",
+    "value": 877,
+    "lift": 1.3032442125663002
+  },
+  {
+    "source": "Adventure",
+    "target": "Free To Play",
+    "value": 841,
+    "lift": 0.7809605488850772
+  },
+  {
+    "source": "Free To Play",
+    "target": "Strategy",
+    "value": 664,
+    "lift": 1.1109220563552888
+  },
+  {
+    "source": "Free To Play",
+    "target": "RPG",
+    "value": 620,
+    "lift": 1.0145066835893939
+  },
+  {
+    "source": "Adventure",
+    "target": "Early Access",
+    "value": 595,
+    "lift": 0.9344186453605412
+  },
+  {
+    "source": "Action",
+    "target": "Massively Multiplayer",
+    "value": 593,
+    "lift": 1.4329207395905301
+  },
+  {
+    "source": "Free To Play",
+    "target": "Massively Multiplayer",
+    "value": 513,
+    "lift": 4.89723408280186
+  },
+  {
+    "source": "Indie",
+    "target": "Massively Multiplayer",
+    "value": 485,
+    "lift": 0.7986213888662292
+  },
+  {
+    "source": "Early Access",
+    "target": "RPG",
+    "value": 483,
+    "lift": 1.336601007181881
+  },
+  {
+    "source": "Simulation",
+    "target": "Sports",
+    "value": 478,
+    "lift": 2.637809148465956
+  }
+]

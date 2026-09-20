@@ -1,0 +1,164 @@
+[
+  {
+    "label": "Running / AM",
+    "behavior": "Running",
+    "group": "AM",
+    "n": 1347,
+    "value": 24.276169265033406,
+    "lo": 22.061751247285816,
+    "hi": 26.63689170042176
+  },
+  {
+    "label": "Chasing / AM",
+    "behavior": "Chasing",
+    "group": "AM",
+    "n": 1347,
+    "value": 9.725315515961396,
+    "lo": 8.255615284472155,
+    "hi": 11.424078219514456
+  },
+  {
+    "label": "Climbing / AM",
+    "behavior": "Climbing",
+    "group": "AM",
+    "n": 1347,
+    "value": 25.241276911655532,
+    "lo": 22.99411382070504,
+    "hi": 27.629255365616682
+  },
+  {
+    "label": "Eating / AM",
+    "behavior": "Eating",
+    "group": "AM",
+    "n": 1347,
+    "value": 21.974758723088346,
+    "lo": 19.844883342393064,
+    "hi": 24.26402780554232
+  },
+  {
+    "label": "Foraging / AM",
+    "behavior": "Foraging",
+    "group": "AM",
+    "n": 1347,
+    "value": 44.61766889383816,
+    "lo": 41.982081938932254,
+    "hi": 47.28386788418117
+  },
+  {
+    "label": "Approaches / AM",
+    "behavior": "Approaches",
+    "group": "AM",
+    "n": 1347,
+    "value": 6.087602078693393,
+    "lo": 4.931318027343153,
+    "hi": 7.493638115713219
+  },
+  {
+    "label": "Indifferent / AM",
+    "behavior": "Indifferent",
+    "group": "AM",
+    "n": 1347,
+    "value": 53.897550111358576,
+    "lo": 51.228214192412004,
+    "hi": 56.544718694298965
+  },
+  {
+    "label": "Runs from / AM",
+    "behavior": "Runs from",
+    "group": "AM",
+    "n": 1347,
+    "value": 21.380846325167038,
+    "lo": 19.27435357097599,
+    "hi": 23.650110660889148
+  },
+  {
+    "label": "Tail twitches / AM",
+    "behavior": "Tail twitches",
+    "group": "AM",
+    "n": 1347,
+    "value": 14.550853749072012,
+    "lo": 12.768589083452808,
+    "hi": 16.534735613604536
+  },
+  {
+    "label": "Running / PM",
+    "behavior": "Running",
+    "group": "PM",
+    "n": 1676,
+    "value": 24.045346062052506,
+    "lo": 22.060186788415866,
+    "hi": 26.149211459751577
+  },
+  {
+    "label": "Chasing / PM",
+    "behavior": "Chasing",
+    "group": "PM",
+    "n": 1676,
+    "value": 8.83054892601432,
+    "lo": 7.564580926872674,
+    "hi": 10.284809397806718
+  },
+  {
+    "label": "Climbing / PM",
+    "behavior": "Climbing",
+    "group": "PM",
+    "n": 1676,
+    "value": 18.973747016706444,
+    "lo": 17.16834681193502,
+    "hi": 20.921048795069737
+  },
+  {
+    "label": "Eating / PM",
+    "behavior": "Eating",
+    "group": "PM",
+    "n": 1676,
+    "value": 27.684964200477328,
+    "lo": 25.59569885489619,
+    "hi": 29.876289523987992
+  },
+  {
+    "label": "Foraging / PM",
+    "behavior": "Foraging",
+    "group": "PM",
+    "n": 1676,
+    "value": 49.76133651551313,
+    "lo": 47.37088540013673,
+    "hi": 52.15287918145562
+  },
+  {
+    "label": "Approaches / PM",
+    "behavior": "Approaches",
+    "group": "PM",
+    "n": 1676,
+    "value": 5.727923627684964,
+    "lo": 4.71333222053415,
+    "hi": 6.944997664845717
+  },
+  {
+    "label": "Indifferent / PM",
+    "behavior": "Indifferent",
+    "group": "PM",
+    "n": 1676,
+    "value": 43.436754176610975,
+    "lo": 41.08138016335324,
+    "hi": 45.82214583043624
+  },
+  {
+    "label": "Runs from / PM",
+    "behavior": "Runs from",
+    "group": "PM",
+    "n": 1676,
+    "value": 23.269689737470166,
+    "lo": 21.309234663157852,
+    "hi": 25.3523984751847
+  },
+  {
+    "label": "Tail twitches / PM",
+    "behavior": "Tail twitches",
+    "group": "PM",
+    "n": 1676,
+    "value": 14.200477326968974,
+    "lo": 12.611139267236075,
+    "hi": 15.95354797161557
+  }
+]

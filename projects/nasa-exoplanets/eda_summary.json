@@ -1,19 +1,28 @@
 {
-  "dataset": "NASA Exoplanet Archive Planetary Systems",
+  "dataset": "NASA Exoplanets",
   "rows": 40155,
   "columns": 355,
   "missing_rate": 0.466508897739569,
   "duplicate_rows": 56,
-  "date_range": [
-    1992,
-    2026
-  ],
-  "confirmed_rate": 0.5132113061885195,
-  "candidate_rate": 0.4867886938114805,
+  "analysis_rows": 6292,
   "findings": [
-    "The table mixes published confirmed planets with several candidate catalogs; status is kept as a first-class dimension.",
-    "Missingness is structural: uncertainty, mass and stellar fields are not measured for every discovery method.",
-    "Transit discoveries dominate the archive, so counts describe the survey pipeline as much as the universe.",
-    "Only a compact physical-variable sample is exported to D3; the full 355-column profile remains in eda_profile.csv."
-  ]
+    {
+      "title": "先把“参数行”还原成“行星”",
+      "text": "原始 40,155 行是文献参数集。主样本只取 Published Confirmed 且 default_flag=1，得到 6,292 个唯一行星；直接统计原表会把不同文献和候选目录反复计数。"
+    },
+    {
+      "title": "测量方法塑造了能看见的关系",
+      "text": "默认确认样本中 Transit 占 73.6%。周期与半径的 pooled Spearman ρ=0.082（成对完整 n=4,640）。分方法完整样本里，Radial Velocity 仅 28 个，Imaging 仅 7 个；这些小样本不足以支持稳定的跨方法比较。完整案例的选择本身就改变了样本。"
+    },
+    {
+      "title": "缺失本身就是观测机制的证据",
+      "text": "剔除上/下限值与非正值后，半径缺失率为 25.8%。质量–半径图进一步要求 pl_bmassprov=Mass，只保留 1,411 个完整点，排除由半径推算的质量，以免制造循环关系。"
+    }
+  ],
+  "checks": {
+    "unique_planets": 6292,
+    "default_confirmed_rows": 6292,
+    "period_radius_complete": 4640,
+    "measured_mass_radius_complete": 1411
+  }
 }

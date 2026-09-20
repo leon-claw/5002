@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Transit",
+    "n": 4599,
+    "rho": 0.07686745483248153,
+    "support": "报告有效 n"
+  },
+  {
+    "label": "Radial Velocity",
+    "n": 28,
+    "rho": 0.14997263273125339,
+    "support": "报告有效 n"
+  },
+  {
+    "label": "Microlensing",
+    "n": 0,
+    "rho": null,
+    "support": "n<20，仅作探索"
+  },
+  {
+    "label": "Imaging",
+    "n": 7,
+    "rho": 0.37062465833055064,
+    "support": "n<20，仅作探索"
+  },
+  {
+    "label": "Transit Timing Variations",
+    "n": 3,
+    "rho": 0.5,
+    "support": "n<20，仅作探索"
+  }
+]

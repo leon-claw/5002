@@ -1,0 +1,86 @@
+[
+  {
+    "label": "Film · Bronx",
+    "group": "Film",
+    "left": 2.9072021086905964,
+    "right": 4.777830864787386,
+    "n": 2093
+  },
+  {
+    "label": "Film · Brooklyn",
+    "group": "Film",
+    "left": 33.49872083107218,
+    "right": 30.19589106545628,
+    "n": 2093
+  },
+  {
+    "label": "Film · Manhattan",
+    "group": "Film",
+    "left": 49.112334289479804,
+    "right": 38.70043000477783,
+    "n": 2093
+  },
+  {
+    "label": "Film · Queens",
+    "group": "Film",
+    "left": 10.597720753546787,
+    "right": 15.862398471094124,
+    "n": 2093
+  },
+  {
+    "label": "Film · Staten Island",
+    "group": "Film",
+    "left": 1.814094115822932,
+    "right": 3.201146679407549,
+    "n": 2093
+  },
+  {
+    "label": "Film · Unknown",
+    "group": "Film",
+    "left": 2.0699279013877048,
+    "right": 7.262302914476828,
+    "n": 2093
+  },
+  {
+    "label": "Television · Bronx",
+    "group": "Television",
+    "left": 1.8651466503120602,
+    "right": 4.975412207115997,
+    "n": 3457
+  },
+  {
+    "label": "Television · Brooklyn",
+    "group": "Television",
+    "left": 25.661098885241167,
+    "right": 17.992479028059012,
+    "n": 3457
+  },
+  {
+    "label": "Television · Manhattan",
+    "group": "Television",
+    "left": 51.45207258559111,
+    "right": 56.002314145212615,
+    "n": 3457
+  },
+  {
+    "label": "Television · Queens",
+    "group": "Television",
+    "left": 17.590822179732314,
+    "right": 11.13682383569569,
+    "n": 3457
+  },
+  {
+    "label": "Television · Staten Island",
+    "group": "Television",
+    "left": 1.4791298387387712,
+    "right": 2.805901070292161,
+    "n": 3457
+  },
+  {
+    "label": "Television · Unknown",
+    "group": "Television",
+    "left": 1.9517298603845736,
+    "right": 7.087069713624531,
+    "n": 3457
+  }
+]

@@ -1,19 +1,28 @@
 {
-  "dataset": "NYC Film Permits Historical",
+  "dataset": "NYC Film Permits",
   "rows": 40754,
-  "columns": 13,
+  "columns": 11,
   "missing_rate": 0.0028017327914270545,
   "duplicate_rows": 136,
-  "date_range": [
-    "2011-07-25",
-    "2015-08-04"
-  ],
-  "boroughs": 6,
-  "projects": 3371,
+  "analysis_rows": 40618,
   "findings": [
-    "Permit records are event-level, so one project can appear across multiple permit events.",
-    "The file contains 136 exact duplicate rows; they are retained and flagged for audit.",
-    "Borough is missing for a meaningful minority of records; Unknown is kept as an explicit category.",
-    "There are no reliable coordinates, so the D3 view uses borough and time rather than inventing point locations."
-  ]
+    {
+      "title": "拍摄类型与行政区有关联",
+      "text": "完全去重后 n=40,618 条事件。类型 × borough 的 Cramér’s V=0.114（0 表示无关联；本样本关联程度较弱）；Film 的 Manhattan 占比为 49.1%，Television 为 51.5%。同一项目有多条事件，卡方结果仅作描述，不能按独立观测解读显著性。"
+    },
+    {
+      "title": "少数公司贡献了大量许可事件",
+      "text": "前 10 家公司占 13.6% 的事件；3,371 个项目对应 40,618 条事件。右侧双点图比较事件占比和“项目–borough 组合”占比，检查大型项目重复出现的影响。项目跨多个 borough 会贡献多个组合。"
+    },
+    {
+      "title": "时间边界会制造假的增长或衰退",
+      "text": "开始日期覆盖 2011-07-25 至 2015-08-04；2011、2015 是不完整边界年。季节热力图只使用 2012–2014 年的 33,348 条事件。许可时间范围不能当作实际拍摄工时；发现 0 条结束早于开始的记录。"
+    }
+  ],
+  "checks": {
+    "raw_columns": 11,
+    "exact_duplicates_removed": 136,
+    "association_n": 40618,
+    "project_count": 3371
+  }
 }
