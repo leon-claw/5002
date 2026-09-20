@@ -1,0 +1,18 @@
+{
+  "dataset": "World Happiness Report 2026 Figure 2.1",
+  "rows": 2116,
+  "columns": 13,
+  "missing_rate": 0.3591318889050458,
+  "duplicate_rows": 0,
+  "date_range": [
+    2011,
+    2025
+  ],
+  "countries": 168,
+  "findings": [
+    "Life evaluation is reported as a three-year average, so year-to-year changes are smoothed rather than annual survey scores.",
+    "The latest ranking is paired with whisker intervals; close ranks should not be over-interpreted.",
+    "Older years contain structural missingness because country coverage changes across report editions.",
+    "The explanatory components are descriptive contributions to the reported evaluation, not causal estimates."
+  ]
+}

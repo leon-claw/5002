@@ -1,0 +1,14 @@
+field,dtype,missing_rate,unique_values
+year,int64,0.0,14
+rank,int64,0.0,158
+country,object,0.0,168
+life,float64,0.0,1673
+lower,float64,0.5170132325141777,903
+upper,float64,0.5170132325141777,927
+gdp,float64,0.5184310018903592,802
+social_support,float64,0.5184310018903592,785
+health,float64,0.5198487712665406,680
+freedom,float64,0.5193761814744802,668
+generosity,float64,0.5184310018903592,436
+corruption,float64,0.5189035916824196,479
+dystopia,float64,0.5212665406427222,869

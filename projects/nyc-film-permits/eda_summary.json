@@ -1,0 +1,19 @@
+{
+  "dataset": "NYC Film Permits Historical",
+  "rows": 40754,
+  "columns": 13,
+  "missing_rate": 0.0028017327914270545,
+  "duplicate_rows": 136,
+  "date_range": [
+    "2011-07-25",
+    "2015-08-04"
+  ],
+  "boroughs": 6,
+  "projects": 3371,
+  "findings": [
+    "Permit records are event-level, so one project can appear across multiple permit events.",
+    "The file contains 136 exact duplicate rows; they are retained and flagged for audit.",
+    "Borough is missing for a meaningful minority of records; Unknown is kept as an explicit category.",
+    "There are no reliable coordinates, so the D3 view uses borough and time rather than inventing point locations."
+  ]
+}

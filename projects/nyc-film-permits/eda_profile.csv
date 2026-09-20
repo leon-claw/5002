@@ -1,0 +1,17 @@
+field,dtype,missing_rate,unique_values
+ProjectTitle,object,0.0,3326
+EventName,object,0.0,37844
+EventType,object,0.0,7
+EventStartDate,datetime64[ns],0.0,14377
+EventEndDate,datetime64[ns],0.0,17705
+Location,object,0.010354811797614959,26659
+Boro,object,0.02046424890808264,5
+ProjectId,int64,0.0,3371
+CategoryName,object,0.0,2
+SubCategoryName,object,0.0,21
+CompanyName,object,0.0,2246
+year,Int64,0.0,5
+duration_days,int64,0.0,181
+Boro_clean,object,0.0,6
+EventType_clean,object,0.0,7
+Category_clean,object,0.0,2

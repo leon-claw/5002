@@ -1,0 +1,15 @@
+{
+  "dataset": "College Majors 2026 Earnings, Debt, Jobs & AI",
+  "rows": 227980,
+  "columns": 72,
+  "missing_rate": 0.27790211860689534,
+  "duplicate_rows": 0,
+  "families": 49,
+  "institutions": 6774,
+  "findings": [
+    "Rows are institution × CIP program × credential observations, not individual graduates.",
+    "Privacy suppression and small cohorts make displayed medians unsuitable for precise causal claims.",
+    "The page compares income, debt and AI exposure as descriptive signals; it does not infer that AI causes earnings.",
+    "State aggregates exclude Unknown and require a minimum program count to reduce unstable rankings."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "Steam Games Dataset V2",
+  "rows": 22608,
+  "columns": 28,
+  "missing_rate": 0.031461682337478515,
+  "duplicate_rows": 489,
+  "appid_duplicates": {
+    "main": 492,
+    "wikidata": 0,
+    "steamspy": 1166
+  },
+  "wikidata_match_rate": 0.9386500353857041,
+  "steamspy_match_rate": 1.0,
+  "findings": [
+    "The main table has 492 repeated appid rows; the EDA keeps the last row and reports the decision.",
+    "Wikidata and SteamSpy are left joins, so unmatched games remain visible rather than being dropped.",
+    "Review ratio is defined as positive / (positive + negative) and is not a Steam recommendation probability.",
+    "Release dates are messy text; only years parsed into 1990–2026 are used in the trend view."
+  ]
+}

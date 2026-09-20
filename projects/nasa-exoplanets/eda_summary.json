@@ -1,0 +1,19 @@
+{
+  "dataset": "NASA Exoplanet Archive Planetary Systems",
+  "rows": 40155,
+  "columns": 355,
+  "missing_rate": 0.466508897739569,
+  "duplicate_rows": 56,
+  "date_range": [
+    1992,
+    2026
+  ],
+  "confirmed_rate": 0.5132113061885195,
+  "candidate_rate": 0.4867886938114805,
+  "findings": [
+    "The table mixes published confirmed planets with several candidate catalogs; status is kept as a first-class dimension.",
+    "Missingness is structural: uncertainty, mass and stellar fields are not measured for every discovery method.",
+    "Transit discoveries dominate the archive, so counts describe the survey pipeline as much as the universe.",
+    "Only a compact physical-variable sample is exported to D3; the full 355-column profile remains in eda_profile.csv."
+  ]
+}
