@@ -1,0 +1,2 @@
+/data/processed/college-majors/college_majors_2026.csv filter=lfs diff=lfs merge=lfs -text
+/data/raw/nasa-exoplanets-ps.csv filter=lfs diff=lfs merge=lfs -text
