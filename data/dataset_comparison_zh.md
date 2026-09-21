@@ -14,11 +14,15 @@
 
 来源：[NYC Open Data Film Permits](https://data.cityofnewyork.us/City-Government/Film-Permits/tg4x-b46p) · [MOME 许可说明](https://www.nyc.gov/site/mome/permits/when-permit-required.page)
 
+**原始页面简介（中文翻译）：** 当申请独占使用城市公共空间（例如人行道、街道或公园）时，通常需要拍摄许可证；该数据集由市长媒体与娱乐办公室提供，每一行是一张 Film Permit。
+
 ### NASA Exoplanets
 
 NASA Exoplanet Archive 的 Planetary Systems（PS）表是天文学参数目录。NASA 说明它合并了 Confirmed Planets 与 Extended Planet Data，并同时保存行星、宿主恒星和系统属性；原始一行可以是某个行星的一个文献参数解，所以 40,155 行不能直接当作 40,155 颗行星。本项目通过 TAP 下载 2026-09-11 快照，用 Published Confirmed、`default_flag=1` 和唯一 `pl_name` 建立主要分析样本，研究发现方法和测量覆盖如何塑造可见的物理关系。
 
 来源：[NASA Archive 概览](https://exoplanetarchive.ipac.caltech.edu/docs/intro.html) · [Planetary Systems 表说明](https://exoplanetarchive.ipac.caltech.edu/docs/planetarysystems_about.html) · [字段定义](https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html)
+
+**原始页面简介（中文翻译）：** PS 表把 Confirmed Planets 和 Extended Planet Data 两张表合并起来，允许用户浏览行星与宿主恒星的所有参数解；每一行包含行星、恒星和系统属性，并汇总该系统可用的数据集。
 
 ### College Majors 2026: Earnings, Debt, Jobs, AI
 
@@ -26,23 +30,31 @@ NASA Exoplanet Archive 的 Planetary Systems（PS）表是天文学参数目录�
 
 来源：[Kaggle College Majors 2026](https://www.kaggle.com/datasets/kylefengkfeng209/college-majors-2026-earnings-debt-jobs-ai) · [Kaggle EDA 页面](https://www.kaggle.com/code/lalit7881/college-majors-2026-earnings-debt-jobs-ai-eda)
 
+**原始页面简介（中文整理）：** Kaggle 数据集以“College Majors 2026: Earnings, Debt, Jobs, AI”为题，配套分析围绕大学项目的收入、债务、就业结果和 AI 关联职业指标展开；页面显示 CSV 包含 227,980 行和 72 个字段。
+
 ### Central Park Squirrel Census
 
 这是 2018 年 Central Park Squirrel Census 的 citizen-science 观测数据。NYC OpenData/Data.gov 的数据说明称，该项目关注东部灰松鼠（*Sciurus carolinensis*），3,023 次观测包含坐标、年龄、毛色、海拔、活动、沟通和与松鼠/人类的互动。一行代表一次观察，不代表被长期追踪的个体；因此它适合做空间分布、AM/PM 行为差异和行为共现的可视化，同时必须说明短期志愿者观察和搜索努力未知的限制。
 
 来源：[Data.gov 数据说明](https://catalog.data.gov/dataset/2018-central-park-squirrel-census-squirrel-data) · [The Squirrel Census](https://www.thesquirrelcensus.com/) · [NYC OpenData 数据页](https://data.cityofnewyork.us/d/vfnx-vebw)
 
+**原始页面简介（中文翻译）：** Squirrel Census 是一个聚焦东部灰松鼠的科学、设计和故事讲述项目；项目统计松鼠并向公众展示结果。该表记录 3,023 次观测，包括坐标、年龄、主/次毛色、海拔、活动、沟通以及与松鼠和人类的互动。
+
 ### Steam Games V2
 
 这是 Kaggle 上的 Steam 游戏多来源快照，使用 `appid` 连接主游戏表、SteamSpy 估计和 Wikidata 元数据。它用于研究价格、评价、快照 CCU、发行年龄和多标签游戏类型之间的关系；归并后一行代表一个唯一 appid，但价格、累计评价和 CCU 的采集时间并不相同。SteamSpy 自己说明其统计来自多日样本，对新发行游戏尤其不可靠，所以 CCU 应被称为快照指标，不能当作销售量或因果结果。
 
-来源：[Kaggle Steam Games Dataset](https://www.kaggle.com/datasets/fronkongames/steam-games-dataset/data) · [SteamSpy API](https://steamspy.com/api.php) · [SteamSpy 方法与限制](https://steamspy.com/about)
+来源：[Kaggle Steam Games Dataset V2](https://www.kaggle.com/datasets/muhammadaqeelkabir/steam-games-dataset-v2) · [V2 文件说明](https://www.kaggle.com/code/huntdata/content-based-game-recommender/input) · [SteamSpy API](https://steamspy.com/api.php) · [SteamSpy 方法与限制](https://steamspy.com/about)
+
+**原始页面简介（中文翻译）：** 该 V2 数据集把 SteamSpy 的热门游戏与官方 Steam Storefront API 取得的丰富元数据独立匹配，用于复杂 EDA、文本分析和玩家参与度建模；本地项目同时保留 Wikidata 增补表。
 
 ### World Happiness Report
 
 这是 World Happiness Report Figure 2.1 的官方工作簿。报告说明数据以 Gallup World Poll 为基础，免费提供 life evaluation 的三年平均、95% 置信区间和六个解释因素的贡献。因此一行是一个国家–Year 报告记录，分数不是单一年份的即时情绪；早期年份没有后来才发布的完整贡献字段。本项目用它研究排名不确定性、固定国家集合后的跨年变化和解释项覆盖，而不是把国家排名直接写成因果解释。
 
 来源：[World Happiness Report 数据共享](https://www.worldhappiness.report/data-sharing/) · [官方 FAQ](https://www.worldhappiness.report/faq/)
+
+**原始页面简介（中文翻译）：** World Happiness Report 由 Gallup World Poll 提供数据；Figure 2.1 可免费下载，包含自 2012 年起的 life evaluation 三年平均、95% 置信区间，以及六个解释因素的贡献。
 
 ## 下载与来源状态
 

@@ -53,6 +53,7 @@ for slug in slugs:
             f'<article class="finding"><div class="tag">DATASET</div><h3>它是什么？</h3><p>{e(meta.get("description", ""))}</p></article>',
             f'<article class="finding"><div class="tag">PURPOSE</div><h3>用来研究什么？</h3><p>{e(meta.get("purpose", ""))}</p></article>',
             f'<article class="finding"><div class="tag">UNIT & SOURCE</div><h3>一行代表什么？</h3><p>{e(meta.get("unit", ""))}</p><p class="source-note">{e(meta.get("source_note", ""))}</p></article>',
+            f'<article class="finding translation-card"><div class="tag">SOURCE DESCRIPTION / 中文翻译</div><h3>原始页面简介</h3><p>{e(meta.get("source_description", ""))}</p><p class="source-note">这是根据页面 Description 的中文翻译或忠实整理；它与本项目后面的统计发现分开呈现。</p></article>',
         ]
     )
     links = " · ".join(

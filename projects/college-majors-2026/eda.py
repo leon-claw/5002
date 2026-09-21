@@ -168,6 +168,7 @@ finish(
         question="高收入专业也意味着高债务吗？学位层级与隐私抑制如何改变答案？",
         theme="college",
         description="这是 Kaggle 发布的 College Majors 2026: Earnings, Debt, Jobs, AI 整合表，面向美国高校项目与职业结果探索。它把学校、CIP 专业、学位层级、收入、债务、就业和 AI 关联职业字段拼在同一张研究表中，不是一张单一的官方原始表。",
+        source_description="原始页面简介（中文整理）：Kaggle 数据集以“College Majors 2026: Earnings, Debt, Jobs, AI”为题，配套分析围绕大学项目的收入、债务、就业结果和 AI 关联职业指标展开；页面显示 CSV 包含 227,980 行和 72 个字段。",
         purpose="用于研究专业大类和学位层级如何对应收入、债务、就业与 AI 职业暴露，并观察隐私抑制如何改变可比较样本。",
         unit="一行大致对应一个学校 × CIP 专业 × credential 项目；部分结果在跨校区共享，收入与债务的 privacy_suppressed 必须保留为状态而不能填成零。",
         source_note="本地文件来自 Kaggle 数据集；数据集页面将它作为教育结果与 AI 关联指标的整合数据，具体上游字段和 cohort 年份需在报告中注明，不能包装成个人级调查。",

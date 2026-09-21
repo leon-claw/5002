@@ -173,6 +173,7 @@ finish(
         question="早晚行为真的不同，还是观察地点和日程改变了我们看到的松鼠？",
         theme="park",
         description="这是 2018 Central Park Squirrel Census 的 citizen-science 观测表。NYC OpenData 说明，该项目关注东部灰松鼠，并为 3,023 次观测记录坐标、年龄、毛色、海拔、活动、叫声以及与松鼠和人类的互动。",
+        source_description="原始页面简介（中文翻译）：Squirrel Census 是一个聚焦东部灰松鼠的科学、设计和故事讲述项目；项目统计松鼠并向公众展示结果。该表记录 3,023 次观测，包括坐标、年龄、主/次毛色、海拔、活动、沟通以及与松鼠和人类的互动。",
         purpose="用于研究中央公园中松鼠的空间分布、AM/PM 行为差异和行为组合，同时展示公民科学观察的抽样边界。",
         unit="一行代表一次松鼠观测，不代表一个被长期追踪的生物个体；坐标、hectare、班次和多个非互斥行为字段共同描述这次观察。",
         source_note="官方记录来自 NYC OpenData / Data.gov；本地 CSV 是 2018 年普查数据的公开镜像，数据页最后更新于 2023-04-18。",
