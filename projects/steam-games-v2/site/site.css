@@ -194,6 +194,15 @@ h3 {
   min-height: 0;
   border-color: var(--accent);
 }
+.dataset-facts .source-links {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+.dataset-facts .source-links a {
+  white-space: nowrap;
+}
 .section-intro {
   display: flex;
   align-items: baseline;
