@@ -2,6 +2,16 @@
 
 价格、好评与在线热度之间的关系，能跨过类型与发行年龄的差异吗？
 
+## 数据集简介
+
+这是一个以 appid 为连接键的 Steam 游戏多来源快照：主表包含商店字段和玩家参与指标，另有 SteamSpy 估计以及 Wikidata 元数据。它用于观察数字游戏市场中的价格、评价、在线人数、发行时间和多标签类型结构，不是 Valve 的销售账本。
+
+**用途：** 用于研究价格、好评率、快照 CCU、发行年龄和游戏类型之间的关系，并展示长尾集中、多标签共现和多表连接的影响。
+
+**观测单位：** 主分析一行代表归并后的唯一 appid；genres/categories 是多标签字段，CCU、评价和价格来自不同时间口径，不能把它们直接解释成因果链。
+
+**来源说明：** 本地文件是 Kaggle 发布的 Steam 数据快照，结合 Steam/SteamSpy/Wikidata 表；SteamSpy 官方说明其数据来自多日样本且对新游戏不可靠，因此这里把 CCU 当作快照指标。
+
 ## 复现
 
 从仓库根目录运行 `python3 projects/steam-games-v2/eda.py`，再运行 `python3 scripts/build_sites.py`。依赖见根目录 requirements.txt。

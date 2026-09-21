@@ -162,7 +162,13 @@ finish(
         kicker="OBSERVATION / SELECTION / PHYSICS",
         question="行星的物理关系，有多少来自发现方法与测量覆盖的选择？",
         theme="space",
+        description="这是 NASA Exoplanet Archive 的 Planetary Systems（PS）表。NASA 说明该表合并了 Confirmed Planets 与 Extended Planet Data，并同时提供行星、宿主恒星和系统属性；原始表包含不同文献和参数解，不能直接当成唯一行星清单。",
+        purpose="用于研究发现方法、文献参数和测量缺失如何影响我们观察到的行星周期、半径、质量及恒星属性关系。",
+        unit="原始一行代表一个行星参数/文献解；主分析限定 Published Confirmed、default_flag=1，并以唯一确认行星作为主要统计单位。",
+        source_note="通过 NASA Exoplanet Archive TAP 的 ps 表下载；本地文件是 2026-09-11 的快照，不代表之后新增的完整年度数据。",
         references=[
+            ["NASA Exoplanet Archive 概览", "https://exoplanetarchive.ipac.caltech.edu/docs/intro.html"],
+            ["Planetary Systems 表说明", "https://exoplanetarchive.ipac.caltech.edu/docs/planetarysystems_about.html"],
             [
                 "NASA 参数定义",
                 "https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html",

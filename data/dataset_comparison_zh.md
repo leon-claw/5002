@@ -4,6 +4,46 @@
 
 逐列 profiling 已另存为 [`data/metadata/dataset_profiles.md`](metadata/dataset_profiles.md)，机器可读版本是 [`data/metadata/dataset_profiles.json`](metadata/dataset_profiles.json)。原始下载和解压文件都在 `data/raw/`、`data/processed/`。
 
+## 本轮六个 D3 项目的数据集简介
+
+下面的简介依据数据发布页面、官方数据目录和当前本地文件的真实字段整理。链接指向发布者或原始数据页面；Kaggle 数据明确标成快照或整合数据，不把它们描述成官方单表。
+
+### NYC Film Permits
+
+纽约市 Mayor's Office of Media and Entertainment（MOME）的影视拍摄许可数据，用来记录申请在街道、人行道、公园等城市公共空间进行拍摄或相关现场活动的许可。官方目录把一行定义为一个 Film Permit，并提供活动类型、开始/结束时间、borough、category、subcategory、country 和 zip code 等字段。当前项目使用的是覆盖 2011–2015 的历史公开镜像，因此适合研究城市拍摄活动的时间、行政区和项目/公司结构，不应把许可记录当作实际拍摄工时、预算或票房。
+
+来源：[NYC Open Data Film Permits](https://data.cityofnewyork.us/City-Government/Film-Permits/tg4x-b46p) · [MOME 许可说明](https://www.nyc.gov/site/mome/permits/when-permit-required.page)
+
+### NASA Exoplanets
+
+NASA Exoplanet Archive 的 Planetary Systems（PS）表是天文学参数目录。NASA 说明它合并了 Confirmed Planets 与 Extended Planet Data，并同时保存行星、宿主恒星和系统属性；原始一行可以是某个行星的一个文献参数解，所以 40,155 行不能直接当作 40,155 颗行星。本项目通过 TAP 下载 2026-09-11 快照，用 Published Confirmed、`default_flag=1` 和唯一 `pl_name` 建立主要分析样本，研究发现方法和测量覆盖如何塑造可见的物理关系。
+
+来源：[NASA Archive 概览](https://exoplanetarchive.ipac.caltech.edu/docs/intro.html) · [Planetary Systems 表说明](https://exoplanetarchive.ipac.caltech.edu/docs/planetarysystems_about.html) · [字段定义](https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html)
+
+### College Majors 2026: Earnings, Debt, Jobs, AI
+
+这是 Kaggle 发布的教育结果整合表，面向美国高校项目，把学校、CIP 专业、credential、收入、债务、就业和 AI 关联职业字段放在同一张表中。它大致是一行一个“学校 × 专业 × 学位层级”项目，不是个人级调查，也不是一张单一的官方原始表；`privacy_suppressed` 是结果不可报告的状态，不是零。本项目用它研究教育项目的收入–债务关系、专业层级差异和 AI 职业暴露，并把隐私抑制本身作为数据质量问题。
+
+来源：[Kaggle College Majors 2026](https://www.kaggle.com/datasets/kylefengkfeng209/college-majors-2026-earnings-debt-jobs-ai) · [Kaggle EDA 页面](https://www.kaggle.com/code/lalit7881/college-majors-2026-earnings-debt-jobs-ai-eda)
+
+### Central Park Squirrel Census
+
+这是 2018 年 Central Park Squirrel Census 的 citizen-science 观测数据。NYC OpenData/Data.gov 的数据说明称，该项目关注东部灰松鼠（*Sciurus carolinensis*），3,023 次观测包含坐标、年龄、毛色、海拔、活动、沟通和与松鼠/人类的互动。一行代表一次观察，不代表被长期追踪的个体；因此它适合做空间分布、AM/PM 行为差异和行为共现的可视化，同时必须说明短期志愿者观察和搜索努力未知的限制。
+
+来源：[Data.gov 数据说明](https://catalog.data.gov/dataset/2018-central-park-squirrel-census-squirrel-data) · [The Squirrel Census](https://www.thesquirrelcensus.com/) · [NYC OpenData 数据页](https://data.cityofnewyork.us/d/vfnx-vebw)
+
+### Steam Games V2
+
+这是 Kaggle 上的 Steam 游戏多来源快照，使用 `appid` 连接主游戏表、SteamSpy 估计和 Wikidata 元数据。它用于研究价格、评价、快照 CCU、发行年龄和多标签游戏类型之间的关系；归并后一行代表一个唯一 appid，但价格、累计评价和 CCU 的采集时间并不相同。SteamSpy 自己说明其统计来自多日样本，对新发行游戏尤其不可靠，所以 CCU 应被称为快照指标，不能当作销售量或因果结果。
+
+来源：[Kaggle Steam Games Dataset](https://www.kaggle.com/datasets/fronkongames/steam-games-dataset/data) · [SteamSpy API](https://steamspy.com/api.php) · [SteamSpy 方法与限制](https://steamspy.com/about)
+
+### World Happiness Report
+
+这是 World Happiness Report Figure 2.1 的官方工作簿。报告说明数据以 Gallup World Poll 为基础，免费提供 life evaluation 的三年平均、95% 置信区间和六个解释因素的贡献。因此一行是一个国家–Year 报告记录，分数不是单一年份的即时情绪；早期年份没有后来才发布的完整贡献字段。本项目用它研究排名不确定性、固定国家集合后的跨年变化和解释项覆盖，而不是把国家排名直接写成因果解释。
+
+来源：[World Happiness Report 数据共享](https://www.worldhappiness.report/data-sharing/) · [官方 FAQ](https://www.worldhappiness.report/faq/)
+
 ## 下载与来源状态
 
 | 候选 | 本地数据 | 来源和状态 |

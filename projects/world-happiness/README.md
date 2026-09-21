@@ -2,6 +2,16 @@
 
 排名背后的差异有多确定？固定国家样本后，跨年变化还成立吗？
 
+## 数据集简介
+
+这是 World Happiness Report Figure 2.1 的官方数据。报告说明数据以 Gallup World Poll 为基础，并提供 life evaluation 的三年平均、95% 置信区间和六个解释因素的贡献；因此这里的年份不是单一年份的即时幸福度。
+
+**用途：** 用于研究国家排名的不确定性、固定国家集合后的跨年变化，以及报告分解中的解释项覆盖，而不是把国家排名直接当作因果结论。
+
+**观测单位：** 一行代表一个国家 × Year 的报告记录；life evaluation 是滚动三年平均，早期年份没有后期才出现的完整贡献字段。
+
+**来源说明：** 官方来源是 World Happiness Report 的 Data Sharing 页面；本地文件是 2026 Figure 2.1 工作簿，保留真实缺失年份和字段缺失结构。
+
 ## 复现
 
 从仓库根目录运行 `python3 projects/world-happiness/eda.py`，再运行 `python3 scripts/build_sites.py`。依赖见根目录 requirements.txt。

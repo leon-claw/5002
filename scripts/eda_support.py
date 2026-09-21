@@ -147,7 +147,7 @@ def finish(
         + ";\n"
     )
     readme = (
-        f"# {meta['title']}\n\n{meta['question']}\n\n## 复现\n\n从仓库根目录运行 `python3 projects/{out.name}/eda.py`，再运行 `python3 scripts/build_sites.py`。依赖见根目录 requirements.txt。\n\n## 分析过程\n\n"
+        f"# {meta['title']}\n\n{meta['question']}\n\n## 数据集简介\n\n{meta.get('description', '')}\n\n**用途：** {meta.get('purpose', '')}\n\n**观测单位：** {meta.get('unit', '')}\n\n**来源说明：** {meta.get('source_note', '')}\n\n## 复现\n\n从仓库根目录运行 `python3 projects/{out.name}/eda.py`，再运行 `python3 scripts/build_sites.py`。依赖见根目录 requirements.txt。\n\n## 分析过程\n\n"
         + "\n".join(f"{i + 1}. {s}" for i, s in enumerate(steps))
         + "\n\n## 实际计算的结论\n\n"
         + "\n\n".join("### " + f["title"] + "\n\n" + f["text"] for f in findings)

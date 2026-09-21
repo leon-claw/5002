@@ -2,6 +2,16 @@
 
 行星的物理关系，有多少来自发现方法与测量覆盖的选择？
 
+## 数据集简介
+
+这是 NASA Exoplanet Archive 的 Planetary Systems（PS）表。NASA 说明该表合并了 Confirmed Planets 与 Extended Planet Data，并同时提供行星、宿主恒星和系统属性；原始表包含不同文献和参数解，不能直接当成唯一行星清单。
+
+**用途：** 用于研究发现方法、文献参数和测量缺失如何影响我们观察到的行星周期、半径、质量及恒星属性关系。
+
+**观测单位：** 原始一行代表一个行星参数/文献解；主分析限定 Published Confirmed、default_flag=1，并以唯一确认行星作为主要统计单位。
+
+**来源说明：** 通过 NASA Exoplanet Archive TAP 的 ps 表下载；本地文件是 2026-09-11 的快照，不代表之后新增的完整年度数据。
+
 ## 复现
 
 从仓库根目录运行 `python3 projects/nasa-exoplanets/eda.py`，再运行 `python3 scripts/build_sites.py`。依赖见根目录 requirements.txt。

@@ -176,6 +176,19 @@ h3 {
   color: var(--muted);
   margin: 0;
 }
+.dataset-facts {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+}
+.dataset-facts .finding {
+  min-height: 190px;
+}
+.dataset-facts .source-note {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 13px;
+  font-size: 12px;
+}
 .section-intro {
   display: flex;
   align-items: baseline;

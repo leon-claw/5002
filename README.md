@@ -4,6 +4,8 @@
 
 **打开 [index.html](index.html)** 进入六项目导航。每个项目的 `index.html` 也可直接打开；D3 7.9.0 和数据都已放到项目自己的 `site/`，支持离线演示。
 
+候选数据集的来源核对、数据用途和观测单位见 [`data/dataset_comparison_zh.md`](data/dataset_comparison_zh.md)；六个项目页面的“这个数据集是什么？”区域也保留了对应发布页面链接。
+
 | 项目目录 | 核心研究问题 | 视图 |
 |---|---|---:|
 | `projects/nyc-film-permits` | 类型与行政区关联，是否受高频项目重复出现影响？ | 8 |
