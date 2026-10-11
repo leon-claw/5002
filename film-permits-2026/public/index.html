@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8eff1">
+  <title>纽约的镜头与街道｜电影许可数据 EDA</title>
+  <meta name="description" content="基于 NYC Film Permits 本地 CSV 的可复现探索性数据分析与 D3.js 交互可视化。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◫</span> FRAME / FIELD <small>DATA STUDY № 01</small></a>
+    <nav aria-label="主导航"><a href="#question">研究问题</a><a href="#evidence">可视化</a><a href="#method">方法</a><a href="#source">数据来源</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">NEW YORK CITY / FILM PERMITS / 2023—2026</p>
+        <h1>纽约的镜头<br><em>落在哪些街道？</em></h1>
+        <p class="hero-lead">从许可事件出发，观察拍摄类型、行政区与时间节奏之间的关系。每张图都给出统计单位、分母和解释边界。</p>
+        <div class="hero-actions"><a class="primary-link" href="#evidence">查看分析图表 <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#method">阅读分析过程</a></div>
+      </div>
+      <div class="hero-art" aria-label="电影胶片形状的数据概览">
+        <div class="reel-top"><span>NYC · 05 BOROUGHS</span><span>24 FPS / DATA</span></div>
+        <div class="film-window"><div class="film-sprockets" aria-hidden="true"></div><div class="film-core"><span class="film-kicker">THE PERMIT FRAME</span><strong id="hero-count">19,412</strong><span>可用于主体分析的许可事件</span><div class="film-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="film-sprockets" aria-hidden="true"></div></div>
+        <div class="reel-bottom"><span>CSV / 14 FIELDS</span><span>EDA + D3.JS</span></div>
+      </div>
+    </section>
+
+    <section class="fact-band section-shell" aria-label="数据概览">
+      <div><span class="fact-label">原始记录</span><strong id="metric-raw">19,420</strong><small>14 个字段 · EventID 全部唯一</small></div>
+      <div><span class="fact-label">分析样本</span><strong id="metric-valid">19,412</strong><small>剔除 8 条字段错位记录</small></div>
+      <div><span class="fact-label">完整年份</span><strong>2023–25</strong><small>2026 仅作阶段性观察</small></div>
+      <div><span class="fact-label">空间范围</span><strong>5 区</strong><small>每条记录为首个活动行政区</small></div>
+    </section>
+
+    <section class="section-shell intro-grid" id="question">
+      <div class="section-heading"><span class="index">研究设问 / 00</span><h2>许可记录能告诉我们什么？</h2></div>
+      <div class="intro-text"><p>官方将 <strong>EventID</strong> 定义为唯一事件编号，<strong>Category</strong> 是申请人选择的制作类别，<strong>Borough</strong> 指当日活动的<strong>第一个</strong>行政区。因而本研究的统计单位是“许可事件”，而非影片、剧集、摄制组或实际拍摄场次。</p><p>核心问题有三个：许可量怎样随时间变化？制作类别在五区的分布是否不同？不同类型的周末活动、许可跨度与提前申请时间有何差异？</p><a class="text-link" href="https://data.cityofnewyork.us/City-Government/Film-Permits/tg4x-b46p/about_data" target="_blank" rel="noopener noreferrer">查看 NYC Open Data 官方字段说明 ↗</a></div>
+    </section>
+
+    <section class="section-shell findings" aria-labelledby="finding-title"><div class="section-heading"><span class="index">主要发现 / SUMMARY</span><h2 id="finding-title">先看结论，再看证据。</h2></div><div class="finding-grid">
+      <article><span class="finding-no">01 / 时间</span><h3>2024 是完整年份中的高点</h3><p>2024 年有 <strong>6,278</strong> 条有效开始日期记录，2025 年为 <strong>5,491</strong> 条，减少 <strong>12.5%</strong>。2026 年只覆盖至 7 月 1 日，不参与全年同比。</p></article>
+      <article><span class="finding-no">02 / 地理</span><h3>“曼哈顿过半”受类型构成影响</h3><p>全部许可中曼哈顿占 <strong>50.7%</strong>；仅看 Shooting Permit，降为 <strong>45.2%</strong>。Theater 类别有 <strong>72.5%</strong> 位于曼哈顿。</p></article>
+      <article><span class="finding-no">03 / 运营</span><h3>申请到开始的中位间隔约 5.5 天</h3><p>在起始时间与提交时间完整且顺序合理的 <strong>17,012</strong> 条记录中，中位数为 <strong>5.5 天</strong>。这是申请提前量，不等于审批处理时间。</p></article>
+    </div></section>
+
+    <section class="section-shell evidence" id="evidence">
+      <div class="section-heading"><span class="index">交互证据 / 01</span><h2>时间：起伏真实，边界要看清。</h2><p>月度序列只使用可解析的 StartDateTime；纵轴为许可事件数。选择类别后，重新计算每个月的数量。窄屏可横向滑动查看完整图表。</p></div>
+      <article class="chart-panel chart-wide"><div class="chart-title"><div><span class="chart-id">FIG. 01 / MONTHLY EVENTS</span><h3>月度许可事件</h3></div><label class="control">制作类别 <select id="trend-category"><option value="all">全部类别</option></select></label></div><div class="chart-root" id="trend-chart" role="img" aria-label="2023 至 2026 年每月电影许可事件数量折线图"></div><p class="chart-caption">2023–2025 为完整年份。2026 只有 1 条 7 月开始的记录；图中的 7 月不代表完整月份。没有季节调整，也不能据此推断行业产量。</p></article>
+      <div class="inline-analysis"><span class="analysis-rule">解读 01</span><p>2024 到 2025 的下降是本文件中“有开始日期的许可事件数”变化。事件可涵盖同一制作的多次申请，因此不能直接解释为影视作品数量下降。</p><div id="annual-table" class="annual-table" aria-label="按年许可数"></div></div>
+
+      <div class="section-heading divider"><span class="index">交互证据 / 02</span><h2>空间：类别改变了城市分布。</h2><p>下方百分比以<strong>各类别的许可数</strong>为分母；切换年份可检查关系是否稳定。</p></div>
+      <article class="chart-panel chart-wide"><div class="chart-title"><div><span class="chart-id">FIG. 02 / CATEGORY × BOROUGH</span><h3>每类许可的行政区构成</h3></div><label class="control">年份 <select id="borough-year"><option value="all">全部记录</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026 · 部分</option></select></label></div><div class="chart-root" id="borough-chart" role="img" aria-label="各制作类别在纽约市五区的百分比堆叠条形图"></div><div class="legend" id="borough-legend"></div><p class="chart-caption">类别为申请人选择；Borough 是官方字段所指的首个活动行政区。多区活动不会在本图重复计数。</p></article>
+      <div class="chart-pair"><article class="chart-panel"><div class="chart-title"><div><span class="chart-id">FIG. 03 / ASSOCIATION</span><h3>哪些组合高于“独立”预期？</h3></div></div><div class="chart-root" id="residual-chart" role="img" aria-label="制作类别与行政区独立分布的 Pearson 残差热力图"></div><p class="chart-caption">Pearson 残差 = (观测 − 独立假设下期望) / √期望。青色偏多、橙色偏少；颜色上限为 ±20，悬停见真实数值。全表 Cramér’s V = <strong>0.175</strong>。小类别有期望频数较低的格子，残差仅用于探索。</p></article><article class="interpretation"><span class="analysis-rule">敏感性检查</span><strong class="big-comparison">50.7% <span>→</span> 45.2%</strong><p>以所有许可为分母，曼哈顿占 50.7%；改为只看 Shooting Permit 后为 45.2%。类别 × 行政区的 Cramér’s V 也从 <strong>0.175</strong> 变为 <strong>0.134</strong>。这说明 Theater 等非拍摄活动会影响总体地理画像。</p><p class="fine">同一作品可能产生多条许可；没有作品 ID，不能在作品层级独立验证该关联。卡方残差用于探索，不作因果或独立样本显著性结论。</p></article></div>
+
+      <div class="section-heading divider"><span class="index">交互证据 / 03</span><h2>排期：工作日与提前量。</h2><p>比较类别时同时显示样本量；许可起止时间是计划时段，不能视为实际拍摄工时。</p></div>
+      <div class="chart-pair"><article class="chart-panel"><div class="chart-title"><div><span class="chart-id">FIG. 04 / WEEKDAY MIX</span><h3>许可开始日分布</h3></div></div><div class="chart-root" id="weekday-chart" role="img" aria-label="不同类别许可在一周七天的开始比例热力图"></div><p class="chart-caption">每行按该类别可解析开始日期的记录归一化为 100%。周末并非所有类别都少见；可悬停查看分子、分母。</p></article><article class="chart-panel"><div class="chart-title"><div><span class="chart-id">FIG. 05 / SCHEDULE SPAN</span><h3>计划起止跨度</h3></div></div><div class="chart-root" id="duration-chart" role="img" aria-label="主要类别许可计划起止跨度的分位数图"></div><p class="chart-caption">单位：小时，横轴使用 symlog 非线性刻度以保留剧场类别的长尾。线段为 P10–P90，粗条为 P25–P75，白点为中位数。仅剔除 17 条结束早于开始的记录；极长跨度仍参与分位数计算。</p></article></div>
+      <article class="chart-panel chart-wide lead-panel"><div class="chart-title"><div><span class="chart-id">FIG. 06 / REQUEST LEAD TIME</span><h3>提交申请距计划开始的时间</h3></div><span class="chart-tag">MEDIAN + IQR</span></div><div class="chart-root" id="lead-chart" role="img" aria-label="按类别的申请提前时间分位数图"></div><p class="chart-caption">单位：天。EnteredOn 是向 MOME 提交请求的日期；这里只看 17,012 条时间顺序合理的完整记录。缺失 EnteredOn 的 2,055 条和负提前量的 3 条不计入本图。</p></article>
+      <div class="operations-note"><span class="analysis-rule">解读 03</span><p>剧场类许可有 <strong>27.6%</strong> 在周末开始，电视类为 <strong>7.0%</strong>；剧场类申请提前量的中位数为 <strong>9.7 天</strong>，电视类为 <strong>4.9 天</strong>。这些是不同许可活动的排期特征，不能直接归因于行业偏好。</p></div>
+    </section>
+
+    <section class="section-shell methods" id="method"><div class="section-heading"><span class="index">分析过程 / 04</span><h2>每一步都能复查。</h2></div><div class="method-list"><article><b>01</b><div><h3>审查原表与统计单位</h3><p>读取 14 列 CSV，检查 EventID 唯一性、类别值、日期范围与缺失。8 条记录的 Borough 落入 EventType 值，其他列同步错位；保留在原始文件中，但从主体分析剔除。</p></div></article><article><b>02</b><div><h3>建立分析字段</h3><p>按源文件的美国日期格式解析 StartDateTime、EndDateTime、EnteredOn；计算年月、星期、计划跨度与申请提前天数。不能解析的日期保留为缺失，不用零替代。</p></div></article><article><b>03</b><div><h3>描述分布与关系</h3><p>计算年度、月度、类别、行政区频数；做类别 × 行政区列联表、行百分比、Pearson 残差和 Cramér’s V；用 P10、P25、中位数、P75、P90 描述偏态时长。</p></div></article><article><b>04</b><div><h3>检查解释的稳健性</h3><p>仅用完整的 2023–2025 年比较年度总量；把全部许可与 Shooting Permit 的空间分布并列，检验 Theater 等活动对总体结果的影响。所有统计来自全量清洗后的记录，图表不抽样。</p></div></article></div></section>
+
+    <section class="section-shell quality" aria-labelledby="quality-title"><div class="section-heading"><span class="index">数据质量 / 05</span><h2 id="quality-title">缺失与异常，直接摆出来。</h2></div><div class="quality-grid"><div><strong>8</strong><span>字段错位记录<br>从主体分析剔除</span></div><div><strong>387</strong><span>开始日期缺失<br>不进入时间图</span></div><div><strong>2,055</strong><span>提交日期缺失<br>不进入提前量图</span></div><div><strong>17</strong><span>负计划跨度<br>不进入跨度图</span></div><div><strong>3</strong><span>负申请提前量<br>不进入提前量图</span></div></div><p class="quality-note">另有 165 条结束日期缺失；计划跨度可计算的记录共 18,861 条。287 条跨度超过 7 天，图表仍将其纳入分位数计算。字段缺失可能并非随机，尤其是 EnteredOn，因此提前量结论只适用于完整案例。</p></section>
+
+    <section class="section-shell limitations"><div class="section-heading"><span class="index">解释边界 / 06</span><h2>这份研究没有越过数据能说的范围。</h2></div><div class="limit-grid"><p><b>许可 ≠ 实拍。</b> EventType 包括 Shooting、Theater Load in/out、Rigging 等；获准的时间范围不是摄制组实际作业时间。</p><p><b>事件 ≠ 作品。</b> CSV 没有可靠的项目 ID 或公司 ID；无法对同一制作的重复许可去重，也不能推断电影或剧集数量。</p><p><b>首个行政区 ≠ 所有地点。</b> 官方将 Borough 定义为当日活动的第一个行政区；ParkingHeld 也只是申请预留停车位置的文字说明，不能直接绘制精确点位。</p><p><b>描述 ≠ 因果。</b> 类型与区域的关联会受项目规模、许可流程等因素影响；没有人口、面积或拍摄需求分母，不能解释为各区“拍摄强度”。</p></div></section>
+
+    <section class="section-shell source" id="source"><div class="section-heading"><span class="index">来源与复现 / 07</span><h2>从原始 CSV 到每一张图。</h2></div><div class="source-grid"><div><h3>官方数据说明</h3><p>NYC Open Data · Film Permits，数据提供方为 Mayor’s Office of Media and Entertainment (MOME)。官方页面将其描述为在独占使用人行道、街道、公园等城市空间时通常需要的许可数据，并列出 14 个字段。官网标注每日更新；本报告只分析提供的本地 CSV 快照。</p><a class="text-link" href="https://data.cityofnewyork.us/City-Government/Film-Permits/tg4x-b46p/about_data" target="_blank" rel="noopener noreferrer">打开官方 About Data ↗</a></div><div><h3>本地分析产物</h3><p>输入：Film_Permits_20260930.csv（19,420 行）。由 Python 脚本生成图表数据 JSON，D3.js 在浏览器中绘图，Node.js 仅负责静态文件服务。</p><ul><li><a href="/data/analysis.json" download>下载全量汇总 JSON</a></li><li>复现命令：<code>python3 analyze.py</code> → <code>npm start</code></li><li>源文件 SHA-256：<code id="source-hash">ac1f5cfb…</code></li></ul></div></div></section>
+  </main>
+  <footer class="site-footer"><span>FRAME / FIELD · EDA RESEARCH STUDIO</span><span>数据截面：本地 CSV · 页面以可复现统计为准</span><a href="#top">返回顶部 ↑</a></footer>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  <script src="/vendor/d3.v7.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

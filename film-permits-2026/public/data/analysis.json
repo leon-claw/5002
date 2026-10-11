@@ -1,0 +1,4317 @@
+{
+  "meta": {
+    "source": "Film_Permits_20260930.csv",
+    "source_sha256": "ac1f5cfbbf8b5542fdca954a3da1c376ee42eb6c5c5e2d0e54818dc6aaf80290",
+    "source_bytes": 8196857,
+    "date_min": "2023-01-01",
+    "date_max": "2026-07-01",
+    "entered_max": "2026-06-29",
+    "unit": "one row = one permit event (EventID)"
+  },
+  "quality": {
+    "raw_rows": 19420,
+    "raw_columns": 14,
+    "unique_event_ids": 19420,
+    "misaligned_rows": 8,
+    "analysis_rows": 19412,
+    "missing_start": 387,
+    "missing_end": 165,
+    "missing_entered": 2055,
+    "duration_pairs": 18861,
+    "duration_negative": 17,
+    "duration_over_7d": 287,
+    "lead_pairs": 17015,
+    "lead_negative": 3
+  },
+  "overview": {
+    "annual": [
+      {
+        "year": 2023,
+        "count": 4640
+      },
+      {
+        "year": 2024,
+        "count": 6278
+      },
+      {
+        "year": 2025,
+        "count": 5491
+      },
+      {
+        "year": 2026,
+        "count": 2616
+      }
+    ],
+    "annual_change_2024_2025_pct": -12.5,
+    "category_counts": [
+      {
+        "name": "Television",
+        "count": 7959
+      },
+      {
+        "name": "Theater",
+        "count": 3781
+      },
+      {
+        "name": "Film",
+        "count": 2879
+      },
+      {
+        "name": "Commercial",
+        "count": 2203
+      },
+      {
+        "name": "Still Photography",
+        "count": 1245
+      },
+      {
+        "name": "WEB",
+        "count": 984
+      },
+      {
+        "name": "Documentary",
+        "count": 169
+      },
+      {
+        "name": "Student",
+        "count": 117
+      },
+      {
+        "name": "Music Video",
+        "count": 75
+      }
+    ],
+    "borough_counts": [
+      {
+        "name": "Manhattan",
+        "count": 9844
+      },
+      {
+        "name": "Brooklyn",
+        "count": 6395
+      },
+      {
+        "name": "Queens",
+        "count": 2488
+      },
+      {
+        "name": "Bronx",
+        "count": 531
+      },
+      {
+        "name": "Staten Island",
+        "count": 154
+      }
+    ],
+    "manhattan_share_all": 50.7,
+    "manhattan_share_shooting": 45.2,
+    "theater_manhattan_share": 72.5,
+    "television_queens_share": 22.8,
+    "cramers_v_all": 0.175,
+    "cramers_v_shooting": 0.134,
+    "duration_median_hours": 15.0,
+    "lead_median_days": 5.5,
+    "weekend_share_theater": 27.6,
+    "weekend_share_television": 7.0
+  },
+  "labels": {
+    "boroughs": [
+      "Manhattan",
+      "Brooklyn",
+      "Queens",
+      "Bronx",
+      "Staten Island"
+    ],
+    "categories": [
+      "Television",
+      "Theater",
+      "Film",
+      "Commercial",
+      "Still Photography",
+      "WEB",
+      "Documentary",
+      "Student",
+      "Music Video"
+    ]
+  },
+  "monthly": [
+    {
+      "month": "2023-01",
+      "count": 435,
+      "year": 2023
+    },
+    {
+      "month": "2023-02",
+      "count": 538,
+      "year": 2023
+    },
+    {
+      "month": "2023-03",
+      "count": 648,
+      "year": 2023
+    },
+    {
+      "month": "2023-04",
+      "count": 545,
+      "year": 2023
+    },
+    {
+      "month": "2023-05",
+      "count": 464,
+      "year": 2023
+    },
+    {
+      "month": "2023-06",
+      "count": 362,
+      "year": 2023
+    },
+    {
+      "month": "2023-07",
+      "count": 175,
+      "year": 2023
+    },
+    {
+      "month": "2023-08",
+      "count": 217,
+      "year": 2023
+    },
+    {
+      "month": "2023-09",
+      "count": 238,
+      "year": 2023
+    },
+    {
+      "month": "2023-10",
+      "count": 386,
+      "year": 2023
+    },
+    {
+      "month": "2023-11",
+      "count": 294,
+      "year": 2023
+    },
+    {
+      "month": "2023-12",
+      "count": 338,
+      "year": 2023
+    },
+    {
+      "month": "2024-01",
+      "count": 358,
+      "year": 2024
+    },
+    {
+      "month": "2024-02",
+      "count": 459,
+      "year": 2024
+    },
+    {
+      "month": "2024-03",
+      "count": 577,
+      "year": 2024
+    },
+    {
+      "month": "2024-04",
+      "count": 754,
+      "year": 2024
+    },
+    {
+      "month": "2024-05",
+      "count": 570,
+      "year": 2024
+    },
+    {
+      "month": "2024-06",
+      "count": 532,
+      "year": 2024
+    },
+    {
+      "month": "2024-07",
+      "count": 409,
+      "year": 2024
+    },
+    {
+      "month": "2024-08",
+      "count": 469,
+      "year": 2024
+    },
+    {
+      "month": "2024-09",
+      "count": 584,
+      "year": 2024
+    },
+    {
+      "month": "2024-10",
+      "count": 676,
+      "year": 2024
+    },
+    {
+      "month": "2024-11",
+      "count": 506,
+      "year": 2024
+    },
+    {
+      "month": "2024-12",
+      "count": 384,
+      "year": 2024
+    },
+    {
+      "month": "2025-01",
+      "count": 282,
+      "year": 2025
+    },
+    {
+      "month": "2025-02",
+      "count": 317,
+      "year": 2025
+    },
+    {
+      "month": "2025-03",
+      "count": 451,
+      "year": 2025
+    },
+    {
+      "month": "2025-04",
+      "count": 523,
+      "year": 2025
+    },
+    {
+      "month": "2025-05",
+      "count": 459,
+      "year": 2025
+    },
+    {
+      "month": "2025-06",
+      "count": 413,
+      "year": 2025
+    },
+    {
+      "month": "2025-07",
+      "count": 398,
+      "year": 2025
+    },
+    {
+      "month": "2025-08",
+      "count": 495,
+      "year": 2025
+    },
+    {
+      "month": "2025-09",
+      "count": 572,
+      "year": 2025
+    },
+    {
+      "month": "2025-10",
+      "count": 683,
+      "year": 2025
+    },
+    {
+      "month": "2025-11",
+      "count": 548,
+      "year": 2025
+    },
+    {
+      "month": "2025-12",
+      "count": 350,
+      "year": 2025
+    },
+    {
+      "month": "2026-01",
+      "count": 288,
+      "year": 2026
+    },
+    {
+      "month": "2026-02",
+      "count": 266,
+      "year": 2026
+    },
+    {
+      "month": "2026-03",
+      "count": 452,
+      "year": 2026
+    },
+    {
+      "month": "2026-04",
+      "count": 531,
+      "year": 2026
+    },
+    {
+      "month": "2026-05",
+      "count": 538,
+      "year": 2026
+    },
+    {
+      "month": "2026-06",
+      "count": 540,
+      "year": 2026
+    },
+    {
+      "month": "2026-07",
+      "count": 1,
+      "year": 2026
+    }
+  ],
+  "monthly_category": [
+    {
+      "month": "2023-01",
+      "category": "Commercial",
+      "count": 15
+    },
+    {
+      "month": "2023-01",
+      "category": "Documentary",
+      "count": 3
+    },
+    {
+      "month": "2023-01",
+      "category": "Film",
+      "count": 19
+    },
+    {
+      "month": "2023-01",
+      "category": "Still Photography",
+      "count": 5
+    },
+    {
+      "month": "2023-01",
+      "category": "Student",
+      "count": 5
+    },
+    {
+      "month": "2023-01",
+      "category": "Television",
+      "count": 335
+    },
+    {
+      "month": "2023-01",
+      "category": "Theater",
+      "count": 42
+    },
+    {
+      "month": "2023-01",
+      "category": "WEB",
+      "count": 11
+    },
+    {
+      "month": "2023-02",
+      "category": "Commercial",
+      "count": 17
+    },
+    {
+      "month": "2023-02",
+      "category": "Film",
+      "count": 62
+    },
+    {
+      "month": "2023-02",
+      "category": "Music Video",
+      "count": 3
+    },
+    {
+      "month": "2023-02",
+      "category": "Still Photography",
+      "count": 9
+    },
+    {
+      "month": "2023-02",
+      "category": "Student",
+      "count": 2
+    },
+    {
+      "month": "2023-02",
+      "category": "Television",
+      "count": 377
+    },
+    {
+      "month": "2023-02",
+      "category": "Theater",
+      "count": 56
+    },
+    {
+      "month": "2023-02",
+      "category": "WEB",
+      "count": 12
+    },
+    {
+      "month": "2023-03",
+      "category": "Commercial",
+      "count": 28
+    },
+    {
+      "month": "2023-03",
+      "category": "Documentary",
+      "count": 10
+    },
+    {
+      "month": "2023-03",
+      "category": "Film",
+      "count": 54
+    },
+    {
+      "month": "2023-03",
+      "category": "Still Photography",
+      "count": 18
+    },
+    {
+      "month": "2023-03",
+      "category": "Student",
+      "count": 5
+    },
+    {
+      "month": "2023-03",
+      "category": "Television",
+      "count": 418
+    },
+    {
+      "month": "2023-03",
+      "category": "Theater",
+      "count": 106
+    },
+    {
+      "month": "2023-03",
+      "category": "WEB",
+      "count": 9
+    },
+    {
+      "month": "2023-04",
+      "category": "Commercial",
+      "count": 52
+    },
+    {
+      "month": "2023-04",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2023-04",
+      "category": "Film",
+      "count": 60
+    },
+    {
+      "month": "2023-04",
+      "category": "Still Photography",
+      "count": 35
+    },
+    {
+      "month": "2023-04",
+      "category": "Student",
+      "count": 5
+    },
+    {
+      "month": "2023-04",
+      "category": "Television",
+      "count": 260
+    },
+    {
+      "month": "2023-04",
+      "category": "Theater",
+      "count": 98
+    },
+    {
+      "month": "2023-04",
+      "category": "WEB",
+      "count": 33
+    },
+    {
+      "month": "2023-05",
+      "category": "Commercial",
+      "count": 54
+    },
+    {
+      "month": "2023-05",
+      "category": "Documentary",
+      "count": 12
+    },
+    {
+      "month": "2023-05",
+      "category": "Film",
+      "count": 47
+    },
+    {
+      "month": "2023-05",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2023-05",
+      "category": "Still Photography",
+      "count": 44
+    },
+    {
+      "month": "2023-05",
+      "category": "Student",
+      "count": 2
+    },
+    {
+      "month": "2023-05",
+      "category": "Television",
+      "count": 165
+    },
+    {
+      "month": "2023-05",
+      "category": "Theater",
+      "count": 111
+    },
+    {
+      "month": "2023-05",
+      "category": "WEB",
+      "count": 28
+    },
+    {
+      "month": "2023-06",
+      "category": "Commercial",
+      "count": 62
+    },
+    {
+      "month": "2023-06",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2023-06",
+      "category": "Film",
+      "count": 61
+    },
+    {
+      "month": "2023-06",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2023-06",
+      "category": "Still Photography",
+      "count": 37
+    },
+    {
+      "month": "2023-06",
+      "category": "Television",
+      "count": 90
+    },
+    {
+      "month": "2023-06",
+      "category": "Theater",
+      "count": 76
+    },
+    {
+      "month": "2023-06",
+      "category": "WEB",
+      "count": 30
+    },
+    {
+      "month": "2023-07",
+      "category": "Commercial",
+      "count": 29
+    },
+    {
+      "month": "2023-07",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2023-07",
+      "category": "Film",
+      "count": 14
+    },
+    {
+      "month": "2023-07",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2023-07",
+      "category": "Still Photography",
+      "count": 21
+    },
+    {
+      "month": "2023-07",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2023-07",
+      "category": "Television",
+      "count": 48
+    },
+    {
+      "month": "2023-07",
+      "category": "Theater",
+      "count": 39
+    },
+    {
+      "month": "2023-07",
+      "category": "WEB",
+      "count": 18
+    },
+    {
+      "month": "2023-08",
+      "category": "Commercial",
+      "count": 63
+    },
+    {
+      "month": "2023-08",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2023-08",
+      "category": "Film",
+      "count": 18
+    },
+    {
+      "month": "2023-08",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2023-08",
+      "category": "Still Photography",
+      "count": 28
+    },
+    {
+      "month": "2023-08",
+      "category": "Student",
+      "count": 3
+    },
+    {
+      "month": "2023-08",
+      "category": "Television",
+      "count": 37
+    },
+    {
+      "month": "2023-08",
+      "category": "Theater",
+      "count": 51
+    },
+    {
+      "month": "2023-08",
+      "category": "WEB",
+      "count": 13
+    },
+    {
+      "month": "2023-09",
+      "category": "Commercial",
+      "count": 37
+    },
+    {
+      "month": "2023-09",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2023-09",
+      "category": "Film",
+      "count": 25
+    },
+    {
+      "month": "2023-09",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2023-09",
+      "category": "Still Photography",
+      "count": 25
+    },
+    {
+      "month": "2023-09",
+      "category": "Television",
+      "count": 22
+    },
+    {
+      "month": "2023-09",
+      "category": "Theater",
+      "count": 99
+    },
+    {
+      "month": "2023-09",
+      "category": "WEB",
+      "count": 24
+    },
+    {
+      "month": "2023-10",
+      "category": "Commercial",
+      "count": 75
+    },
+    {
+      "month": "2023-10",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2023-10",
+      "category": "Film",
+      "count": 63
+    },
+    {
+      "month": "2023-10",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2023-10",
+      "category": "Still Photography",
+      "count": 41
+    },
+    {
+      "month": "2023-10",
+      "category": "Student",
+      "count": 2
+    },
+    {
+      "month": "2023-10",
+      "category": "Television",
+      "count": 27
+    },
+    {
+      "month": "2023-10",
+      "category": "Theater",
+      "count": 152
+    },
+    {
+      "month": "2023-10",
+      "category": "WEB",
+      "count": 22
+    },
+    {
+      "month": "2023-11",
+      "category": "Commercial",
+      "count": 58
+    },
+    {
+      "month": "2023-11",
+      "category": "Documentary",
+      "count": 1
+    },
+    {
+      "month": "2023-11",
+      "category": "Film",
+      "count": 32
+    },
+    {
+      "month": "2023-11",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2023-11",
+      "category": "Still Photography",
+      "count": 15
+    },
+    {
+      "month": "2023-11",
+      "category": "Student",
+      "count": 6
+    },
+    {
+      "month": "2023-11",
+      "category": "Television",
+      "count": 63
+    },
+    {
+      "month": "2023-11",
+      "category": "Theater",
+      "count": 99
+    },
+    {
+      "month": "2023-11",
+      "category": "WEB",
+      "count": 18
+    },
+    {
+      "month": "2023-12",
+      "category": "Commercial",
+      "count": 24
+    },
+    {
+      "month": "2023-12",
+      "category": "Film",
+      "count": 41
+    },
+    {
+      "month": "2023-12",
+      "category": "Music Video",
+      "count": 3
+    },
+    {
+      "month": "2023-12",
+      "category": "Still Photography",
+      "count": 3
+    },
+    {
+      "month": "2023-12",
+      "category": "Television",
+      "count": 171
+    },
+    {
+      "month": "2023-12",
+      "category": "Theater",
+      "count": 84
+    },
+    {
+      "month": "2023-12",
+      "category": "WEB",
+      "count": 12
+    },
+    {
+      "month": "2024-01",
+      "category": "Commercial",
+      "count": 28
+    },
+    {
+      "month": "2024-01",
+      "category": "Film",
+      "count": 28
+    },
+    {
+      "month": "2024-01",
+      "category": "Still Photography",
+      "count": 4
+    },
+    {
+      "month": "2024-01",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2024-01",
+      "category": "Television",
+      "count": 232
+    },
+    {
+      "month": "2024-01",
+      "category": "Theater",
+      "count": 59
+    },
+    {
+      "month": "2024-01",
+      "category": "WEB",
+      "count": 6
+    },
+    {
+      "month": "2024-02",
+      "category": "Commercial",
+      "count": 25
+    },
+    {
+      "month": "2024-02",
+      "category": "Film",
+      "count": 82
+    },
+    {
+      "month": "2024-02",
+      "category": "Still Photography",
+      "count": 5
+    },
+    {
+      "month": "2024-02",
+      "category": "Student",
+      "count": 2
+    },
+    {
+      "month": "2024-02",
+      "category": "Television",
+      "count": 259
+    },
+    {
+      "month": "2024-02",
+      "category": "Theater",
+      "count": 67
+    },
+    {
+      "month": "2024-02",
+      "category": "WEB",
+      "count": 19
+    },
+    {
+      "month": "2024-03",
+      "category": "Commercial",
+      "count": 33
+    },
+    {
+      "month": "2024-03",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2024-03",
+      "category": "Film",
+      "count": 102
+    },
+    {
+      "month": "2024-03",
+      "category": "Music Video",
+      "count": 4
+    },
+    {
+      "month": "2024-03",
+      "category": "Still Photography",
+      "count": 27
+    },
+    {
+      "month": "2024-03",
+      "category": "Student",
+      "count": 7
+    },
+    {
+      "month": "2024-03",
+      "category": "Television",
+      "count": 297
+    },
+    {
+      "month": "2024-03",
+      "category": "Theater",
+      "count": 97
+    },
+    {
+      "month": "2024-03",
+      "category": "WEB",
+      "count": 8
+    },
+    {
+      "month": "2024-04",
+      "category": "Commercial",
+      "count": 77
+    },
+    {
+      "month": "2024-04",
+      "category": "Documentary",
+      "count": 12
+    },
+    {
+      "month": "2024-04",
+      "category": "Film",
+      "count": 113
+    },
+    {
+      "month": "2024-04",
+      "category": "Music Video",
+      "count": 3
+    },
+    {
+      "month": "2024-04",
+      "category": "Still Photography",
+      "count": 23
+    },
+    {
+      "month": "2024-04",
+      "category": "Student",
+      "count": 5
+    },
+    {
+      "month": "2024-04",
+      "category": "Television",
+      "count": 373
+    },
+    {
+      "month": "2024-04",
+      "category": "Theater",
+      "count": 112
+    },
+    {
+      "month": "2024-04",
+      "category": "WEB",
+      "count": 36
+    },
+    {
+      "month": "2024-05",
+      "category": "Commercial",
+      "count": 65
+    },
+    {
+      "month": "2024-05",
+      "category": "Documentary",
+      "count": 6
+    },
+    {
+      "month": "2024-05",
+      "category": "Film",
+      "count": 76
+    },
+    {
+      "month": "2024-05",
+      "category": "Music Video",
+      "count": 4
+    },
+    {
+      "month": "2024-05",
+      "category": "Still Photography",
+      "count": 49
+    },
+    {
+      "month": "2024-05",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2024-05",
+      "category": "Television",
+      "count": 233
+    },
+    {
+      "month": "2024-05",
+      "category": "Theater",
+      "count": 100
+    },
+    {
+      "month": "2024-05",
+      "category": "WEB",
+      "count": 36
+    },
+    {
+      "month": "2024-06",
+      "category": "Commercial",
+      "count": 92
+    },
+    {
+      "month": "2024-06",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2024-06",
+      "category": "Film",
+      "count": 67
+    },
+    {
+      "month": "2024-06",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2024-06",
+      "category": "Still Photography",
+      "count": 68
+    },
+    {
+      "month": "2024-06",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2024-06",
+      "category": "Television",
+      "count": 169
+    },
+    {
+      "month": "2024-06",
+      "category": "Theater",
+      "count": 105
+    },
+    {
+      "month": "2024-06",
+      "category": "WEB",
+      "count": 25
+    },
+    {
+      "month": "2024-07",
+      "category": "Commercial",
+      "count": 33
+    },
+    {
+      "month": "2024-07",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2024-07",
+      "category": "Film",
+      "count": 27
+    },
+    {
+      "month": "2024-07",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2024-07",
+      "category": "Still Photography",
+      "count": 44
+    },
+    {
+      "month": "2024-07",
+      "category": "Television",
+      "count": 249
+    },
+    {
+      "month": "2024-07",
+      "category": "Theater",
+      "count": 37
+    },
+    {
+      "month": "2024-07",
+      "category": "WEB",
+      "count": 13
+    },
+    {
+      "month": "2024-08",
+      "category": "Commercial",
+      "count": 27
+    },
+    {
+      "month": "2024-08",
+      "category": "Documentary",
+      "count": 7
+    },
+    {
+      "month": "2024-08",
+      "category": "Film",
+      "count": 32
+    },
+    {
+      "month": "2024-08",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2024-08",
+      "category": "Still Photography",
+      "count": 23
+    },
+    {
+      "month": "2024-08",
+      "category": "Television",
+      "count": 281
+    },
+    {
+      "month": "2024-08",
+      "category": "Theater",
+      "count": 62
+    },
+    {
+      "month": "2024-08",
+      "category": "WEB",
+      "count": 35
+    },
+    {
+      "month": "2024-09",
+      "category": "Commercial",
+      "count": 62
+    },
+    {
+      "month": "2024-09",
+      "category": "Film",
+      "count": 99
+    },
+    {
+      "month": "2024-09",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2024-09",
+      "category": "Still Photography",
+      "count": 53
+    },
+    {
+      "month": "2024-09",
+      "category": "Television",
+      "count": 210
+    },
+    {
+      "month": "2024-09",
+      "category": "Theater",
+      "count": 130
+    },
+    {
+      "month": "2024-09",
+      "category": "WEB",
+      "count": 28
+    },
+    {
+      "month": "2024-10",
+      "category": "Commercial",
+      "count": 65
+    },
+    {
+      "month": "2024-10",
+      "category": "Documentary",
+      "count": 3
+    },
+    {
+      "month": "2024-10",
+      "category": "Film",
+      "count": 131
+    },
+    {
+      "month": "2024-10",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2024-10",
+      "category": "Still Photography",
+      "count": 45
+    },
+    {
+      "month": "2024-10",
+      "category": "Television",
+      "count": 219
+    },
+    {
+      "month": "2024-10",
+      "category": "Theater",
+      "count": 160
+    },
+    {
+      "month": "2024-10",
+      "category": "WEB",
+      "count": 52
+    },
+    {
+      "month": "2024-11",
+      "category": "Commercial",
+      "count": 64
+    },
+    {
+      "month": "2024-11",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2024-11",
+      "category": "Film",
+      "count": 89
+    },
+    {
+      "month": "2024-11",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2024-11",
+      "category": "Still Photography",
+      "count": 32
+    },
+    {
+      "month": "2024-11",
+      "category": "Student",
+      "count": 4
+    },
+    {
+      "month": "2024-11",
+      "category": "Television",
+      "count": 184
+    },
+    {
+      "month": "2024-11",
+      "category": "Theater",
+      "count": 113
+    },
+    {
+      "month": "2024-11",
+      "category": "WEB",
+      "count": 17
+    },
+    {
+      "month": "2024-12",
+      "category": "Commercial",
+      "count": 56
+    },
+    {
+      "month": "2024-12",
+      "category": "Documentary",
+      "count": 3
+    },
+    {
+      "month": "2024-12",
+      "category": "Film",
+      "count": 58
+    },
+    {
+      "month": "2024-12",
+      "category": "Still Photography",
+      "count": 17
+    },
+    {
+      "month": "2024-12",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2024-12",
+      "category": "Television",
+      "count": 161
+    },
+    {
+      "month": "2024-12",
+      "category": "Theater",
+      "count": 77
+    },
+    {
+      "month": "2024-12",
+      "category": "WEB",
+      "count": 11
+    },
+    {
+      "month": "2025-01",
+      "category": "Commercial",
+      "count": 20
+    },
+    {
+      "month": "2025-01",
+      "category": "Documentary",
+      "count": 8
+    },
+    {
+      "month": "2025-01",
+      "category": "Film",
+      "count": 48
+    },
+    {
+      "month": "2025-01",
+      "category": "Still Photography",
+      "count": 6
+    },
+    {
+      "month": "2025-01",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2025-01",
+      "category": "Television",
+      "count": 139
+    },
+    {
+      "month": "2025-01",
+      "category": "Theater",
+      "count": 59
+    },
+    {
+      "month": "2025-01",
+      "category": "WEB",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "category": "Commercial",
+      "count": 36
+    },
+    {
+      "month": "2025-02",
+      "category": "Documentary",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "category": "Film",
+      "count": 36
+    },
+    {
+      "month": "2025-02",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2025-02",
+      "category": "Still Photography",
+      "count": 7
+    },
+    {
+      "month": "2025-02",
+      "category": "Television",
+      "count": 153
+    },
+    {
+      "month": "2025-02",
+      "category": "Theater",
+      "count": 65
+    },
+    {
+      "month": "2025-02",
+      "category": "WEB",
+      "count": 18
+    },
+    {
+      "month": "2025-03",
+      "category": "Commercial",
+      "count": 49
+    },
+    {
+      "month": "2025-03",
+      "category": "Film",
+      "count": 80
+    },
+    {
+      "month": "2025-03",
+      "category": "Still Photography",
+      "count": 9
+    },
+    {
+      "month": "2025-03",
+      "category": "Student",
+      "count": 15
+    },
+    {
+      "month": "2025-03",
+      "category": "Television",
+      "count": 191
+    },
+    {
+      "month": "2025-03",
+      "category": "Theater",
+      "count": 84
+    },
+    {
+      "month": "2025-03",
+      "category": "WEB",
+      "count": 23
+    },
+    {
+      "month": "2025-04",
+      "category": "Commercial",
+      "count": 69
+    },
+    {
+      "month": "2025-04",
+      "category": "Documentary",
+      "count": 12
+    },
+    {
+      "month": "2025-04",
+      "category": "Film",
+      "count": 51
+    },
+    {
+      "month": "2025-04",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2025-04",
+      "category": "Still Photography",
+      "count": 45
+    },
+    {
+      "month": "2025-04",
+      "category": "Student",
+      "count": 5
+    },
+    {
+      "month": "2025-04",
+      "category": "Television",
+      "count": 190
+    },
+    {
+      "month": "2025-04",
+      "category": "Theater",
+      "count": 121
+    },
+    {
+      "month": "2025-04",
+      "category": "WEB",
+      "count": 28
+    },
+    {
+      "month": "2025-05",
+      "category": "Commercial",
+      "count": 80
+    },
+    {
+      "month": "2025-05",
+      "category": "Documentary",
+      "count": 14
+    },
+    {
+      "month": "2025-05",
+      "category": "Film",
+      "count": 45
+    },
+    {
+      "month": "2025-05",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2025-05",
+      "category": "Still Photography",
+      "count": 45
+    },
+    {
+      "month": "2025-05",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2025-05",
+      "category": "Television",
+      "count": 124
+    },
+    {
+      "month": "2025-05",
+      "category": "Theater",
+      "count": 126
+    },
+    {
+      "month": "2025-05",
+      "category": "WEB",
+      "count": 23
+    },
+    {
+      "month": "2025-06",
+      "category": "Commercial",
+      "count": 89
+    },
+    {
+      "month": "2025-06",
+      "category": "Documentary",
+      "count": 9
+    },
+    {
+      "month": "2025-06",
+      "category": "Film",
+      "count": 50
+    },
+    {
+      "month": "2025-06",
+      "category": "Music Video",
+      "count": 6
+    },
+    {
+      "month": "2025-06",
+      "category": "Still Photography",
+      "count": 49
+    },
+    {
+      "month": "2025-06",
+      "category": "Student",
+      "count": 6
+    },
+    {
+      "month": "2025-06",
+      "category": "Television",
+      "count": 97
+    },
+    {
+      "month": "2025-06",
+      "category": "Theater",
+      "count": 74
+    },
+    {
+      "month": "2025-06",
+      "category": "WEB",
+      "count": 33
+    },
+    {
+      "month": "2025-07",
+      "category": "Commercial",
+      "count": 74
+    },
+    {
+      "month": "2025-07",
+      "category": "Documentary",
+      "count": 6
+    },
+    {
+      "month": "2025-07",
+      "category": "Film",
+      "count": 87
+    },
+    {
+      "month": "2025-07",
+      "category": "Music Video",
+      "count": 5
+    },
+    {
+      "month": "2025-07",
+      "category": "Still Photography",
+      "count": 51
+    },
+    {
+      "month": "2025-07",
+      "category": "Television",
+      "count": 106
+    },
+    {
+      "month": "2025-07",
+      "category": "Theater",
+      "count": 47
+    },
+    {
+      "month": "2025-07",
+      "category": "WEB",
+      "count": 22
+    },
+    {
+      "month": "2025-08",
+      "category": "Commercial",
+      "count": 64
+    },
+    {
+      "month": "2025-08",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2025-08",
+      "category": "Film",
+      "count": 106
+    },
+    {
+      "month": "2025-08",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2025-08",
+      "category": "Still Photography",
+      "count": 53
+    },
+    {
+      "month": "2025-08",
+      "category": "Television",
+      "count": 186
+    },
+    {
+      "month": "2025-08",
+      "category": "Theater",
+      "count": 55
+    },
+    {
+      "month": "2025-08",
+      "category": "WEB",
+      "count": 27
+    },
+    {
+      "month": "2025-09",
+      "category": "Commercial",
+      "count": 84
+    },
+    {
+      "month": "2025-09",
+      "category": "Documentary",
+      "count": 4
+    },
+    {
+      "month": "2025-09",
+      "category": "Film",
+      "count": 81
+    },
+    {
+      "month": "2025-09",
+      "category": "Music Video",
+      "count": 3
+    },
+    {
+      "month": "2025-09",
+      "category": "Still Photography",
+      "count": 37
+    },
+    {
+      "month": "2025-09",
+      "category": "Television",
+      "count": 210
+    },
+    {
+      "month": "2025-09",
+      "category": "Theater",
+      "count": 108
+    },
+    {
+      "month": "2025-09",
+      "category": "WEB",
+      "count": 45
+    },
+    {
+      "month": "2025-10",
+      "category": "Commercial",
+      "count": 70
+    },
+    {
+      "month": "2025-10",
+      "category": "Documentary",
+      "count": 2
+    },
+    {
+      "month": "2025-10",
+      "category": "Film",
+      "count": 127
+    },
+    {
+      "month": "2025-10",
+      "category": "Still Photography",
+      "count": 28
+    },
+    {
+      "month": "2025-10",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2025-10",
+      "category": "Television",
+      "count": 279
+    },
+    {
+      "month": "2025-10",
+      "category": "Theater",
+      "count": 141
+    },
+    {
+      "month": "2025-10",
+      "category": "WEB",
+      "count": 35
+    },
+    {
+      "month": "2025-11",
+      "category": "Commercial",
+      "count": 49
+    },
+    {
+      "month": "2025-11",
+      "category": "Documentary",
+      "count": 3
+    },
+    {
+      "month": "2025-11",
+      "category": "Film",
+      "count": 108
+    },
+    {
+      "month": "2025-11",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2025-11",
+      "category": "Still Photography",
+      "count": 22
+    },
+    {
+      "month": "2025-11",
+      "category": "Student",
+      "count": 10
+    },
+    {
+      "month": "2025-11",
+      "category": "Television",
+      "count": 213
+    },
+    {
+      "month": "2025-11",
+      "category": "Theater",
+      "count": 119
+    },
+    {
+      "month": "2025-11",
+      "category": "WEB",
+      "count": 22
+    },
+    {
+      "month": "2025-12",
+      "category": "Commercial",
+      "count": 23
+    },
+    {
+      "month": "2025-12",
+      "category": "Film",
+      "count": 42
+    },
+    {
+      "month": "2025-12",
+      "category": "Music Video",
+      "count": 2
+    },
+    {
+      "month": "2025-12",
+      "category": "Still Photography",
+      "count": 18
+    },
+    {
+      "month": "2025-12",
+      "category": "Student",
+      "count": 4
+    },
+    {
+      "month": "2025-12",
+      "category": "Television",
+      "count": 148
+    },
+    {
+      "month": "2025-12",
+      "category": "Theater",
+      "count": 88
+    },
+    {
+      "month": "2025-12",
+      "category": "WEB",
+      "count": 25
+    },
+    {
+      "month": "2026-01",
+      "category": "Commercial",
+      "count": 47
+    },
+    {
+      "month": "2026-01",
+      "category": "Film",
+      "count": 36
+    },
+    {
+      "month": "2026-01",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2026-01",
+      "category": "Still Photography",
+      "count": 9
+    },
+    {
+      "month": "2026-01",
+      "category": "Television",
+      "count": 141
+    },
+    {
+      "month": "2026-01",
+      "category": "Theater",
+      "count": 45
+    },
+    {
+      "month": "2026-01",
+      "category": "WEB",
+      "count": 9
+    },
+    {
+      "month": "2026-02",
+      "category": "Commercial",
+      "count": 24
+    },
+    {
+      "month": "2026-02",
+      "category": "Film",
+      "count": 22
+    },
+    {
+      "month": "2026-02",
+      "category": "Music Video",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "category": "Still Photography",
+      "count": 11
+    },
+    {
+      "month": "2026-02",
+      "category": "Student",
+      "count": 1
+    },
+    {
+      "month": "2026-02",
+      "category": "Television",
+      "count": 125
+    },
+    {
+      "month": "2026-02",
+      "category": "Theater",
+      "count": 68
+    },
+    {
+      "month": "2026-02",
+      "category": "WEB",
+      "count": 14
+    },
+    {
+      "month": "2026-03",
+      "category": "Commercial",
+      "count": 42
+    },
+    {
+      "month": "2026-03",
+      "category": "Film",
+      "count": 98
+    },
+    {
+      "month": "2026-03",
+      "category": "Still Photography",
+      "count": 10
+    },
+    {
+      "month": "2026-03",
+      "category": "Student",
+      "count": 11
+    },
+    {
+      "month": "2026-03",
+      "category": "Television",
+      "count": 201
+    },
+    {
+      "month": "2026-03",
+      "category": "Theater",
+      "count": 73
+    },
+    {
+      "month": "2026-03",
+      "category": "WEB",
+      "count": 17
+    },
+    {
+      "month": "2026-04",
+      "category": "Commercial",
+      "count": 71
+    },
+    {
+      "month": "2026-04",
+      "category": "Documentary",
+      "count": 5
+    },
+    {
+      "month": "2026-04",
+      "category": "Film",
+      "count": 110
+    },
+    {
+      "month": "2026-04",
+      "category": "Still Photography",
+      "count": 32
+    },
+    {
+      "month": "2026-04",
+      "category": "Student",
+      "count": 4
+    },
+    {
+      "month": "2026-04",
+      "category": "Television",
+      "count": 149
+    },
+    {
+      "month": "2026-04",
+      "category": "Theater",
+      "count": 128
+    },
+    {
+      "month": "2026-04",
+      "category": "WEB",
+      "count": 32
+    },
+    {
+      "month": "2026-05",
+      "category": "Commercial",
+      "count": 79
+    },
+    {
+      "month": "2026-05",
+      "category": "Documentary",
+      "count": 5
+    },
+    {
+      "month": "2026-05",
+      "category": "Film",
+      "count": 85
+    },
+    {
+      "month": "2026-05",
+      "category": "Music Video",
+      "count": 4
+    },
+    {
+      "month": "2026-05",
+      "category": "Still Photography",
+      "count": 57
+    },
+    {
+      "month": "2026-05",
+      "category": "Student",
+      "count": 3
+    },
+    {
+      "month": "2026-05",
+      "category": "Television",
+      "count": 133
+    },
+    {
+      "month": "2026-05",
+      "category": "Theater",
+      "count": 130
+    },
+    {
+      "month": "2026-05",
+      "category": "WEB",
+      "count": 42
+    },
+    {
+      "month": "2026-06",
+      "category": "Commercial",
+      "count": 67
+    },
+    {
+      "month": "2026-06",
+      "category": "Documentary",
+      "count": 6
+    },
+    {
+      "month": "2026-06",
+      "category": "Film",
+      "count": 159
+    },
+    {
+      "month": "2026-06",
+      "category": "Music Video",
+      "count": 5
+    },
+    {
+      "month": "2026-06",
+      "category": "Still Photography",
+      "count": 70
+    },
+    {
+      "month": "2026-06",
+      "category": "Television",
+      "count": 107
+    },
+    {
+      "month": "2026-06",
+      "category": "Theater",
+      "count": 89
+    },
+    {
+      "month": "2026-06",
+      "category": "WEB",
+      "count": 37
+    },
+    {
+      "month": "2026-07",
+      "category": "Theater",
+      "count": 1
+    }
+  ],
+  "by_year": {
+    "all": {
+      "n": 19412,
+      "categories": [
+        {
+          "name": "Television",
+          "count": 7959
+        },
+        {
+          "name": "Theater",
+          "count": 3781
+        },
+        {
+          "name": "Film",
+          "count": 2879
+        },
+        {
+          "name": "Commercial",
+          "count": 2203
+        },
+        {
+          "name": "Still Photography",
+          "count": 1245
+        },
+        {
+          "name": "WEB",
+          "count": 984
+        },
+        {
+          "name": "Documentary",
+          "count": 169
+        },
+        {
+          "name": "Student",
+          "count": 117
+        },
+        {
+          "name": "Music Video",
+          "count": 75
+        }
+      ],
+      "boroughs": [
+        {
+          "name": "Manhattan",
+          "count": 9844
+        },
+        {
+          "name": "Brooklyn",
+          "count": 6395
+        },
+        {
+          "name": "Queens",
+          "count": 2488
+        },
+        {
+          "name": "Bronx",
+          "count": 531
+        },
+        {
+          "name": "Staten Island",
+          "count": 154
+        }
+      ],
+      "matrix": [
+        {
+          "category": "Television",
+          "borough": "Manhattan",
+          "count": 3146
+        },
+        {
+          "category": "Television",
+          "borough": "Brooklyn",
+          "count": 2606
+        },
+        {
+          "category": "Television",
+          "borough": "Queens",
+          "count": 1814
+        },
+        {
+          "category": "Television",
+          "borough": "Bronx",
+          "count": 339
+        },
+        {
+          "category": "Television",
+          "borough": "Staten Island",
+          "count": 54
+        },
+        {
+          "category": "Theater",
+          "borough": "Manhattan",
+          "count": 2742
+        },
+        {
+          "category": "Theater",
+          "borough": "Brooklyn",
+          "count": 1034
+        },
+        {
+          "category": "Theater",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Bronx",
+          "count": 5
+        },
+        {
+          "category": "Theater",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Film",
+          "borough": "Manhattan",
+          "count": 1292
+        },
+        {
+          "category": "Film",
+          "borough": "Brooklyn",
+          "count": 1045
+        },
+        {
+          "category": "Film",
+          "borough": "Queens",
+          "count": 376
+        },
+        {
+          "category": "Film",
+          "borough": "Bronx",
+          "count": 94
+        },
+        {
+          "category": "Film",
+          "borough": "Staten Island",
+          "count": 72
+        },
+        {
+          "category": "Commercial",
+          "borough": "Manhattan",
+          "count": 1109
+        },
+        {
+          "category": "Commercial",
+          "borough": "Brooklyn",
+          "count": 855
+        },
+        {
+          "category": "Commercial",
+          "borough": "Queens",
+          "count": 167
+        },
+        {
+          "category": "Commercial",
+          "borough": "Bronx",
+          "count": 62
+        },
+        {
+          "category": "Commercial",
+          "borough": "Staten Island",
+          "count": 10
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Manhattan",
+          "count": 817
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Brooklyn",
+          "count": 382
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Queens",
+          "count": 41
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Bronx",
+          "count": 3
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "WEB",
+          "borough": "Manhattan",
+          "count": 549
+        },
+        {
+          "category": "WEB",
+          "borough": "Brooklyn",
+          "count": 362
+        },
+        {
+          "category": "WEB",
+          "borough": "Queens",
+          "count": 47
+        },
+        {
+          "category": "WEB",
+          "borough": "Bronx",
+          "count": 18
+        },
+        {
+          "category": "WEB",
+          "borough": "Staten Island",
+          "count": 8
+        },
+        {
+          "category": "Documentary",
+          "borough": "Manhattan",
+          "count": 98
+        },
+        {
+          "category": "Documentary",
+          "borough": "Brooklyn",
+          "count": 44
+        },
+        {
+          "category": "Documentary",
+          "borough": "Queens",
+          "count": 17
+        },
+        {
+          "category": "Documentary",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Staten Island",
+          "count": 8
+        },
+        {
+          "category": "Student",
+          "borough": "Manhattan",
+          "count": 57
+        },
+        {
+          "category": "Student",
+          "borough": "Brooklyn",
+          "count": 34
+        },
+        {
+          "category": "Student",
+          "borough": "Queens",
+          "count": 20
+        },
+        {
+          "category": "Student",
+          "borough": "Bronx",
+          "count": 6
+        },
+        {
+          "category": "Student",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Manhattan",
+          "count": 34
+        },
+        {
+          "category": "Music Video",
+          "borough": "Brooklyn",
+          "count": 33
+        },
+        {
+          "category": "Music Video",
+          "borough": "Queens",
+          "count": 6
+        },
+        {
+          "category": "Music Video",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "Music Video",
+          "borough": "Staten Island",
+          "count": 0
+        }
+      ]
+    },
+    "2023": {
+      "n": 4640,
+      "categories": [
+        {
+          "name": "Television",
+          "count": 2013
+        },
+        {
+          "name": "Theater",
+          "count": 1013
+        },
+        {
+          "name": "Film",
+          "count": 496
+        },
+        {
+          "name": "Commercial",
+          "count": 514
+        },
+        {
+          "name": "Still Photography",
+          "count": 281
+        },
+        {
+          "name": "WEB",
+          "count": 230
+        },
+        {
+          "name": "Documentary",
+          "count": 44
+        },
+        {
+          "name": "Student",
+          "count": 31
+        },
+        {
+          "name": "Music Video",
+          "count": 18
+        }
+      ],
+      "boroughs": [
+        {
+          "name": "Manhattan",
+          "count": 2422
+        },
+        {
+          "name": "Brooklyn",
+          "count": 1468
+        },
+        {
+          "name": "Queens",
+          "count": 583
+        },
+        {
+          "name": "Bronx",
+          "count": 152
+        },
+        {
+          "name": "Staten Island",
+          "count": 15
+        }
+      ],
+      "matrix": [
+        {
+          "category": "Television",
+          "borough": "Manhattan",
+          "count": 798
+        },
+        {
+          "category": "Television",
+          "borough": "Brooklyn",
+          "count": 639
+        },
+        {
+          "category": "Television",
+          "borough": "Queens",
+          "count": 462
+        },
+        {
+          "category": "Television",
+          "borough": "Bronx",
+          "count": 112
+        },
+        {
+          "category": "Television",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Theater",
+          "borough": "Manhattan",
+          "count": 808
+        },
+        {
+          "category": "Theater",
+          "borough": "Brooklyn",
+          "count": 203
+        },
+        {
+          "category": "Theater",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "Theater",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Film",
+          "borough": "Manhattan",
+          "count": 226
+        },
+        {
+          "category": "Film",
+          "borough": "Brooklyn",
+          "count": 189
+        },
+        {
+          "category": "Film",
+          "borough": "Queens",
+          "count": 48
+        },
+        {
+          "category": "Film",
+          "borough": "Bronx",
+          "count": 24
+        },
+        {
+          "category": "Film",
+          "borough": "Staten Island",
+          "count": 9
+        },
+        {
+          "category": "Commercial",
+          "borough": "Manhattan",
+          "count": 234
+        },
+        {
+          "category": "Commercial",
+          "borough": "Brooklyn",
+          "count": 229
+        },
+        {
+          "category": "Commercial",
+          "borough": "Queens",
+          "count": 41
+        },
+        {
+          "category": "Commercial",
+          "borough": "Bronx",
+          "count": 8
+        },
+        {
+          "category": "Commercial",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Manhattan",
+          "count": 174
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Brooklyn",
+          "count": 93
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Queens",
+          "count": 14
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "WEB",
+          "borough": "Manhattan",
+          "count": 130
+        },
+        {
+          "category": "WEB",
+          "borough": "Brooklyn",
+          "count": 88
+        },
+        {
+          "category": "WEB",
+          "borough": "Queens",
+          "count": 8
+        },
+        {
+          "category": "WEB",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "WEB",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Manhattan",
+          "count": 21
+        },
+        {
+          "category": "Documentary",
+          "borough": "Brooklyn",
+          "count": 18
+        },
+        {
+          "category": "Documentary",
+          "borough": "Queens",
+          "count": 3
+        },
+        {
+          "category": "Documentary",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Student",
+          "borough": "Manhattan",
+          "count": 24
+        },
+        {
+          "category": "Student",
+          "borough": "Brooklyn",
+          "count": 1
+        },
+        {
+          "category": "Student",
+          "borough": "Queens",
+          "count": 5
+        },
+        {
+          "category": "Student",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Student",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Manhattan",
+          "count": 7
+        },
+        {
+          "category": "Music Video",
+          "borough": "Brooklyn",
+          "count": 8
+        },
+        {
+          "category": "Music Video",
+          "borough": "Queens",
+          "count": 2
+        },
+        {
+          "category": "Music Video",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Music Video",
+          "borough": "Staten Island",
+          "count": 0
+        }
+      ]
+    },
+    "2024": {
+      "n": 6278,
+      "categories": [
+        {
+          "name": "Television",
+          "count": 2867
+        },
+        {
+          "name": "Theater",
+          "count": 1119
+        },
+        {
+          "name": "Film",
+          "count": 904
+        },
+        {
+          "name": "Commercial",
+          "count": 627
+        },
+        {
+          "name": "Still Photography",
+          "count": 390
+        },
+        {
+          "name": "WEB",
+          "count": 286
+        },
+        {
+          "name": "Documentary",
+          "count": 43
+        },
+        {
+          "name": "Student",
+          "count": 22
+        },
+        {
+          "name": "Music Video",
+          "count": 20
+        }
+      ],
+      "boroughs": [
+        {
+          "name": "Manhattan",
+          "count": 3012
+        },
+        {
+          "name": "Brooklyn",
+          "count": 2132
+        },
+        {
+          "name": "Queens",
+          "count": 898
+        },
+        {
+          "name": "Bronx",
+          "count": 188
+        },
+        {
+          "name": "Staten Island",
+          "count": 48
+        }
+      ],
+      "matrix": [
+        {
+          "category": "Television",
+          "borough": "Manhattan",
+          "count": 995
+        },
+        {
+          "category": "Television",
+          "borough": "Brooklyn",
+          "count": 997
+        },
+        {
+          "category": "Television",
+          "borough": "Queens",
+          "count": 723
+        },
+        {
+          "category": "Television",
+          "borough": "Bronx",
+          "count": 135
+        },
+        {
+          "category": "Television",
+          "borough": "Staten Island",
+          "count": 17
+        },
+        {
+          "category": "Theater",
+          "borough": "Manhattan",
+          "count": 794
+        },
+        {
+          "category": "Theater",
+          "borough": "Brooklyn",
+          "count": 323
+        },
+        {
+          "category": "Theater",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Bronx",
+          "count": 2
+        },
+        {
+          "category": "Theater",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Film",
+          "borough": "Manhattan",
+          "count": 399
+        },
+        {
+          "category": "Film",
+          "borough": "Brooklyn",
+          "count": 366
+        },
+        {
+          "category": "Film",
+          "borough": "Queens",
+          "count": 96
+        },
+        {
+          "category": "Film",
+          "borough": "Bronx",
+          "count": 19
+        },
+        {
+          "category": "Film",
+          "borough": "Staten Island",
+          "count": 24
+        },
+        {
+          "category": "Commercial",
+          "borough": "Manhattan",
+          "count": 332
+        },
+        {
+          "category": "Commercial",
+          "borough": "Brooklyn",
+          "count": 226
+        },
+        {
+          "category": "Commercial",
+          "borough": "Queens",
+          "count": 38
+        },
+        {
+          "category": "Commercial",
+          "borough": "Bronx",
+          "count": 27
+        },
+        {
+          "category": "Commercial",
+          "borough": "Staten Island",
+          "count": 4
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Manhattan",
+          "count": 276
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Brooklyn",
+          "count": 100
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Queens",
+          "count": 13
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "WEB",
+          "borough": "Manhattan",
+          "count": 158
+        },
+        {
+          "category": "WEB",
+          "borough": "Brooklyn",
+          "count": 103
+        },
+        {
+          "category": "WEB",
+          "borough": "Queens",
+          "count": 19
+        },
+        {
+          "category": "WEB",
+          "borough": "Bronx",
+          "count": 4
+        },
+        {
+          "category": "WEB",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Manhattan",
+          "count": 31
+        },
+        {
+          "category": "Documentary",
+          "borough": "Brooklyn",
+          "count": 6
+        },
+        {
+          "category": "Documentary",
+          "borough": "Queens",
+          "count": 5
+        },
+        {
+          "category": "Documentary",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Documentary",
+          "borough": "Staten Island",
+          "count": 1
+        },
+        {
+          "category": "Student",
+          "borough": "Manhattan",
+          "count": 12
+        },
+        {
+          "category": "Student",
+          "borough": "Brooklyn",
+          "count": 6
+        },
+        {
+          "category": "Student",
+          "borough": "Queens",
+          "count": 4
+        },
+        {
+          "category": "Student",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Student",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Manhattan",
+          "count": 15
+        },
+        {
+          "category": "Music Video",
+          "borough": "Brooklyn",
+          "count": 5
+        },
+        {
+          "category": "Music Video",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Staten Island",
+          "count": 0
+        }
+      ]
+    },
+    "2025": {
+      "n": 5491,
+      "categories": [
+        {
+          "name": "Television",
+          "count": 2036
+        },
+        {
+          "name": "Theater",
+          "count": 1087
+        },
+        {
+          "name": "Film",
+          "count": 861
+        },
+        {
+          "name": "Commercial",
+          "count": 707
+        },
+        {
+          "name": "Still Photography",
+          "count": 370
+        },
+        {
+          "name": "WEB",
+          "count": 302
+        },
+        {
+          "name": "Documentary",
+          "count": 61
+        },
+        {
+          "name": "Student",
+          "count": 43
+        },
+        {
+          "name": "Music Video",
+          "count": 24
+        }
+      ],
+      "boroughs": [
+        {
+          "name": "Manhattan",
+          "count": 2860
+        },
+        {
+          "name": "Brooklyn",
+          "count": 1787
+        },
+        {
+          "name": "Queens",
+          "count": 657
+        },
+        {
+          "name": "Bronx",
+          "count": 108
+        },
+        {
+          "name": "Staten Island",
+          "count": 79
+        }
+      ],
+      "matrix": [
+        {
+          "category": "Television",
+          "borough": "Manhattan",
+          "count": 884
+        },
+        {
+          "category": "Television",
+          "borough": "Brooklyn",
+          "count": 645
+        },
+        {
+          "category": "Television",
+          "borough": "Queens",
+          "count": 427
+        },
+        {
+          "category": "Television",
+          "borough": "Bronx",
+          "count": 50
+        },
+        {
+          "category": "Television",
+          "borough": "Staten Island",
+          "count": 30
+        },
+        {
+          "category": "Theater",
+          "borough": "Manhattan",
+          "count": 759
+        },
+        {
+          "category": "Theater",
+          "borough": "Brooklyn",
+          "count": 327
+        },
+        {
+          "category": "Theater",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Theater",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Film",
+          "borough": "Manhattan",
+          "count": 381
+        },
+        {
+          "category": "Film",
+          "borough": "Brooklyn",
+          "count": 272
+        },
+        {
+          "category": "Film",
+          "borough": "Queens",
+          "count": 148
+        },
+        {
+          "category": "Film",
+          "borough": "Bronx",
+          "count": 24
+        },
+        {
+          "category": "Film",
+          "borough": "Staten Island",
+          "count": 36
+        },
+        {
+          "category": "Commercial",
+          "borough": "Manhattan",
+          "count": 356
+        },
+        {
+          "category": "Commercial",
+          "borough": "Brooklyn",
+          "count": 272
+        },
+        {
+          "category": "Commercial",
+          "borough": "Queens",
+          "count": 55
+        },
+        {
+          "category": "Commercial",
+          "borough": "Bronx",
+          "count": 21
+        },
+        {
+          "category": "Commercial",
+          "borough": "Staten Island",
+          "count": 3
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Manhattan",
+          "count": 249
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Brooklyn",
+          "count": 113
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Queens",
+          "count": 6
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Staten Island",
+          "count": 1
+        },
+        {
+          "category": "WEB",
+          "borough": "Manhattan",
+          "count": 179
+        },
+        {
+          "category": "WEB",
+          "borough": "Brooklyn",
+          "count": 107
+        },
+        {
+          "category": "WEB",
+          "borough": "Queens",
+          "count": 7
+        },
+        {
+          "category": "WEB",
+          "borough": "Bronx",
+          "count": 7
+        },
+        {
+          "category": "WEB",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Manhattan",
+          "count": 33
+        },
+        {
+          "category": "Documentary",
+          "borough": "Brooklyn",
+          "count": 18
+        },
+        {
+          "category": "Documentary",
+          "borough": "Queens",
+          "count": 3
+        },
+        {
+          "category": "Documentary",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Documentary",
+          "borough": "Staten Island",
+          "count": 7
+        },
+        {
+          "category": "Student",
+          "borough": "Manhattan",
+          "count": 13
+        },
+        {
+          "category": "Student",
+          "borough": "Brooklyn",
+          "count": 17
+        },
+        {
+          "category": "Student",
+          "borough": "Queens",
+          "count": 9
+        },
+        {
+          "category": "Student",
+          "borough": "Bronx",
+          "count": 4
+        },
+        {
+          "category": "Student",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Manhattan",
+          "count": 6
+        },
+        {
+          "category": "Music Video",
+          "borough": "Brooklyn",
+          "count": 16
+        },
+        {
+          "category": "Music Video",
+          "borough": "Queens",
+          "count": 2
+        },
+        {
+          "category": "Music Video",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Staten Island",
+          "count": 0
+        }
+      ]
+    },
+    "2026": {
+      "n": 2616,
+      "categories": [
+        {
+          "name": "Television",
+          "count": 856
+        },
+        {
+          "name": "Theater",
+          "count": 534
+        },
+        {
+          "name": "Film",
+          "count": 510
+        },
+        {
+          "name": "Commercial",
+          "count": 330
+        },
+        {
+          "name": "Still Photography",
+          "count": 189
+        },
+        {
+          "name": "WEB",
+          "count": 151
+        },
+        {
+          "name": "Documentary",
+          "count": 16
+        },
+        {
+          "name": "Student",
+          "count": 19
+        },
+        {
+          "name": "Music Video",
+          "count": 11
+        }
+      ],
+      "boroughs": [
+        {
+          "name": "Manhattan",
+          "count": 1336
+        },
+        {
+          "name": "Brooklyn",
+          "count": 906
+        },
+        {
+          "name": "Queens",
+          "count": 298
+        },
+        {
+          "name": "Bronx",
+          "count": 66
+        },
+        {
+          "name": "Staten Island",
+          "count": 10
+        }
+      ],
+      "matrix": [
+        {
+          "category": "Television",
+          "borough": "Manhattan",
+          "count": 360
+        },
+        {
+          "category": "Television",
+          "borough": "Brooklyn",
+          "count": 286
+        },
+        {
+          "category": "Television",
+          "borough": "Queens",
+          "count": 168
+        },
+        {
+          "category": "Television",
+          "borough": "Bronx",
+          "count": 38
+        },
+        {
+          "category": "Television",
+          "borough": "Staten Island",
+          "count": 4
+        },
+        {
+          "category": "Theater",
+          "borough": "Manhattan",
+          "count": 356
+        },
+        {
+          "category": "Theater",
+          "borough": "Brooklyn",
+          "count": 178
+        },
+        {
+          "category": "Theater",
+          "borough": "Queens",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Theater",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Film",
+          "borough": "Manhattan",
+          "count": 239
+        },
+        {
+          "category": "Film",
+          "borough": "Brooklyn",
+          "count": 178
+        },
+        {
+          "category": "Film",
+          "borough": "Queens",
+          "count": 73
+        },
+        {
+          "category": "Film",
+          "borough": "Bronx",
+          "count": 18
+        },
+        {
+          "category": "Film",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Commercial",
+          "borough": "Manhattan",
+          "count": 170
+        },
+        {
+          "category": "Commercial",
+          "borough": "Brooklyn",
+          "count": 124
+        },
+        {
+          "category": "Commercial",
+          "borough": "Queens",
+          "count": 31
+        },
+        {
+          "category": "Commercial",
+          "borough": "Bronx",
+          "count": 4
+        },
+        {
+          "category": "Commercial",
+          "borough": "Staten Island",
+          "count": 1
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Manhattan",
+          "count": 111
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Brooklyn",
+          "count": 68
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Queens",
+          "count": 8
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Still Photography",
+          "borough": "Staten Island",
+          "count": 1
+        },
+        {
+          "category": "WEB",
+          "borough": "Manhattan",
+          "count": 79
+        },
+        {
+          "category": "WEB",
+          "borough": "Brooklyn",
+          "count": 58
+        },
+        {
+          "category": "WEB",
+          "borough": "Queens",
+          "count": 8
+        },
+        {
+          "category": "WEB",
+          "borough": "Bronx",
+          "count": 4
+        },
+        {
+          "category": "WEB",
+          "borough": "Staten Island",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Manhattan",
+          "count": 8
+        },
+        {
+          "category": "Documentary",
+          "borough": "Brooklyn",
+          "count": 2
+        },
+        {
+          "category": "Documentary",
+          "borough": "Queens",
+          "count": 6
+        },
+        {
+          "category": "Documentary",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Documentary",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Student",
+          "borough": "Manhattan",
+          "count": 8
+        },
+        {
+          "category": "Student",
+          "borough": "Brooklyn",
+          "count": 9
+        },
+        {
+          "category": "Student",
+          "borough": "Queens",
+          "count": 2
+        },
+        {
+          "category": "Student",
+          "borough": "Bronx",
+          "count": 0
+        },
+        {
+          "category": "Student",
+          "borough": "Staten Island",
+          "count": 0
+        },
+        {
+          "category": "Music Video",
+          "borough": "Manhattan",
+          "count": 5
+        },
+        {
+          "category": "Music Video",
+          "borough": "Brooklyn",
+          "count": 3
+        },
+        {
+          "category": "Music Video",
+          "borough": "Queens",
+          "count": 2
+        },
+        {
+          "category": "Music Video",
+          "borough": "Bronx",
+          "count": 1
+        },
+        {
+          "category": "Music Video",
+          "borough": "Staten Island",
+          "count": 0
+        }
+      ]
+    }
+  },
+  "residuals": [
+    {
+      "category": "Television",
+      "borough": "Manhattan",
+      "count": 3146,
+      "expected": 4036.1,
+      "residual": -14.01
+    },
+    {
+      "category": "Television",
+      "borough": "Brooklyn",
+      "count": 2606,
+      "expected": 2622.0,
+      "residual": -0.31
+    },
+    {
+      "category": "Television",
+      "borough": "Queens",
+      "count": 1814,
+      "expected": 1020.1,
+      "residual": 24.86
+    },
+    {
+      "category": "Television",
+      "borough": "Bronx",
+      "count": 339,
+      "expected": 217.7,
+      "residual": 8.22
+    },
+    {
+      "category": "Television",
+      "borough": "Staten Island",
+      "count": 54,
+      "expected": 63.1,
+      "residual": -1.15
+    },
+    {
+      "category": "Theater",
+      "borough": "Manhattan",
+      "count": 2742,
+      "expected": 1917.4,
+      "residual": 18.83
+    },
+    {
+      "category": "Theater",
+      "borough": "Brooklyn",
+      "count": 1034,
+      "expected": 1245.6,
+      "residual": -6.0
+    },
+    {
+      "category": "Theater",
+      "borough": "Queens",
+      "count": 0,
+      "expected": 484.6,
+      "residual": -22.01
+    },
+    {
+      "category": "Theater",
+      "borough": "Bronx",
+      "count": 5,
+      "expected": 103.4,
+      "residual": -9.68
+    },
+    {
+      "category": "Theater",
+      "borough": "Staten Island",
+      "count": 0,
+      "expected": 30.0,
+      "residual": -5.48
+    },
+    {
+      "category": "Film",
+      "borough": "Manhattan",
+      "count": 1292,
+      "expected": 1460.0,
+      "residual": -4.4
+    },
+    {
+      "category": "Film",
+      "borough": "Brooklyn",
+      "count": 1045,
+      "expected": 948.4,
+      "residual": 3.14
+    },
+    {
+      "category": "Film",
+      "borough": "Queens",
+      "count": 376,
+      "expected": 369.0,
+      "residual": 0.36
+    },
+    {
+      "category": "Film",
+      "borough": "Bronx",
+      "count": 94,
+      "expected": 78.8,
+      "residual": 1.72
+    },
+    {
+      "category": "Film",
+      "borough": "Staten Island",
+      "count": 72,
+      "expected": 22.8,
+      "residual": 10.29
+    },
+    {
+      "category": "Commercial",
+      "borough": "Manhattan",
+      "count": 1109,
+      "expected": 1117.2,
+      "residual": -0.24
+    },
+    {
+      "category": "Commercial",
+      "borough": "Brooklyn",
+      "count": 855,
+      "expected": 725.7,
+      "residual": 4.8
+    },
+    {
+      "category": "Commercial",
+      "borough": "Queens",
+      "count": 167,
+      "expected": 282.4,
+      "residual": -6.86
+    },
+    {
+      "category": "Commercial",
+      "borough": "Bronx",
+      "count": 62,
+      "expected": 60.3,
+      "residual": 0.22
+    },
+    {
+      "category": "Commercial",
+      "borough": "Staten Island",
+      "count": 10,
+      "expected": 17.5,
+      "residual": -1.79
+    },
+    {
+      "category": "Still Photography",
+      "borough": "Manhattan",
+      "count": 817,
+      "expected": 631.4,
+      "residual": 7.39
+    },
+    {
+      "category": "Still Photography",
+      "borough": "Brooklyn",
+      "count": 382,
+      "expected": 410.1,
+      "residual": -1.39
+    },
+    {
+      "category": "Still Photography",
+      "borough": "Queens",
+      "count": 41,
+      "expected": 159.6,
+      "residual": -9.39
+    },
+    {
+      "category": "Still Photography",
+      "borough": "Bronx",
+      "count": 3,
+      "expected": 34.1,
+      "residual": -5.32
+    },
+    {
+      "category": "Still Photography",
+      "borough": "Staten Island",
+      "count": 2,
+      "expected": 9.9,
+      "residual": -2.51
+    },
+    {
+      "category": "WEB",
+      "borough": "Manhattan",
+      "count": 549,
+      "expected": 499.0,
+      "residual": 2.24
+    },
+    {
+      "category": "WEB",
+      "borough": "Brooklyn",
+      "count": 362,
+      "expected": 324.2,
+      "residual": 2.1
+    },
+    {
+      "category": "WEB",
+      "borough": "Queens",
+      "count": 47,
+      "expected": 126.1,
+      "residual": -7.05
+    },
+    {
+      "category": "WEB",
+      "borough": "Bronx",
+      "count": 18,
+      "expected": 26.9,
+      "residual": -1.72
+    },
+    {
+      "category": "WEB",
+      "borough": "Staten Island",
+      "count": 8,
+      "expected": 7.8,
+      "residual": 0.07
+    },
+    {
+      "category": "Documentary",
+      "borough": "Manhattan",
+      "count": 98,
+      "expected": 85.7,
+      "residual": 1.33
+    },
+    {
+      "category": "Documentary",
+      "borough": "Brooklyn",
+      "count": 44,
+      "expected": 55.7,
+      "residual": -1.56
+    },
+    {
+      "category": "Documentary",
+      "borough": "Queens",
+      "count": 17,
+      "expected": 21.7,
+      "residual": -1.0
+    },
+    {
+      "category": "Documentary",
+      "borough": "Bronx",
+      "count": 2,
+      "expected": 4.6,
+      "residual": -1.22
+    },
+    {
+      "category": "Documentary",
+      "borough": "Staten Island",
+      "count": 8,
+      "expected": 1.3,
+      "residual": 5.75
+    },
+    {
+      "category": "Student",
+      "borough": "Manhattan",
+      "count": 57,
+      "expected": 59.3,
+      "residual": -0.3
+    },
+    {
+      "category": "Student",
+      "borough": "Brooklyn",
+      "count": 34,
+      "expected": 38.5,
+      "residual": -0.73
+    },
+    {
+      "category": "Student",
+      "borough": "Queens",
+      "count": 20,
+      "expected": 15.0,
+      "residual": 1.29
+    },
+    {
+      "category": "Student",
+      "borough": "Bronx",
+      "count": 6,
+      "expected": 3.2,
+      "residual": 1.56
+    },
+    {
+      "category": "Student",
+      "borough": "Staten Island",
+      "count": 0,
+      "expected": 0.9,
+      "residual": -0.96
+    },
+    {
+      "category": "Music Video",
+      "borough": "Manhattan",
+      "count": 34,
+      "expected": 38.0,
+      "residual": -0.65
+    },
+    {
+      "category": "Music Video",
+      "borough": "Brooklyn",
+      "count": 33,
+      "expected": 24.7,
+      "residual": 1.67
+    },
+    {
+      "category": "Music Video",
+      "borough": "Queens",
+      "count": 6,
+      "expected": 9.6,
+      "residual": -1.17
+    },
+    {
+      "category": "Music Video",
+      "borough": "Bronx",
+      "count": 2,
+      "expected": 2.1,
+      "residual": -0.04
+    },
+    {
+      "category": "Music Video",
+      "borough": "Staten Island",
+      "count": 0,
+      "expected": 0.6,
+      "residual": -0.77
+    }
+  ],
+  "weekday": [
+    {
+      "category": "Television",
+      "day": 0,
+      "count": 1327
+    },
+    {
+      "category": "Television",
+      "day": 1,
+      "count": 1470
+    },
+    {
+      "category": "Television",
+      "day": 2,
+      "count": 1481
+    },
+    {
+      "category": "Television",
+      "day": 3,
+      "count": 1521
+    },
+    {
+      "category": "Television",
+      "day": 4,
+      "count": 1428
+    },
+    {
+      "category": "Television",
+      "day": 5,
+      "count": 308
+    },
+    {
+      "category": "Television",
+      "day": 6,
+      "count": 237
+    },
+    {
+      "category": "Theater",
+      "day": 0,
+      "count": 377
+    },
+    {
+      "category": "Theater",
+      "day": 1,
+      "count": 505
+    },
+    {
+      "category": "Theater",
+      "day": 2,
+      "count": 531
+    },
+    {
+      "category": "Theater",
+      "day": 3,
+      "count": 562
+    },
+    {
+      "category": "Theater",
+      "day": 4,
+      "count": 743
+    },
+    {
+      "category": "Theater",
+      "day": 5,
+      "count": 669
+    },
+    {
+      "category": "Theater",
+      "day": 6,
+      "count": 366
+    },
+    {
+      "category": "Film",
+      "day": 0,
+      "count": 511
+    },
+    {
+      "category": "Film",
+      "day": 1,
+      "count": 500
+    },
+    {
+      "category": "Film",
+      "day": 2,
+      "count": 494
+    },
+    {
+      "category": "Film",
+      "day": 3,
+      "count": 452
+    },
+    {
+      "category": "Film",
+      "day": 4,
+      "count": 447
+    },
+    {
+      "category": "Film",
+      "day": 5,
+      "count": 168
+    },
+    {
+      "category": "Film",
+      "day": 6,
+      "count": 199
+    },
+    {
+      "category": "Commercial",
+      "day": 0,
+      "count": 265
+    },
+    {
+      "category": "Commercial",
+      "day": 1,
+      "count": 399
+    },
+    {
+      "category": "Commercial",
+      "day": 2,
+      "count": 470
+    },
+    {
+      "category": "Commercial",
+      "day": 3,
+      "count": 419
+    },
+    {
+      "category": "Commercial",
+      "day": 4,
+      "count": 319
+    },
+    {
+      "category": "Commercial",
+      "day": 5,
+      "count": 142
+    },
+    {
+      "category": "Commercial",
+      "day": 6,
+      "count": 164
+    },
+    {
+      "category": "Still Photography",
+      "day": 0,
+      "count": 157
+    },
+    {
+      "category": "Still Photography",
+      "day": 1,
+      "count": 218
+    },
+    {
+      "category": "Still Photography",
+      "day": 2,
+      "count": 263
+    },
+    {
+      "category": "Still Photography",
+      "day": 3,
+      "count": 287
+    },
+    {
+      "category": "Still Photography",
+      "day": 4,
+      "count": 176
+    },
+    {
+      "category": "Still Photography",
+      "day": 5,
+      "count": 72
+    },
+    {
+      "category": "Still Photography",
+      "day": 6,
+      "count": 57
+    },
+    {
+      "category": "WEB",
+      "day": 0,
+      "count": 112
+    },
+    {
+      "category": "WEB",
+      "day": 1,
+      "count": 175
+    },
+    {
+      "category": "WEB",
+      "day": 2,
+      "count": 195
+    },
+    {
+      "category": "WEB",
+      "day": 3,
+      "count": 200
+    },
+    {
+      "category": "WEB",
+      "day": 4,
+      "count": 160
+    },
+    {
+      "category": "WEB",
+      "day": 5,
+      "count": 66
+    },
+    {
+      "category": "WEB",
+      "day": 6,
+      "count": 61
+    },
+    {
+      "category": "Documentary",
+      "day": 0,
+      "count": 29
+    },
+    {
+      "category": "Documentary",
+      "day": 1,
+      "count": 28
+    },
+    {
+      "category": "Documentary",
+      "day": 2,
+      "count": 29
+    },
+    {
+      "category": "Documentary",
+      "day": 3,
+      "count": 34
+    },
+    {
+      "category": "Documentary",
+      "day": 4,
+      "count": 23
+    },
+    {
+      "category": "Documentary",
+      "day": 5,
+      "count": 11
+    },
+    {
+      "category": "Documentary",
+      "day": 6,
+      "count": 10
+    },
+    {
+      "category": "Student",
+      "day": 0,
+      "count": 15
+    },
+    {
+      "category": "Student",
+      "day": 1,
+      "count": 7
+    },
+    {
+      "category": "Student",
+      "day": 2,
+      "count": 16
+    },
+    {
+      "category": "Student",
+      "day": 3,
+      "count": 14
+    },
+    {
+      "category": "Student",
+      "day": 4,
+      "count": 27
+    },
+    {
+      "category": "Student",
+      "day": 5,
+      "count": 17
+    },
+    {
+      "category": "Student",
+      "day": 6,
+      "count": 19
+    },
+    {
+      "category": "Music Video",
+      "day": 0,
+      "count": 15
+    },
+    {
+      "category": "Music Video",
+      "day": 1,
+      "count": 17
+    },
+    {
+      "category": "Music Video",
+      "day": 2,
+      "count": 10
+    },
+    {
+      "category": "Music Video",
+      "day": 3,
+      "count": 6
+    },
+    {
+      "category": "Music Video",
+      "day": 4,
+      "count": 4
+    },
+    {
+      "category": "Music Video",
+      "day": 5,
+      "count": 8
+    },
+    {
+      "category": "Music Video",
+      "day": 6,
+      "count": 13
+    }
+  ],
+  "distributions": {
+    "duration": {
+      "Television": {
+        "n": 7644,
+        "p10": 11.983,
+        "p25": 13.983,
+        "median": 15.0,
+        "p75": 16.0,
+        "p90": 17.983
+      },
+      "Theater": {
+        "n": 3746,
+        "p10": 11.967,
+        "p25": 12.0,
+        "median": 17.983,
+        "p75": 41.983,
+        "p90": 107.967
+      },
+      "Film": {
+        "n": 2757,
+        "p10": 12.0,
+        "p25": 13.0,
+        "median": 14.0,
+        "p75": 16.0,
+        "p90": 17.0
+      },
+      "Commercial": {
+        "n": 2161,
+        "p10": 11.95,
+        "p25": 12.0,
+        "median": 14.0,
+        "p75": 15.0,
+        "p90": 17.0
+      },
+      "Still Photography": {
+        "n": 1226,
+        "p10": 10.5,
+        "p25": 12.0,
+        "median": 13.0,
+        "p75": 14.0,
+        "p90": 15.0
+      },
+      "WEB": {
+        "n": 961,
+        "p10": 11.5,
+        "p25": 12.0,
+        "median": 14.0,
+        "p75": 15.0,
+        "p90": 17.983
+      },
+      "Documentary": {
+        "n": 164,
+        "p10": 10.0,
+        "p25": 12.0,
+        "median": 14.0,
+        "p75": 15.0,
+        "p90": 16.995
+      },
+      "Student": {
+        "n": 113,
+        "p10": 5.0,
+        "p25": 7.0,
+        "median": 10.5,
+        "p75": 12.0,
+        "p90": 15.0
+      },
+      "Music Video": {
+        "n": 72,
+        "p10": 8.05,
+        "p25": 12.0,
+        "median": 14.0,
+        "p75": 16.0,
+        "p90": 17.0
+      }
+    },
+    "lead": {
+      "Television": {
+        "n": 6919,
+        "p10": 1.86,
+        "p25": 2.891,
+        "median": 4.915,
+        "p75": 6.957,
+        "p90": 10.511
+      },
+      "Theater": {
+        "n": 3326,
+        "p10": 2.754,
+        "p25": 4.921,
+        "median": 9.722,
+        "p75": 16.856,
+        "p90": 25.084
+      },
+      "Film": {
+        "n": 2510,
+        "p10": 2.064,
+        "p25": 3.548,
+        "median": 5.114,
+        "p75": 6.906,
+        "p90": 9.705
+      },
+      "Commercial": {
+        "n": 1944,
+        "p10": 1.888,
+        "p25": 2.794,
+        "median": 4.585,
+        "p75": 5.803,
+        "p90": 8.457
+      },
+      "Still Photography": {
+        "n": 1118,
+        "p10": 2.084,
+        "p25": 3.445,
+        "median": 4.768,
+        "p75": 6.576,
+        "p90": 8.82
+      },
+      "WEB": {
+        "n": 878,
+        "p10": 1.999,
+        "p25": 3.026,
+        "median": 4.796,
+        "p75": 7.467,
+        "p90": 16.756
+      },
+      "Documentary": {
+        "n": 148,
+        "p10": 1.822,
+        "p25": 3.409,
+        "median": 5.679,
+        "p75": 7.79,
+        "p90": 10.766
+      },
+      "Student": {
+        "n": 101,
+        "p10": 2.138,
+        "p25": 3.661,
+        "median": 6.991,
+        "p75": 11.173,
+        "p90": 18.46
+      },
+      "Music Video": {
+        "n": 68,
+        "p10": 2.112,
+        "p25": 3.043,
+        "median": 3.859,
+        "p75": 4.79,
+        "p90": 5.714
+      }
+    }
+  }
+}

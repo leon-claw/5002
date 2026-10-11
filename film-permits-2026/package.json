@@ -1,0 +1,11 @@
+{
+  "name": "nyc-film-permits-eda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible EDA and offline D3 dashboard for NYC Film Permits",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
