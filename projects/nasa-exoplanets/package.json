@@ -1,0 +1,12 @@
+{
+  "name": "nasa-exoplanets-eda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NASA Planetary Systems reproducible EDA and local D3 report",
+  "scripts": {
+    "start": "node server.js",
+    "analyze": "python3 build_report.py",
+    "test": "node --test server.test.js && python3 verify_report.py"
+  },
+  "engines": { "node": ">=18" }
+}

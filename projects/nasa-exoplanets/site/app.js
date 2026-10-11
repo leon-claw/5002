@@ -11,7 +11,9 @@ const palette = [
   "#79a242",
   "#7864cc",
   "#46a2b8",
+  "#bd6670",
 ];
+const methodColor = d3.scaleOrdinal(DATA.methodOrder, palette);
 const theme = getComputedStyle(document.body),
   ink = theme.getPropertyValue("--ink").trim(),
   muted = theme.getPropertyValue("--muted").trim(),
@@ -182,7 +184,7 @@ function scatter(body, c) {
       (c.scaleY !== "log" || d.y > 0),
   );
   const groups = [...new Set(all.map((d) => d.group))].sort(),
-    color = d3.scaleOrdinal(groups, palette),
+    color = methodColor,
     bar = controls(body),
     sel = select(bar, "分组", ["全部", ...groups]);
   bar
@@ -355,7 +357,7 @@ function scatter(body, c) {
     .append("p")
     .attr("class", "footnote")
     .text(
-      "拖动框选 → 下方两个视图同步更新。双对数图只包含正值；symlog 图保留零值。",
+      "拖动框选 → 下方两个视图同步更新。双对数图只包含正值；方法筛选保持全样本坐标范围。",
     );
 }
 function heatmap(body, c) {
@@ -647,7 +649,7 @@ function lineChart(body, c) {
     })),
     date = arr.some((d) => typeof d.x === "string"),
     groups = [...new Set(arr.map((d) => d.group))],
-    color = d3.scaleOrdinal(groups, palette),
+    color = methodColor,
     control = controls(body),
     sel = select(
       control,
@@ -1073,6 +1075,7 @@ function table(body, c) {
       label: "分组 / 变量",
       n: "有效 n",
       rho: "相关系数",
+    support: "解读限制",
       pooled_rho: "总体 Spearman",
       within_rank_r: "国家内秩残差 r",
     };
@@ -1100,7 +1103,30 @@ function table(body, c) {
           : d.v,
     );
 }
+function histogram(body, c) {
+  const control = controls(body);
+  const chosen = select(control, "发现方法", c.data.map(d => d.group));
+  const status = body.append("p").attr("class", "selection-status");
+  const holder = body.append("div");
+  const first = c.data[0].bins;
+  function draw() {
+    holder.html("");
+    const row = c.data.find(d => d.group === chosen.property("value"));
+    status.text(`当前方法：${row.group} · 有效半径 n = ${num(row.n)} · 所有方法使用相同的 24 个箱边界`);
+    if (!row.n) { empty(holder); return; }
+    const ctx = setup(holder, {w:800, h:380, left:65}), {svg,w,h,m} = ctx;
+    const x = d3.scaleLog().domain([first[0].lo, first.at(-1).hi]).range([m.l,w-m.r]);
+    const y = d3.scaleLinear().domain([0,d3.max(row.bins,d=>d.count)||1]).nice().range([h-m.b,m.t]);
+    axes(ctx,x,y,c.xLabel,c.yLabel);
+    hover(svg.selectAll("rect.bin").data(row.bins).join("rect").attr("class","bin")
+      .attr("x",d=>x(d.lo)+1).attr("width",d=>Math.max(0,x(d.hi)-x(d.lo)-2))
+      .attr("y",d=>y(d.count)).attr("height",d=>h-m.b-y(d.count)).attr("fill",accent),
+      d=>`${fmt(d.lo)}–${fmt(d.hi)} R⊕\n${num(d.count)} 颗 · 占当前有效样本 ${d3.format(".1%")(d.count/row.n)}`);
+  }
+  chosen.on("change",draw); draw();
+}
 const renderers = {
+  histogram,
   scatter,
   heatmap,
   interval,
@@ -1163,7 +1189,9 @@ DATA.charts.forEach((c, i) => {
           a = document.createElement("a");
         a.href = url;
         a.download = DATA.meta.title + "-" + (i + 1) + ".svg";
+        document.body.append(a);
         a.click();
+        a.remove();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
       });
   } catch (e) {
@@ -1175,3 +1203,5 @@ DATA.charts.forEach((c, i) => {
   }
 });
 document.body.dataset.ready = "true";
+
+document.querySelector("#print-report")?.addEventListener("click", () => window.print());

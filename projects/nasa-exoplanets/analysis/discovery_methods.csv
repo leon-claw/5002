@@ -1,0 +1,12 @@
+label,value,share,period_radius,radius
+Transit,4635,73.59479199745951,4592,4599
+Radial Velocity,1202,19.08542394410924,28,28
+Microlensing,292,4.63639250555732,0,0
+Imaging,97,1.5401714830104793,7,30
+Transit Timing Variations,29,0.4604636392505557,3,3
+Eclipse Timing Variations,17,0.269926960939981,0,0
+Orbital Brightness Modulation,9,0.1429025087329311,3,3
+Pulsar Timing,8,0.12702445220704986,0,0
+Astrometry,6,0.0952683391552874,0,0
+Pulsation Timing Variations,2,0.031756113051762465,0,0
+Disk Kinematics,1,0.015878056525881232,0,0

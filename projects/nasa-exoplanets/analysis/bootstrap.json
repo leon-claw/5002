@@ -1,0 +1,11 @@
+{
+  "rho": 0.08467521122361557,
+  "low": 0.05150028309378551,
+  "high": 0.11783064125330919,
+  "replicates": 1000,
+  "seed": 20261001,
+  "cluster_unit": "hostname",
+  "clusters": 3574,
+  "method": "percentile host-cluster bootstrap; 2.5% and 97.5%",
+  "scope": "Conditional on observed host systems; does not correct detection selection or missingness."
+}

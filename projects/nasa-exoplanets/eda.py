@@ -1,12 +1,12 @@
 from pathlib import Path
 import sys
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from eda_support import *
 
 OUT = Path(__file__).resolve().parent
-source = "data/raw/nasa-exoplanets-ps.csv"
-raw = pd.read_csv(ROOT / source, low_memory=False)
+source = "data/PS_2026.10.01_06.21.14.csv"
+raw = pd.read_csv(ROOT / source, comment="#", low_memory=False)
 df = raw[(raw.default_flag == 1) & (raw.soltype == "Published Confirmed")].copy()
 assert df.pl_name.is_unique
 fields = [
@@ -20,8 +20,8 @@ fields = [
 ]
 labels = [
     "周期 / 天",
-    "半径 / 地球",
-    "质量 / 地球",
+    "半径 / R⊕",
+    "质量 / M⊕",
     "平衡温度 / K",
     "恒星温度 / K",
     "距离 / pc",
@@ -166,7 +166,7 @@ finish(
         source_description="原始页面简介（中文翻译）：PS 表把 Confirmed Planets 和 Extended Planet Data 两张表合并起来，允许用户浏览行星与宿主恒星的所有参数解；每一行包含行星、恒星和系统属性，并汇总该系统可用的数据集。",
         purpose="用于研究发现方法、文献参数和测量缺失如何影响我们观察到的行星周期、半径、质量及恒星属性关系。",
         unit="原始一行代表一个行星参数/文献解；主分析限定 Published Confirmed、default_flag=1，并以唯一确认行星作为主要统计单位。",
-        source_note="通过 NASA Exoplanet Archive TAP 的 ps 表下载；本地文件是 2026-09-11 的快照，不代表之后新增的完整年度数据。",
+        source_note="用户提供的 NASA Exoplanet Archive PS 表 CSV 导出；本地文件是 2026-10-01 导出的快照，不代表之后新增的完整年度数据。",
         references=[
             ["NASA Exoplanet Archive 概览", "https://exoplanetarchive.ipac.caltech.edu/docs/intro.html"],
             ["Planetary Systems 表说明", "https://exoplanetarchive.ipac.caltech.edu/docs/planetarysystems_about.html"],
@@ -183,14 +183,14 @@ finish(
         "measurement_missingness": missing,
         "period_distribution": periods,
         "confirmed_planets": df[
-            ["pl_name", "hostname", "default_flag", "discoverymethod", "disc_year"]
+            ["pl_name", "hostname", "default_flag", "soltype", "pl_controv_flag", "pl_bmassprov", "discoverymethod", "disc_year", "disc_facility", "sy_snum", "sy_pnum"]
             + fields
         ],
         "limits_removed": limits,
     },
     [source],
     [
-        "原始 355 列逐列审计；原表是文献参数集而非唯一行星表。",
+        "原始 92 列逐列审计；原表是文献参数集而非唯一行星表。",
         "取 Published Confirmed 且 default_flag=1；断言 pl_name 唯一。",
         "各物理参数剔除 limit flag 非零和非正值。",
         "计算 pooled / 方法内 Spearman 和方法 × 参数缺失矩阵。",
@@ -200,7 +200,7 @@ finish(
         "探测样本不等于宇宙总体，不能推断行星真实丰度或宜居概率。",
         "完整案例分析受非随机缺失影响；没有全表插补。",
         "同一恒星可有多颗行星，不将每个点视为独立随机抽样。",
-        "快照截止 2026-09-11；2026 年发现数量未覆盖全年。",
+        "导出日期 2026-10-01；2026 年发现数量未覆盖全年。",
     ],
     {
         "unique_planets": int(df.pl_name.nunique()),
