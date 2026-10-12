@@ -1,0 +1,15 @@
+﻿,dtype,missing_n,missing_pct,distinct_n
+EventID,int64,0,0.0,19420
+EventType,object,0,0.0,5
+StartDateTime,object,395,2.03,8241
+EndDateTime,object,165,0.85,10276
+EnteredOn,object,2062,10.62,17354
+EventAgency,object,0,0.0,9
+ParkingHeld,object,0,0.0,10088
+Borough,object,0,0.0,7
+CommunityBoard(s),object,11,0.06,376
+PolicePrecinct(s),object,11,0.06,931
+Category,object,0,0.0,17
+SubCategoryName,object,0,0.0,28
+Country,object,0,0.0,10
+ZipCode(s),object,11,0.06,1762

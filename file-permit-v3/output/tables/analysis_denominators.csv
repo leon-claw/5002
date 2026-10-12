@@ -1,0 +1,8 @@
+﻿,0
+raw_records,19420
+clean_records,19412
+valid_start,19025
+missing_start,387
+valid_nonnegative_duration,18844
+valid_lead_including_negative,17015
+nonnegative_lead,17012

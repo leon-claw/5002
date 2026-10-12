@@ -7,3 +7,6 @@ node_modules/
 
 .playwright-cli/
 output/playwright/
+
+film-permits-v2/
+film-permits-2026/
